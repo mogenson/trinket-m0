@@ -7,8 +7,17 @@ extern crate bindgen;
 extern crate cc;
 
 fn main() {
-    // TODO: make list of C source files
-    // do cargo:rerun-if-changed for all of them
+    // Put the linker script somewhere the linker can find it
+    let out = &PathBuf::from(env::var_os("OUT_DIR").unwrap());
+    File::create(out.join("memory.x"))
+        .unwrap()
+        .write_all(include_bytes!("memory.x"))
+        .unwrap();
+    println!("cargo:rustc-link-search={}", out.display());
+
+    // Only re-run the build script when memory.x is changed,
+    // instead of when any part of the source code changes.
+    println!("cargo:rerun-if-changed=memory.x");
 
     // compile the atmel-start sources as a static library
     cc::Build::new()
@@ -16,6 +25,7 @@ fn main() {
         .define("__SAMD21E18A__", None)
         .flag("-ffunction-sections")
         .flag("-fno-pic")
+        .flag("-nostartfiles")
         .flag("-g3")
         .flag("-mcpu=cortex-m0plus")
         .flag("-mlong-calls")
@@ -55,8 +65,9 @@ fn main() {
         .file("atmel-start/hpl/gclk/hpl_gclk.c")
         .file("atmel-start/hpl/pm/hpl_pm.c")
         .file("atmel-start/hpl/sysctrl/hpl_sysctrl.c")
-        .file("atmel-start/samd21a/gcc/gcc/startup_samd21.c")
+        //.file("atmel-start/samd21a/gcc/gcc/startup_samd21.c")
         .file("atmel-start/samd21a/gcc/system_samd21.c")
+        .file("toggle_led.c")
         .archiver("arm-none-eabi-ar")
         .compile("atmel-start");
 
@@ -77,6 +88,7 @@ fn main() {
         .clang_arg("-Iatmel-start/hri")
         .clang_arg("-Iatmel-start/samd21a/include")
         .header("atmel-start/atmel_start.h")
+        .header("toggle_led.h")
         .ctypes_prefix("cty")
         .use_core()
         .trust_clang_mangling(false)
