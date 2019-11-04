@@ -3,13 +3,15 @@ rustflags = [
   # use GCC as the linker by commenting out both lines above and then
   # uncommenting the three lines below
   "-C", "linker=arm-none-eabi-gcc",
-  "-C", "link-arg=-nostartfiles",
+  "-C", "link-arg=-Wl,-Latmel-start/samd21a/gcc/gcc",
+  "-C", "link-arg=-Wl,-Tsamd21e18a_flash.ld",
   "-C", "link-arg=-mcpu=cortex-m0plus",
   "-C", "link-arg=-mthumb",
-  "-C", "link-arg=--specs=nosys.specs",
+  "-C", "link-arg=--specs=nano.specs",
   "-C", "link-arg=-Wl,--gc-sections",
-  "-C", "link-arg=-Wl,--build-id=none",
-  "-C", "link-arg=-Wl,-Tmemory.x",
+  "-C", "link-arg=-Wl,--start-group",
+  "-C", "link-arg=-lm",
+  "-C", "link-arg=-Wl,--end-group",
 ]
 
 [build]

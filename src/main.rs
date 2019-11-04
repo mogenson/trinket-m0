@@ -7,12 +7,11 @@
 extern crate cty;
 extern crate panic_halt;
 use cortex_m::asm;
-use cortex_m_rt::entry;
+extern crate r0;
 
 include!(concat!(env!("OUT_DIR"), "/bindings.rs"));
 
-#[entry]
-fn main() -> ! {
+pub unsafe extern "C" fn main()  {
     let led: u8 = 10;
 
     unsafe {
