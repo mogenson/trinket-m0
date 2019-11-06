@@ -19,6 +19,8 @@ fn main() {
     // instead of when any part of the source code changes.
     println!("cargo:rerun-if-changed=memory.x");
 
+    // TODO file list (exclude startup and main)
+
     // compile the atmel-start sources as a static library
     cc::Build::new()
         .pic(false)
@@ -67,9 +69,9 @@ fn main() {
         .file("atmel-start/hpl/sysctrl/hpl_sysctrl.c")
         //.file("atmel-start/samd21a/gcc/gcc/startup_samd21.c")
         .file("atmel-start/samd21a/gcc/system_samd21.c")
-        .file("toggle_led.c")
+        .file("src/hal.c")
         .archiver("arm-none-eabi-ar")
-        .compile("atmel-start");
+        .compile("libhal.a");
 
     let bindings = bindgen::Builder::default()
         .clang_arg("--sysroot=/usr/lib/gcc/arm-none-eabi/include")
@@ -88,7 +90,7 @@ fn main() {
         .clang_arg("-Iatmel-start/hri")
         .clang_arg("-Iatmel-start/samd21a/include")
         .header("atmel-start/atmel_start.h")
-        .header("toggle_led.h")
+        .header("src/hal.h")
         .ctypes_prefix("cty")
         .use_core()
         .trust_clang_mangling(false)
