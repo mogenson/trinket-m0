@@ -19,86 +19,102 @@ fn main() {
     // instead of when any part of the source code changes.
     println!("cargo:rerun-if-changed=memory.x");
 
-    // TODO file list (exclude startup and main)
+    let defines = ["__SAMD21E18A__"];
+
+    let flags = [
+        "-ffunction-sections",
+        "-fno-pic",
+        "-nostartfiles",
+        "-g3",
+        "-mcpu=cortex-m0plus",
+        "-mlong-calls",
+        "-mthumb",
+        "-Os",
+        "-std=gnu99",
+        "-Wall",
+    ];
+
+    let includes = [
+        "atmel-start",
+        "atmel-start/CMSIS/Core/Include",
+        "atmel-start/config",
+        "atmel-start/hal/include",
+        "atmel-start/hal/utils/include",
+        "atmel-start/hpl/core",
+        "atmel-start/hpl/dmac",
+        "atmel-start/hpl/gclk",
+        "atmel-start/hpl/pm",
+        "atmel-start/hpl/port",
+        "atmel-start/hpl/sysctrl",
+        "atmel-start/hri",
+        "atmel-start/samd21a/include",
+    ];
+
+    // exclude main.c, startup_samd21.c, driver_examples.c
+    let files = [
+        "atmel-start/atmel_start.c",
+        "atmel-start/driver_init.c",
+        "atmel-start/hal/src/hal_atomic.c",
+        "atmel-start/hal/src/hal_delay.c",
+        "atmel-start/hal/src/hal_gpio.c",
+        "atmel-start/hal/src/hal_init.c",
+        "atmel-start/hal/src/hal_io.c",
+        "atmel-start/hal/src/hal_sleep.c",
+        "atmel-start/hal/utils/src/utils_assert.c",
+        "atmel-start/hal/utils/src/utils_event.c",
+        "atmel-start/hal/utils/src/utils_list.c",
+        "atmel-start/hal/utils/src/utils_syscalls.c",
+        "atmel-start/hpl/core/hpl_core_m0plus_base.c",
+        "atmel-start/hpl/core/hpl_init.c",
+        "atmel-start/hpl/dmac/hpl_dmac.c",
+        "atmel-start/hpl/gclk/hpl_gclk.c",
+        "atmel-start/hpl/pm/hpl_pm.c",
+        "atmel-start/hpl/sysctrl/hpl_sysctrl.c",
+        "atmel-start/samd21a/gcc/system_samd21.c",
+        "src/hal.c",
+    ];
+
+    let mut builder = cc::Build::new();
+    builder.pic(false);
+    builder.archiver("arm-none-eabi-ar");
+
+    let mut bindings = bindgen::Builder::default();
+    bindings = bindings.clang_arg("--sysroot=/usr/lib/gcc/arm-none-eabi/include");
+    bindings = bindings.header("atmel-start/atmel_start.h");
+    bindings = bindings.header("src/hal.h");
+    bindings = bindings.ctypes_prefix("cty");
+    bindings = bindings.use_core();
+    bindings = bindings.trust_clang_mangling(false);
+
+    // add defines
+    for define in defines.iter() {
+        builder.define(define, None);
+        bindings = bindings.clang_arg(format!("-D{}", define));
+    }
+
+    // add compiler flags
+    for flag in flags.iter() {
+        builder.flag(flag);
+    }
+
+    // add include paths
+    for include in includes.iter() {
+        builder.include(include);
+        bindings = bindings.clang_arg(format!("-I{}", include));
+    }
+
+    // add source files
+    for file in files.iter() {
+        builder.file(file);
+    }
 
     // compile the atmel-start sources as a static library
-    cc::Build::new()
-        .pic(false)
-        .define("__SAMD21E18A__", None)
-        .flag("-ffunction-sections")
-        .flag("-fno-pic")
-        .flag("-nostartfiles")
-        .flag("-g3")
-        .flag("-mcpu=cortex-m0plus")
-        .flag("-mlong-calls")
-        .flag("-mthumb")
-        .flag("-Os")
-        .flag("-std=gnu99")
-        .flag("-Wall")
-        .include("atmel-start")
-        .include("atmel-start/CMSIS/Core/Include")
-        .include("atmel-start/config")
-        .include("atmel-start/hal/include")
-        .include("atmel-start/hal/utils/include")
-        .include("atmel-start/hpl/core")
-        .include("atmel-start/hpl/dmac")
-        .include("atmel-start/hpl/gclk")
-        .include("atmel-start/hpl/pm")
-        .include("atmel-start/hpl/port")
-        .include("atmel-start/hpl/sysctrl")
-        .include("atmel-start/hri")
-        .include("atmel-start/samd21a/include")
-        .file("atmel-start/atmel_start.c")
-        .file("atmel-start/driver_init.c")
-        .file("atmel-start/examples/driver_examples.c")
-        .file("atmel-start/hal/src/hal_atomic.c")
-        .file("atmel-start/hal/src/hal_delay.c")
-        .file("atmel-start/hal/src/hal_gpio.c")
-        .file("atmel-start/hal/src/hal_init.c")
-        .file("atmel-start/hal/src/hal_io.c")
-        .file("atmel-start/hal/src/hal_sleep.c")
-        .file("atmel-start/hal/utils/src/utils_assert.c")
-        .file("atmel-start/hal/utils/src/utils_event.c")
-        .file("atmel-start/hal/utils/src/utils_list.c")
-        .file("atmel-start/hal/utils/src/utils_syscalls.c")
-        .file("atmel-start/hpl/core/hpl_core_m0plus_base.c")
-        .file("atmel-start/hpl/core/hpl_init.c")
-        .file("atmel-start/hpl/dmac/hpl_dmac.c")
-        .file("atmel-start/hpl/gclk/hpl_gclk.c")
-        .file("atmel-start/hpl/pm/hpl_pm.c")
-        .file("atmel-start/hpl/sysctrl/hpl_sysctrl.c")
-        //.file("atmel-start/samd21a/gcc/gcc/startup_samd21.c")
-        .file("atmel-start/samd21a/gcc/system_samd21.c")
-        .file("src/hal.c")
-        .archiver("arm-none-eabi-ar")
-        .compile("libhal.a");
+    builder.compile("libhal.a");
 
-    let bindings = bindgen::Builder::default()
-        .clang_arg("--sysroot=/usr/lib/gcc/arm-none-eabi/include")
-        .clang_arg("-D__SAMD21E18A__")
-        .clang_arg("-Iatmel-start")
-        .clang_arg("-Iatmel-start/CMSIS/Core/Include")
-        .clang_arg("-Iatmel-start/config")
-        .clang_arg("-Iatmel-start/hal/include")
-        .clang_arg("-Iatmel-start/hal/utils/include")
-        .clang_arg("-Iatmel-start/hpl/core")
-        .clang_arg("-Iatmel-start/hpl/dmac")
-        .clang_arg("-Iatmel-start/hpl/gclk")
-        .clang_arg("-Iatmel-start/hpl/pm")
-        .clang_arg("-Iatmel-start/hpl/port")
-        .clang_arg("-Iatmel-start/hpl/sysctrl")
-        .clang_arg("-Iatmel-start/hri")
-        .clang_arg("-Iatmel-start/samd21a/include")
-        .header("atmel-start/atmel_start.h")
-        .header("src/hal.h")
-        .ctypes_prefix("cty")
-        .use_core()
-        .trust_clang_mangling(false)
-        .generate()
-        .expect("Unable to generate bindings");
-
-    let out_path = PathBuf::from(env::var("OUT_DIR").unwrap());
+    // write bindings to file
     bindings
-        .write_to_file(out_path.join("bindings.rs"))
+        .generate()
+        .expect("Unable to generate bindings")
+        .write_to_file(out.join("bindings.rs"))
         .expect("Couldn't write bindings");
 }
