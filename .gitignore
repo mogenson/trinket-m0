@@ -3,3 +3,5 @@
 .gdb_history
 Cargo.lock
 target/
+trinket-m0.bin
+trinket-m0.uf2
