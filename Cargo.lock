@@ -168,19 +168,6 @@ version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
-name = "demo"
-version = "0.1.0"
-dependencies = [
- "bindgen 0.51.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "cc 1.0.46 (registry+https://github.com/rust-lang/crates.io-index)",
- "cortex-m 0.6.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "cortex-m-rt 0.6.10 (registry+https://github.com/rust-lang/crates.io-index)",
- "cortex-m-semihosting 0.3.5 (registry+https://github.com/rust-lang/crates.io-index)",
- "cty 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "panic-halt 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
-]
-
-[[package]]
 name = "env_logger"
 version = "0.6.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -403,6 +390,19 @@ version = "0.3.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "lazy_static 1.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "trinket-m0"
+version = "0.1.0"
+dependencies = [
+ "bindgen 0.51.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cc 1.0.46 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cortex-m 0.6.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cortex-m-rt 0.6.10 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cortex-m-semihosting 0.3.5 (registry+https://github.com/rust-lang/crates.io-index)",
+ "cty 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "panic-halt 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
