@@ -22,7 +22,7 @@ drivers:
     api: HAL:HPL:GCLK
     configuration:
       enable_gclk_gen_0: true
-      enable_gclk_gen_1: false
+      enable_gclk_gen_1: true
       enable_gclk_gen_2: false
       enable_gclk_gen_3: false
       enable_gclk_gen_4: false
@@ -35,7 +35,7 @@ drivers:
       gclk_arch_gen_0_oe: false
       gclk_arch_gen_0_oov: false
       gclk_arch_gen_1_RUNSTDBY: false
-      gclk_arch_gen_1_enable: false
+      gclk_arch_gen_1_enable: true
       gclk_arch_gen_1_idc: false
       gclk_arch_gen_1_oe: false
       gclk_arch_gen_1_oov: false
@@ -71,10 +71,10 @@ drivers:
       gclk_arch_gen_7_oov: false
       gclk_gen_0_div: 1
       gclk_gen_0_div_sel: false
-      gclk_gen_0_oscillator: 8MHz Internal Oscillator (OSC8M)
-      gclk_gen_1_div: 1
+      gclk_gen_0_oscillator: Digital Frequency Locked Loop (DFLL48M)
+      gclk_gen_1_div: 250
       gclk_gen_1_div_sel: false
-      gclk_gen_1_oscillator: External Crystal Oscillator 0.4-32MHz (XOSC)
+      gclk_gen_1_oscillator: 8MHz Internal Oscillator (OSC8M)
       gclk_gen_2_div: 1
       gclk_gen_2_div_sel: false
       gclk_gen_2_oscillator: External Crystal Oscillator 0.4-32MHz (XOSC)
@@ -410,7 +410,7 @@ drivers:
       dfll48m_arch_calibration: false
       dfll48m_arch_ccdis: false
       dfll48m_arch_coarse: 31
-      dfll48m_arch_enable: false
+      dfll48m_arch_enable: true
       dfll48m_arch_fine: 512
       dfll48m_arch_llaw: false
       dfll48m_arch_ondemand: true
@@ -419,16 +419,16 @@ drivers:
       dfll48m_arch_stable: false
       dfll48m_arch_usbcrm: false
       dfll48m_arch_waitlock: false
-      dfll48m_mode: Open Loop Mode
-      dfll48m_mul: 0
-      dfll48m_ref_clock: Generic clock generator 3
-      dfll_arch_cstep: 1
-      dfll_arch_fstep: 1
-      enable_dfll48m: false
+      dfll48m_mode: Closed Loop Mode
+      dfll48m_mul: 1500
+      dfll48m_ref_clock: Generic clock generator 1
+      dfll_arch_cstep: 8
+      dfll_arch_fstep: 64
+      enable_dfll48m: true
       enable_fdpll96m: false
       enable_osc32k: false
       enable_osc8m: true
-      enable_osculp32k: true
+      enable_osculp32k: false
       enable_xosc: false
       enable_xosc32k: false
       fdpll96m_arch_enable: false
@@ -441,7 +441,7 @@ drivers:
       fdpll96m_ref_clock: Generic clock generator 3
       osc32k_arch_calib: 0
       osc32k_arch_en1k: false
-      osc32k_arch_en32k: false
+      osc32k_arch_en32k: true
       osc32k_arch_enable: false
       osc32k_arch_ondemand: true
       osc32k_arch_overwrite_calibration: false
@@ -453,7 +453,7 @@ drivers:
       osc8m_arch_ondemand: true
       osc8m_arch_overwrite_calibration: false
       osc8m_arch_runstdby: false
-      osc8m_presc: '8'
+      osc8m_presc: '1'
       osculp32k_arch_calib: 0
       osculp32k_arch_overwrite_calibration: false
       osculp32k_arch_wrtlock: false
@@ -478,11 +478,5 @@ drivers:
     variant: null
     clocks:
       domain_group: null
-pads:
-  LED:
-    name: PA10
-    definition: Atmel:SAMD21_Drivers:0.0.1::SAMD21E18A-MF::pad::PA10
-    mode: Digital output
-    user_label: LED
-    configuration: null
+pads: {}
 toolchain_options: []

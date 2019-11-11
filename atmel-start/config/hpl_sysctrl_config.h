@@ -84,7 +84,7 @@
 // <i> Default: No Prescaling
 // <id> osc8m_presc
 #ifndef CONF_OSC8M_PRESC
-#define CONF_OSC8M_PRESC SYSCTRL_OSC8M_PRESC_3_Val
+#define CONF_OSC8M_PRESC SYSCTRL_OSC8M_PRESC_0_Val
 #endif
 
 // <q> Overwrite Default Osc Calibration
@@ -142,7 +142,7 @@
 // <i> Enable 32 Khz Output
 // <id> osc32k_arch_en32k
 #ifndef CONF_OSC32K_EN32K
-#define CONF_OSC32K_EN32K 0
+#define CONF_OSC32K_EN32K 1
 #endif
 
 // <q> Enable 1K
@@ -377,7 +377,7 @@
 // <i> Indicates whether configuration for OSCULP32K is enabled or not
 // <id> enable_osculp32k
 #ifndef CONF_OSCULP32K_CONFIG
-#define CONF_OSCULP32K_CONFIG 1
+#define CONF_OSCULP32K_CONFIG 0
 #endif
 
 // <h> 32kHz Ultra Low Power Internal Oscillator (OSCULP32K) Control
@@ -410,7 +410,7 @@
 // <i> Indicates whether configuration for DFLL is enabled or not
 // <id> enable_dfll48m
 #ifndef CONF_DFLL_CONFIG
-#define CONF_DFLL_CONFIG 0
+#define CONF_DFLL_CONFIG 1
 #endif
 
 // <y> Reference Clock Source
@@ -425,7 +425,7 @@
 // <i> Select the clock source.
 // <id> dfll48m_ref_clock
 #ifndef CONF_DFLL_GCLK
-#define CONF_DFLL_GCLK GCLK_CLKCTRL_GEN_GCLK3_Val
+#define CONF_DFLL_GCLK GCLK_CLKCTRL_GEN_GCLK1_Val
 #endif
 
 // <h> DFLL Control
@@ -433,7 +433,7 @@
 // <i> Indicates whether DFLL is enabled or not
 // <id> dfll48m_arch_enable
 #ifndef CONF_DFLL_ENABLE
-#define CONF_DFLL_ENABLE 0
+#define CONF_DFLL_ENABLE 1
 #endif
 
 // <q> Wait Lock
@@ -520,19 +520,19 @@
 // <i> Mode
 // <id> dfll48m_mode
 #ifndef CONF_DFLL_MODE
-#define CONF_DFLL_MODE CONF_DFLL_OPEN_LOOP_MODE
+#define CONF_DFLL_MODE CONF_DFLL_CLOSED_LOOP_MODE
 #endif
 
 // <o> Coarse Maximum Step <0x0-0x1F>
 // <id> dfll_arch_cstep
 #ifndef CONF_DFLL_CSTEP
-#define CONF_DFLL_CSTEP 1
+#define CONF_DFLL_CSTEP 8
 #endif
 
 // <o> Fine Maximum Step <0x0-0x3FF>
 // <id> dfll_arch_fstep
 #ifndef CONF_DFLL_FSTEP
-#define CONF_DFLL_FSTEP 1
+#define CONF_DFLL_FSTEP 64
 #endif
 
 //  <o>DFLL Multiply Factor<0-65535>
@@ -540,7 +540,7 @@
 //  <i> Default: 0
 //  <id> dfll48m_mul
 #ifndef CONF_DFLL_MUL
-#define CONF_DFLL_MUL 0
+#define CONF_DFLL_MUL 1500
 #endif
 
 // <e> DFLL Calibration Overwrite
