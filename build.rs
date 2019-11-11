@@ -14,9 +14,6 @@ fn main() {
         .write_all(include_bytes!("memory.x"))
         .unwrap();
     println!("cargo:rustc-link-search={}", out.display());
-
-    // Only re-run the build script when memory.x is changed,
-    // instead of when any part of the source code changes.
     println!("cargo:rerun-if-changed=memory.x");
 
     let defines = ["__SAMD21E18A__"];
@@ -103,9 +100,10 @@ fn main() {
         bindings = bindings.clang_arg(format!("-I{}", include));
     }
 
-    // add source files
+    // add source files, rebuild if modified
     for file in files.iter() {
         builder.file(file);
+        println!("cargo:rerun-if-changed={}", file);
     }
 
     // compile the atmel-start sources as a static library
