@@ -14,15 +14,17 @@ include!(concat!(env!("OUT_DIR"), "/bindings.rs"));
 
 #[entry]
 fn main() -> ! {
+    let led:u8 = 10;
     asm::nop();
     unsafe {
         atmel_start_init();
+        hal_gpio_set_pin_direction(led, gpio_direction_GPIO_DIRECTION_OUT);
     }
 
     loop {
         unsafe {
-            delay_ms(500);
-            toggle_led();
+            delay_ms(100);
+            hal_gpio_toggle_pin_level(led);
         }
     }
 }
