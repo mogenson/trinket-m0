@@ -77,7 +77,7 @@ fn main() {
 
     let mut bindings = bindgen::Builder::default();
     bindings = bindings.clang_arg("--sysroot=/usr/lib/gcc/arm-none-eabi/include");
-    bindings = bindings.header("atmel-start/atmel_start.h");
+    bindings = bindings.header("atmel-start/driver_init.h");
     bindings = bindings.header("src/hal.h");
     bindings = bindings.ctypes_prefix("cty");
     bindings = bindings.use_core();

@@ -9,3 +9,7 @@ void hal_gpio_set_pin_direction(const uint8_t pin, const enum gpio_direction dir
 void hal_gpio_toggle_pin_level(const uint8_t pin) {
     gpio_toggle_pin_level(pin);
 }
+
+void hal_gpio_set_pin_level(const uint8_t pin, const bool level) {
+    gpio_set_pin_level(pin, level);
+}
