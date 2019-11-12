@@ -1,10 +1,9 @@
-#![allow(non_upper_case_globals)]
 #![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
+#![allow(non_upper_case_globals)]
 #![allow(unused)]
+extern crate cty;
 include!(concat!(env!("OUT_DIR"), "/bindings.rs"));
-
-use embedded_hal::blocking::delay::{DelayMs, DelayUs};
 
 pub fn init(pin: u8) {
     unsafe {
@@ -23,6 +22,7 @@ pub fn work(pin: u8) {
 
 // implement Delay trait from embedded_hal
 // Note: <u32> unimplemented because atmel start hal uses uin16_t for delay time
+use embedded_hal::blocking::delay::{DelayMs, DelayUs};
 pub struct Delay; // empty struct
 
 impl DelayMs<u16> for Delay {

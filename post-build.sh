@@ -2,6 +2,9 @@
 
 name=trinket-m0
 
+# print stats
+arm-none-eabi-size target/thumbv6m-none-eabi/debug/$name
+
 # build binary
 arm-none-eabi-objcopy target/thumbv6m-none-eabi/debug/$name -O binary $name.bin
 
