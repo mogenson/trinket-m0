@@ -9,18 +9,45 @@ pub fn init(pin: u8) {
     unsafe {
         system_init();
         hal_gpio_set_pin_direction(pin, gpio_direction_GPIO_DIRECTION_OUT);
-        hal_gpio_set_pin_level(pin, true);
     }
 }
 
-pub fn work(pin: u8) {
-    unsafe {
-        delay_ms(1000);
-        hal_gpio_toggle_pin_level(pin);
+// implement gpio traits from embedded_hal
+use core::convert::Infallible;
+use embedded_hal::digital::v2::{InputPin, OutputPin};
+pub struct Pin {
+    pin: u8,
+}
+
+impl Pin {
+    pub fn new(port: gpio_port, pin: u8) -> Pin {
+        Pin {
+            pin: unsafe { pin_new(port, pin) },
+        }
     }
 }
 
-// implement Delay trait from embedded_hal
+impl OutputPin for Pin {
+    type Error = Infallible;
+    fn set_low(&mut self) -> Result<(), Self::Error> {
+        Ok(unsafe {pin_set_low(self.pin);})
+    }
+    fn set_high(&mut self) -> Result<(), Self::Error> {
+        Ok(unsafe {pin_set_high(self.pin);})
+    }
+}
+
+impl InputPin for Pin {
+    type Error = Infallible;
+    fn is_low(&self) -> Result<bool, Self::Error> {
+        Ok(true)
+    }
+    fn is_high(&self) -> Result<bool, Self::Error> {
+        Ok(true)
+    }
+}
+
+// implement delay traits from embedded_hal
 // Note: <u32> unimplemented because atmel start hal uses uin16_t for delay time
 use embedded_hal::blocking::delay::{DelayMs, DelayUs};
 pub struct Delay; // empty struct
