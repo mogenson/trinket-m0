@@ -13,7 +13,8 @@ pub fn init() {
 
 // implement gpio traits from embedded_hal
 use core::convert::Infallible;
-use embedded_hal::digital::v2::{InputPin, OutputPin};
+use embedded_hal::digital::v2::{InputPin, OutputPin, ToggleableOutputPin};
+
 pub struct Pin {
     pin: u8,
 }
@@ -79,9 +80,18 @@ impl InputPin for Pin {
     }
 }
 
+impl ToggleableOutputPin for Pin {
+    type Error =  Infallible;
+    fn toggle(&mut self) -> Result<(), Self::Error> {
+        unsafe { pin_toggle(self.pin); }
+        Ok(())
+    }
+}
+
 // implement delay traits from embedded_hal
 // Note: <u32> unimplemented because atmel start hal uses uin16_t for delay time
 use embedded_hal::blocking::delay::{DelayMs, DelayUs};
+
 pub struct Delay; // empty struct
 
 impl DelayMs<u16> for Delay {
