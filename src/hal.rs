@@ -5,10 +5,9 @@
 extern crate cty;
 include!(concat!(env!("OUT_DIR"), "/bindings.rs"));
 
-pub fn init(pin: u8) {
+pub fn init() {
     unsafe {
         system_init();
-        hal_gpio_set_pin_direction(pin, gpio_direction_GPIO_DIRECTION_OUT);
     }
 }
 
@@ -20,30 +19,63 @@ pub struct Pin {
 }
 
 impl Pin {
-    pub fn new(port: gpio_port, pin: u8) -> Pin {
+    pub fn new(port: gpio_port, pin: u8) -> Self {
         Pin {
             pin: unsafe { pin_new(port, pin) },
         }
+    }
+    pub fn from(pin: u8) -> Self {
+        Pin { pin: pin }
+    }
+    pub fn into_output(self) -> Self {
+        unsafe {
+            pin_into_output(self.pin);
+        }
+        self
+    }
+    pub fn into_input(self) -> Self {
+        unsafe {
+            pin_into_input(self.pin);
+        }
+        self
+    }
+    pub fn into_pull_down_input(self) -> Self {
+        unsafe {
+            pin_into_pull_down_input(self.pin);
+        }
+        self
+    }
+    pub fn into_pull_up_input(self) -> Self {
+        unsafe {
+            pin_into_pull_up_input(self.pin);
+        }
+        self
     }
 }
 
 impl OutputPin for Pin {
     type Error = Infallible;
     fn set_low(&mut self) -> Result<(), Self::Error> {
-        Ok(unsafe {pin_set_low(self.pin);})
+        unsafe {
+            pin_set_low(self.pin);
+        }
+        Ok(())
     }
     fn set_high(&mut self) -> Result<(), Self::Error> {
-        Ok(unsafe {pin_set_high(self.pin);})
+        unsafe {
+            pin_set_high(self.pin);
+        }
+        Ok(())
     }
 }
 
 impl InputPin for Pin {
     type Error = Infallible;
     fn is_low(&self) -> Result<bool, Self::Error> {
-        Ok(true)
+        Ok(unsafe { pin_is_low(self.pin) })
     }
     fn is_high(&self) -> Result<bool, Self::Error> {
-        Ok(true)
+        Ok(unsafe { pin_is_high(self.pin) })
     }
 }
 
