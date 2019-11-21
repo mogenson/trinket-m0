@@ -2,8 +2,9 @@
 #![allow(non_snake_case)]
 #![allow(non_upper_case_globals)]
 #![allow(unused)]
-extern crate cty;
-include!(concat!(env!("OUT_DIR"), "/bindings.rs"));
+
+pub use bindings::*;
+mod bindings;
 
 pub fn init() {
     unsafe {
@@ -81,9 +82,11 @@ impl InputPin for Pin {
 }
 
 impl ToggleableOutputPin for Pin {
-    type Error =  Infallible;
+    type Error = Infallible;
     fn toggle(&mut self) -> Result<(), Self::Error> {
-        unsafe { pin_toggle(self.pin); }
+        unsafe {
+            pin_toggle(self.pin);
+        }
         Ok(())
     }
 }

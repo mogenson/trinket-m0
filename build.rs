@@ -113,6 +113,6 @@ fn main() {
     bindings
         .generate()
         .expect("Unable to generate bindings")
-        .write_to_file(out.join("bindings.rs"))
+        .write_to_file("src/hal/bindings.rs")
         .expect("Couldn't write bindings");
 }
