@@ -2,7 +2,7 @@
 #![no_main]
 
 extern crate panic_halt;
-mod hal;
+extern crate trinket_m0 as hal;
 use cortex_m_rt::entry;
 use embedded_hal::blocking::delay::DelayMs;
 use embedded_hal::digital::v2::{OutputPin, ToggleableOutputPin};

@@ -2,6 +2,7 @@
 #![allow(non_snake_case)]
 #![allow(non_upper_case_globals)]
 #![allow(unused)]
+#![no_std]
 
 pub use bindings::*;
 mod bindings;
