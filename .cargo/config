@@ -2,24 +2,17 @@
 runner = "sh make-uf2.sh"
 
 rustflags = [
-  # LLD (shipped with the Rust toolchain) is used as the default linker
-  #"-C", "link-arg=-Tlink.x",
-
-  # if you run into problems with LLD switch to the GNU linker by commenting out
-  # this line
-  # "-C", "linker=arm-none-eabi-ld",
-
-  # if you need to link to pre-compiled C libraries provided by a C toolchain
-  # use GCC as the linker by commenting out both lines above and then
-  # uncommenting the three lines below
   "-C", "linker=arm-none-eabi-gcc",
-  "-C", "link-arg=-nostartfiles",
   "-C", "link-arg=-mcpu=cortex-m0plus",
   "-C", "link-arg=-mthumb",
-  "-C", "link-arg=--specs=nosys.specs",
+  "-C", "link-arg=--specs=nano.specs",
   "-C", "link-arg=-Wl,--gc-sections",
-  "-C", "link-arg=-Wl,--build-id=none",
-  "-C", "link-arg=-Wl,-Tlink.x",
+  "-C", "link-arg=-Wl,--start-group",
+  "-C", "link-arg=-lm",
+  "-C", "link-arg=-Wl,--end-group",
+  "-C", "link-arg=-Wl,--section-start=.text=0x2000",
+  "-C", "link-arg=-Tatmel-start/samd21a/gcc/gcc/samd21e18a_flash.ld",
+  "-C", "link-arg=-Latmel-start/samd21a/gcc/gcc",
 ]
 
 [build]

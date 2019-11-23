@@ -3,12 +3,11 @@
 
 extern crate panic_halt;
 extern crate trinket_m0 as hal;
-use cortex_m_rt::entry;
 use embedded_hal::blocking::delay::DelayMs;
 use embedded_hal::digital::v2::{OutputPin, ToggleableOutputPin};
 
-#[entry]
-fn main() -> ! {
+#[no_mangle]
+pub unsafe extern fn main() {
     hal::init();
     let mut led = hal::Pin::from(hal::PIN_PA10 as u8).into_output();
     led.set_low().unwrap();

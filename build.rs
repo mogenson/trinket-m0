@@ -1,21 +1,7 @@
-use std::env;
-use std::fs::File;
-use std::io::Write;
-use std::path::PathBuf;
-
 extern crate bindgen;
 extern crate cc;
 
 fn main() {
-    // Put the linker script somewhere the linker can find it
-    let out = &PathBuf::from(env::var_os("OUT_DIR").unwrap());
-    File::create(out.join("memory.x"))
-        .unwrap()
-        .write_all(include_bytes!("memory.x"))
-        .unwrap();
-    println!("cargo:rustc-link-search={}", out.display());
-    println!("cargo:rerun-if-changed=memory.x");
-
     let defines = ["__SAMD21E18A__"];
 
     let flags = [
@@ -47,7 +33,7 @@ fn main() {
         "atmel-start/samd21a/include",
     ];
 
-    // exclude main.c, startup_samd21.c, driver_examples.c
+    /* exclude main.c and driver_examples.c */
     let files = [
         "atmel-start/atmel_start.c",
         "atmel-start/driver_init.c",
@@ -67,6 +53,7 @@ fn main() {
         "atmel-start/hpl/gclk/hpl_gclk.c",
         "atmel-start/hpl/pm/hpl_pm.c",
         "atmel-start/hpl/sysctrl/hpl_sysctrl.c",
+        "atmel-start/samd21a/gcc/gcc/startup_samd21.c",
         "atmel-start/samd21a/gcc/system_samd21.c",
         "src/hal.c",
     ];
