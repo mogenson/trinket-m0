@@ -2949,6 +2949,7 @@ pub const GPIO_PIN_FUNCTION_E: u32 = 4;
 pub const GPIO_PIN_FUNCTION_F: u32 = 5;
 pub const GPIO_PIN_FUNCTION_G: u32 = 6;
 pub const GPIO_PIN_FUNCTION_H: u32 = 7;
+pub type size_t = cty::c_uint;
 pub type wchar_t = cty::c_uint;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]

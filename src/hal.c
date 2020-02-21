@@ -1,5 +1,8 @@
 #include <hal_gpio.h>
 
+/* empty function to remove libc link dependency */
+void __libc_init_array(void) { return; }
+
 /* wrap static inline functions so bindgen can pick them up */
 
 uint8_t pin_new(enum gpio_port port, uint8_t pin) { return GPIO(port, pin); }

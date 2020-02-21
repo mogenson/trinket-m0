@@ -2,19 +2,21 @@ extern crate bindgen;
 extern crate cc;
 
 fn main() {
-    let defines = ["__SAMD21E18A__"];
+    let defines = ["__SAMD21E18A__", "DEBUG"];
 
     let flags = [
+        "-c",
         "-ffunction-sections",
         "-fno-pic",
-        "-nostartfiles",
-        "-g3",
+        "-ggdb3",
         "-mcpu=cortex-m0plus",
         "-mlong-calls",
         "-mthumb",
-        "-Os",
+        "-nostartfiles",
+        "-O0",
         "-std=gnu99",
         "-Wall",
+        "-xc",
     ];
 
     let includes = [
@@ -60,7 +62,13 @@ fn main() {
 
     let mut builder = cc::Build::new();
     builder.pic(false);
-    builder.archiver("arm-none-eabi-ar");
+    builder.no_default_flags(true);
+    builder.compiler("arm-none-eabi-gcc");
+    builder.archiver("arm-none-eabi-ar"); // adds flags "crs" by default
+
+    /* uncomment below and use link arg "-lhal" to manually link libhal.a */
+    // builder.out_dir(".");
+    // builder.cargo_metadata(false);
 
     let mut bindings = bindgen::Builder::default();
     bindings = bindings.clang_arg("--sysroot=/usr/lib/gcc/arm-none-eabi/include");

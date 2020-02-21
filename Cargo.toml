@@ -11,5 +11,5 @@ cty = "0.2.1"
 embedded-hal = { version = "0.2.3", features = ["unproven"] }
 
 [build-dependencies]
-cc = "1.0.47"
-bindgen = "0.52.0"
+cc = "1.0.50"
+bindgen = "0.53.1"

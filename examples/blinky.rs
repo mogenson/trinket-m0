@@ -7,7 +7,7 @@ use embedded_hal::blocking::delay::DelayMs;
 use embedded_hal::digital::v2::{OutputPin, ToggleableOutputPin};
 
 #[no_mangle]
-pub unsafe extern fn main() {
+pub unsafe extern "C" fn main() {
     hal::init();
     let mut led = hal::Pin::from(hal::PIN_PA10 as u8).into_output();
     led.set_low().unwrap();
