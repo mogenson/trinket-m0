@@ -2,21 +2,19 @@ extern crate bindgen;
 extern crate cc;
 
 fn main() {
-    let defines = ["__SAMD21E18A__", "DEBUG"];
+    let defines = ["__SAMD21E18A__"];
 
     let flags = [
         "-c",
         "-ffunction-sections",
-        "-fno-pic",
         "-ggdb3",
         "-mcpu=cortex-m0plus",
         "-mlong-calls",
         "-mthumb",
         "-nostartfiles",
-        "-O0",
+        "-Os",
         "-std=gnu99",
         "-Wall",
-        "-xc",
     ];
 
     let includes = [
