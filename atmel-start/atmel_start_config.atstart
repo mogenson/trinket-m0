@@ -2,18 +2,91 @@ format_version: '2'
 name: Trinket M0
 versions:
   api: '1.0'
-  backend: 1.6.148
-  commit: 605f106ab95776472e3febf2fac2471441fb1816
-  content: 1.0.1635
-  content_pack_name: acme-packs-all
+  backend: 1.7.298
+  commit: 1e07622763d149970fd8808a8f12ff3b1e84e0d7
+  content: unknown
+  content_pack_name: unknown
   format: '2'
-  frontend: 1.6.1884
+  frontend: 1.7.298
+  packs_version_avr8: 1.0.1408
+  packs_version_qtouch: unknown
+  packs_version_sam: 1.0.1373
+  version_backend: 1.7.298
+  version_frontend: ''
 board:
   identifier: CustomBoard
   device: SAMD21E18A-MF
 details: null
 application: null
-middlewares: {}
+middlewares:
+  USB_CHAPTER_9:
+    user_label: USB_CHAPTER_9
+    configuration: {}
+    definition: Atmel:USB:0.0.1::USB_Chapter_9
+    functionality: USB_Chapter_9
+    api: USB:Protocol:Core
+    dependencies: {}
+  USB_CLASS_CDC:
+    user_label: USB_CLASS_CDC
+    configuration: {}
+    definition: Atmel:USB:0.0.1::USB_Class_CDC
+    functionality: USB_Class_CDC
+    api: USB:Protocol:CDC
+    dependencies:
+      USB Chapter 9: USB_CHAPTER_9
+  USB_DEVICE_STACK_CORE_INSTANCE:
+    user_label: USB_DEVICE_STACK_CORE_INSTANCE
+    configuration:
+      usbd_hs_sp: false
+    definition: Atmel:USB:0.0.1::USB_Device_Core
+    functionality: USB_Device_Core
+    api: USB:Device:Core
+    dependencies:
+      USB Chapter 9: USB_CHAPTER_9
+      USB Device instance: USB_DEVICE_INSTANCE
+  USB_DEVICE_CDC_ACM_0:
+    user_label: USB_DEVICE_CDC_ACM_0
+    configuration:
+      usb_cdcd_acm_bcddevice: 256
+      usb_cdcd_acm_bcdusb: USB 2.0 version
+      usb_cdcd_acm_bconfigval: 1
+      usb_cdcd_acm_bmattri: Bus power supply, not support for remote wakeup
+      usb_cdcd_acm_bmaxpksz0: 64 bytes
+      usb_cdcd_acm_bmaxpower: 50
+      usb_cdcd_acm_bnumconfig: 1
+      usb_cdcd_acm_comm_baltset: 0
+      usb_cdcd_acm_comm_bifcnum: 0
+      usb_cdcd_acm_comm_iifc: 0
+      usb_cdcd_acm_comm_int_interval: 10
+      usb_cdcd_acm_comm_int_maxpksz: 64 bytes
+      usb_cdcd_acm_data_baltset: 0
+      usb_cdcd_acm_data_bifcnum: 1
+      usb_cdcd_acm_data_buckout_maxpksz: 64 bytes
+      usb_cdcd_acm_data_buckout_maxpksz_hs: 512 bytes
+      usb_cdcd_acm_data_builin_maxpksz: 64 bytes
+      usb_cdcd_acm_data_builin_maxpksz_hs: 512 bytes
+      usb_cdcd_acm_data_bulkin_epaddr: EndpointAddress = 0x81
+      usb_cdcd_acm_data_bulkout_epaddr: EndpointAddress = 0x01
+      usb_cdcd_acm_data_iifc: 0
+      usb_cdcd_acm_epaddr: EndpointAddress = 0x82
+      usb_cdcd_acm_iconfig_en: false
+      usb_cdcd_acm_iconfig_str: ''
+      usb_cdcd_acm_idproduct: 9220
+      usb_cdcd_acm_idvender: 1003
+      usb_cdcd_acm_imanufact_en: false
+      usb_cdcd_acm_imanufact_str: Atmel
+      usb_cdcd_acm_iproduct_en: false
+      usb_cdcd_acm_iproduct_str: CDC ACM Serial Bridge Demo
+      usb_cdcd_acm_iserialnum_en: false
+      usb_cdcd_acm_iserialnum_str: 123456789ABCDEF
+      usb_cdcd_acm_langid: '0x0409'
+      usb_cdcd_acm_str_en: false
+    definition: Atmel:USB:0.0.1::USB_Device_CDC_ACM
+    functionality: USB_Device_CDC_ACM
+    api: USB:Device:CDC_ACM
+    dependencies:
+      USB Device Stack Core Instance: USB_DEVICE_STACK_CORE_INSTANCE
+      USB Class CDC: USB_CLASS_CDC
 drivers:
   GCLK:
     user_label: GCLK
@@ -22,13 +95,21 @@ drivers:
     api: HAL:HPL:GCLK
     configuration:
       enable_gclk_gen_0: true
+      enable_gclk_gen_0__externalclock: 1000000
       enable_gclk_gen_1: true
+      enable_gclk_gen_1__externalclock: 1000000
       enable_gclk_gen_2: false
+      enable_gclk_gen_2__externalclock: 1000000
       enable_gclk_gen_3: false
+      enable_gclk_gen_3__externalclock: 1000000
       enable_gclk_gen_4: false
+      enable_gclk_gen_4__externalclock: 1000000
       enable_gclk_gen_5: false
+      enable_gclk_gen_5__externalclock: 1000000
       enable_gclk_gen_6: false
+      enable_gclk_gen_6__externalclock: 1000000
       enable_gclk_gen_7: false
+      enable_gclk_gen_7__externalclock: 1000000
       gclk_arch_gen_0_RUNSTDBY: false
       gclk_arch_gen_0_enable: true
       gclk_arch_gen_0_idc: false
@@ -478,5 +559,60 @@ drivers:
     variant: null
     clocks:
       domain_group: null
-pads: {}
+  USB_DEVICE_INSTANCE:
+    user_label: USB_DEVICE_INSTANCE
+    definition: Atmel:SAMD21_Drivers:0.0.1::SAMD21E18A-MF::USB::driver_config_definition::USB.Device::HAL:Driver:USB.Device
+    functionality: USB
+    api: HAL:Driver:USB_Device
+    configuration:
+      usb_arch_ep0_cache: Cached by 64 bytes buffer
+      usb_arch_ep1_cache: Cached by 64 bytes buffer
+      usb_arch_ep2_cache: Cached by 64 bytes buffer
+      usb_arch_ep3_cache: Cached by 64 bytes buffer
+      usb_arch_ep4_cache: Cached by 64 bytes buffer
+      usb_arch_ep5_cache: Cached by 64 bytes buffer
+      usb_arch_ep6_cache: Cached by 64 bytes buffer
+      usb_arch_ep7_cache: Cached by 64 bytes buffer
+      usb_ep1_I_CACHE: No cache
+      usb_ep2_I_CACHE: No cache
+      usb_ep3_I_CACHE: No cache
+      usb_ep4_I_CACHE: No cache
+      usb_ep5_I_CACHE: No cache
+      usb_ep6_I_CACHE: No cache
+      usb_ep7_I_CACHE: No cache
+      usbd_arch_max_ep_n: 2 (EP 0x82 or 0x02)
+      usbd_arch_speed: Full speed
+      usbd_num_ep_sp: 4 (EP0 + 3 endpoints)
+    optional_signals: []
+    variant:
+      specification: default
+      required_signals:
+      - name: USB/DM
+        pad: PA24
+        label: Data-
+      - name: USB/DP
+        pad: PA25
+        label: Data+
+    clocks:
+      domain_group:
+        nodes:
+        - name: USB
+          input: Generic clock generator 0
+          external: false
+          external_frequency: 0
+        configuration:
+          usb_gclk_selection: Generic clock generator 0
+pads:
+  PA24:
+    name: PA24
+    definition: Atmel:SAMD21_Drivers:0.0.1::SAMD21E18A-MF::pad::PA24
+    mode: Advanced
+    user_label: PA24
+    configuration: null
+  PA25:
+    name: PA25
+    definition: Atmel:SAMD21_Drivers:0.0.1::SAMD21E18A-MF::pad::PA25
+    mode: Advanced
+    user_label: PA25
+    configuration: null
 toolchain_options: []

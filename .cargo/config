@@ -8,6 +8,7 @@ rustflags = [
   "-C", "link-arg=-nostartfiles",
   "-C", "link-arg=-specs=nosys.specs",
   "-C", "link-arg=-Wl,--gc-sections",
+  "-C", "link-arg=-Wl,--library=gcc",
   "-C", "link-arg=-Wl,--script=atmel-start/samd21a/gcc/gcc/samd21e18a_flash.ld",
   "-C", "link-arg=-Wl,--section-start=.text=0x2000",
   "-C", "link-arg=-Wl,--undefined=Reset_Handler",

@@ -30,7 +30,9 @@ endif
 # List the subdirectories for creating object files
 SUB_DIRS +=  \
  \
-samd21a/gcc/gcc \
+hpl/usb \
+usb/class/cdc/device \
+usb/device \
 hpl/dmac \
 hal/src \
 samd21a/gcc \
@@ -39,55 +41,69 @@ hpl/sysctrl \
 hal/utils/src \
 examples \
 hpl/gclk \
-hpl/core
+samd21a/gcc/gcc \
+hpl/core \
+usb
 
 # List the object files
 OBJS +=  \
 hal/src/hal_io.o \
 samd21a/gcc/gcc/startup_samd21.o \
+usb/class/cdc/device/cdcdf_acm.o \
 hal/utils/src/utils_syscalls.o \
+hpl/usb/hpl_usb.o \
 hal/src/hal_delay.o \
 hpl/pm/hpl_pm.o \
 hpl/core/hpl_init.o \
-samd21a/gcc/system_samd21.o \
+hal/utils/src/utils_list.o \
 hpl/core/hpl_core_m0plus_base.o \
 hal/utils/src/utils_assert.o \
-hpl/dmac/hpl_dmac.o \
+usb_start.o \
 hpl/sysctrl/hpl_sysctrl.o \
 hpl/gclk/hpl_gclk.o \
+usb/usb_protocol.o \
 hal/src/hal_init.o \
+hal/src/hal_usb_device.o \
 main.o \
-hal/utils/src/utils_list.o \
+samd21a/gcc/system_samd21.o \
 examples/driver_examples.o \
 driver_init.o \
 hal/src/hal_gpio.o \
 hal/utils/src/utils_event.o \
 hal/src/hal_sleep.o \
+hpl/dmac/hpl_dmac.o \
 atmel_start.o \
+usb/device/usbdc.o \
 hal/src/hal_atomic.o
 
 OBJS_AS_ARGS +=  \
 "hal/src/hal_io.o" \
 "samd21a/gcc/gcc/startup_samd21.o" \
+"usb/class/cdc/device/cdcdf_acm.o" \
 "hal/utils/src/utils_syscalls.o" \
+"hpl/usb/hpl_usb.o" \
 "hal/src/hal_delay.o" \
 "hpl/pm/hpl_pm.o" \
 "hpl/core/hpl_init.o" \
-"samd21a/gcc/system_samd21.o" \
+"hal/utils/src/utils_list.o" \
 "hpl/core/hpl_core_m0plus_base.o" \
 "hal/utils/src/utils_assert.o" \
-"hpl/dmac/hpl_dmac.o" \
+"usb_start.o" \
 "hpl/sysctrl/hpl_sysctrl.o" \
 "hpl/gclk/hpl_gclk.o" \
+"usb/usb_protocol.o" \
 "hal/src/hal_init.o" \
+"hal/src/hal_usb_device.o" \
 "main.o" \
-"hal/utils/src/utils_list.o" \
+"samd21a/gcc/system_samd21.o" \
 "examples/driver_examples.o" \
 "driver_init.o" \
 "hal/src/hal_gpio.o" \
 "hal/utils/src/utils_event.o" \
 "hal/src/hal_sleep.o" \
+"hpl/dmac/hpl_dmac.o" \
 "atmel_start.o" \
+"usb/device/usbdc.o" \
 "hal/src/hal_atomic.o"
 
 # List the directories containing header files
@@ -103,7 +119,14 @@ DIR_INCLUDES +=  \
 -I"../hpl/pm" \
 -I"../hpl/port" \
 -I"../hpl/sysctrl" \
+-I"../hpl/usb" \
 -I"../hri" \
+-I"../" \
+-I"../config" \
+-I"../usb" \
+-I"../usb/class/cdc" \
+-I"../usb/class/cdc/device" \
+-I"../usb/device" \
 -I"../" \
 -I"../CMSIS/Core/Include" \
 -I"../samd21a/include"
@@ -116,14 +139,19 @@ DEPS_AS_ARGS +=  \
 "hal/src/hal_gpio.d" \
 "hal/src/hal_io.d" \
 "hal/utils/src/utils_syscalls.d" \
+"usb/class/cdc/device/cdcdf_acm.d" \
+"hpl/usb/hpl_usb.d" \
 "hpl/core/hpl_core_m0plus_base.d" \
 "hal/utils/src/utils_list.d" \
-"hpl/dmac/hpl_dmac.d" \
+"usb_start.d" \
 "hal/utils/src/utils_assert.d" \
 "hal/src/hal_delay.d" \
 "hpl/core/hpl_init.d" \
 "hpl/sysctrl/hpl_sysctrl.d" \
+"usb/usb_protocol.d" \
 "hpl/gclk/hpl_gclk.d" \
+"hal/src/hal_usb_device.d" \
+"hpl/dmac/hpl_dmac.d" \
 "hal/src/hal_init.d" \
 "driver_init.d" \
 "samd21a/gcc/system_samd21.d" \
@@ -132,6 +160,7 @@ DEPS_AS_ARGS +=  \
 "hal/src/hal_sleep.d" \
 "hal/utils/src/utils_event.d" \
 "hal/src/hal_atomic.d" \
+"usb/device/usbdc.d" \
 "hpl/pm/hpl_pm.d" \
 "atmel_start.d"
 

@@ -81,6 +81,58 @@ where
         }
     }
 }
+pub const _NEWLIB_VERSION_H__: u32 = 1;
+pub const _NEWLIB_VERSION: &'static [u8; 6usize] = b"3.1.0\0";
+pub const __NEWLIB__: u32 = 3;
+pub const __NEWLIB_MINOR__: u32 = 1;
+pub const __NEWLIB_PATCHLEVEL__: u32 = 0;
+pub const _DEFAULT_SOURCE: u32 = 1;
+pub const _POSIX_SOURCE: u32 = 1;
+pub const _POSIX_C_SOURCE: u32 = 200809;
+pub const _ATFILE_SOURCE: u32 = 1;
+pub const __ATFILE_VISIBLE: u32 = 1;
+pub const __BSD_VISIBLE: u32 = 1;
+pub const __GNU_VISIBLE: u32 = 0;
+pub const __ISO_C_VISIBLE: u32 = 2011;
+pub const __LARGEFILE_VISIBLE: u32 = 0;
+pub const __MISC_VISIBLE: u32 = 1;
+pub const __POSIX_VISIBLE: u32 = 200809;
+pub const __SVID_VISIBLE: u32 = 1;
+pub const __XSI_VISIBLE: u32 = 0;
+pub const __SSP_FORTIFY_LEVEL: u32 = 0;
+pub const __have_longlong64: u32 = 1;
+pub const __have_long32: u32 = 1;
+pub const ___int8_t_defined: u32 = 1;
+pub const ___int16_t_defined: u32 = 1;
+pub const ___int32_t_defined: u32 = 1;
+pub const ___int64_t_defined: u32 = 1;
+pub const ___int_least8_t_defined: u32 = 1;
+pub const ___int_least16_t_defined: u32 = 1;
+pub const ___int_least32_t_defined: u32 = 1;
+pub const ___int_least64_t_defined: u32 = 1;
+pub const __int20: u32 = 2;
+pub const __INT8: &'static [u8; 3usize] = b"hh\0";
+pub const __INT16: &'static [u8; 2usize] = b"h\0";
+pub const __INT64: &'static [u8; 3usize] = b"ll\0";
+pub const __FAST8: &'static [u8; 3usize] = b"hh\0";
+pub const __FAST16: &'static [u8; 2usize] = b"h\0";
+pub const __FAST64: &'static [u8; 3usize] = b"ll\0";
+pub const __LEAST8: &'static [u8; 3usize] = b"hh\0";
+pub const __LEAST16: &'static [u8; 2usize] = b"h\0";
+pub const __LEAST64: &'static [u8; 3usize] = b"ll\0";
+pub const __int8_t_defined: u32 = 1;
+pub const __int16_t_defined: u32 = 1;
+pub const __int32_t_defined: u32 = 1;
+pub const __int64_t_defined: u32 = 1;
+pub const __int_least8_t_defined: u32 = 1;
+pub const __int_least16_t_defined: u32 = 1;
+pub const __int_least32_t_defined: u32 = 1;
+pub const __int_least64_t_defined: u32 = 1;
+pub const __int_fast8_t_defined: u32 = 1;
+pub const __int_fast16_t_defined: u32 = 1;
+pub const __int_fast32_t_defined: u32 = 1;
+pub const __int_fast64_t_defined: u32 = 1;
+pub const WINT_MIN: u32 = 0;
 pub const true_: u32 = 1;
 pub const false_: u32 = 0;
 pub const __bool_true_false_are_defined: u32 = 1;
@@ -2949,6 +3001,267 @@ pub const GPIO_PIN_FUNCTION_E: u32 = 4;
 pub const GPIO_PIN_FUNCTION_F: u32 = 5;
 pub const GPIO_PIN_FUNCTION_G: u32 = 6;
 pub const GPIO_PIN_FUNCTION_H: u32 = 7;
+pub const USB_bmRequestType_Offset: u32 = 0;
+pub const USB_bRequest_Offset: u32 = 1;
+pub const USB_wValue_Offset: u32 = 2;
+pub const USB_wIndex_Offset: u32 = 4;
+pub const USB_wLength_Offset: u32 = 6;
+pub const USB_REQ_TYPE_IN: u32 = 128;
+pub const USB_EP_N_MASK: u32 = 15;
+pub const USB_EP_DIR: u32 = 128;
+pub const USB_EP_XTYPE_CTRL: u32 = 0;
+pub const USB_EP_XTYPE_ISOCH: u32 = 1;
+pub const USB_EP_XTYPE_BULK: u32 = 2;
+pub const USB_EP_XTYPE_INTERRUPT: u32 = 3;
+pub const USB_EP_XTYPE_MASK: u32 = 3;
+pub const USB_OK: u32 = 0;
+pub const USB_BUSY: u32 = 1;
+pub const USB_HALTED: u32 = 2;
+pub const USB_ERROR: u32 = 16;
+pub const USB_ERR_DENIED: u32 = 17;
+pub const USB_ERR_PARAM: u32 = 18;
+pub const USB_ERR_FUNC: u32 = 19;
+pub const USB_ERR_REDO: u32 = 20;
+pub const USB_ERR_ALLOC_FAIL: u32 = 21;
+pub const CONF_USB_N_0: u32 = 0;
+pub const CONF_USB_N_1: u32 = 1;
+pub const CONF_USB_N_2: u32 = 2;
+pub const CONF_USB_N_3: u32 = 3;
+pub const CONF_USB_N_4: u32 = 4;
+pub const CONF_USB_N_5: u32 = 5;
+pub const CONF_USB_N_6: u32 = 6;
+pub const CONF_USB_N_7: u32 = 7;
+pub const CONF_USB_N_8: u32 = 8;
+pub const CONF_USB_N_9: u32 = 9;
+pub const CONF_USB_N_10: u32 = 10;
+pub const CONF_USB_N_11: u32 = 11;
+pub const CONF_USB_N_12: u32 = 12;
+pub const CONF_USB_N_13: u32 = 13;
+pub const CONF_USB_N_14: u32 = 14;
+pub const CONF_USB_N_15: u32 = 15;
+pub const CONF_USB_D_EP_N_MAX: u32 = 7;
+pub const CONF_USB_D_N_EP_MAX: u32 = 13;
+pub const CONF_USB_D_NUM_EP_SP: u32 = 4;
+pub const CONF_USB_D_MAX_EP_N: u32 = 2;
+pub const CONF_USB_EP0_CACHE: u32 = 64;
+pub const CONF_USB_EP1_CACHE: u32 = 64;
+pub const CONF_USB_EP1_I_CACHE: u32 = 0;
+pub const CONF_USB_EP2_CACHE: u32 = 64;
+pub const CONF_USB_EP2_I_CACHE: u32 = 0;
+pub const CONF_USB_EP3_CACHE: u32 = 64;
+pub const CONF_USB_EP3_I_CACHE: u32 = 0;
+pub const CONF_USB_EP4_CACHE: u32 = 64;
+pub const CONF_USB_EP4_I_CACHE: u32 = 0;
+pub const CONF_USB_EP5_CACHE: u32 = 64;
+pub const CONF_USB_EP5_I_CACHE: u32 = 0;
+pub const CONF_USB_EP6_CACHE: u32 = 64;
+pub const CONF_USB_EP6_I_CACHE: u32 = 0;
+pub const CONF_USB_EP7_CACHE: u32 = 64;
+pub const CONF_USB_EP7_I_CACHE: u32 = 0;
+pub const __NEWLIB_H__: u32 = 1;
+pub const _WANT_IO_C99_FORMATS: u32 = 1;
+pub const _WANT_IO_LONG_LONG: u32 = 1;
+pub const _WANT_REGISTER_FINI: u32 = 1;
+pub const _MB_LEN_MAX: u32 = 1;
+pub const HAVE_INITFINI_ARRAY: u32 = 1;
+pub const _ATEXIT_DYNAMIC_ALLOC: u32 = 1;
+pub const _HAVE_LONG_DOUBLE: u32 = 1;
+pub const _HAVE_CC_INHIBIT_LOOP_TO_LIBCALL: u32 = 1;
+pub const _LDBL_EQ_DBL: u32 = 1;
+pub const _FVWRITE_IN_STREAMIO: u32 = 1;
+pub const _FSEEK_OPTIMIZATION: u32 = 1;
+pub const _WIDE_ORIENT: u32 = 1;
+pub const _UNBUF_STREAM_OPT: u32 = 1;
+pub const _RETARGETABLE_LOCKING: u32 = 1;
+pub const __OBSOLETE_MATH_DEFAULT: u32 = 1;
+pub const __OBSOLETE_MATH: u32 = 1;
+pub const __RAND_MAX: u32 = 2147483647;
+pub const _NULL: u32 = 0;
+pub const _ATEXIT_SIZE: u32 = 32;
+pub const _RAND48_SEED_0: u32 = 13070;
+pub const _RAND48_SEED_1: u32 = 43981;
+pub const _RAND48_SEED_2: u32 = 4660;
+pub const _RAND48_MULT_0: u32 = 58989;
+pub const _RAND48_MULT_1: u32 = 57068;
+pub const _RAND48_MULT_2: u32 = 5;
+pub const _RAND48_ADD: u32 = 11;
+pub const _REENT_EMERGENCY_SIZE: u32 = 25;
+pub const _REENT_ASCTIME_SIZE: u32 = 26;
+pub const _REENT_SIGNAL_SIZE: u32 = 24;
+pub const _N_LISTS: u32 = 30;
+pub const __GNUCLIKE_ASM: u32 = 3;
+pub const __GNUCLIKE___TYPEOF: u32 = 1;
+pub const __GNUCLIKE___OFFSETOF: u32 = 1;
+pub const __GNUCLIKE___SECTION: u32 = 1;
+pub const __GNUCLIKE_CTOR_SECTION_HANDLING: u32 = 1;
+pub const __GNUCLIKE_BUILTIN_CONSTANT_P: u32 = 1;
+pub const __GNUCLIKE_BUILTIN_VARARGS: u32 = 1;
+pub const __GNUCLIKE_BUILTIN_STDARG: u32 = 1;
+pub const __GNUCLIKE_BUILTIN_VAALIST: u32 = 1;
+pub const __GNUC_VA_LIST_COMPATIBILITY: u32 = 1;
+pub const __GNUCLIKE_BUILTIN_NEXT_ARG: u32 = 1;
+pub const __GNUCLIKE_BUILTIN_MEMCPY: u32 = 1;
+pub const __CC_SUPPORTS_INLINE: u32 = 1;
+pub const __CC_SUPPORTS___INLINE: u32 = 1;
+pub const __CC_SUPPORTS___INLINE__: u32 = 1;
+pub const __CC_SUPPORTS___FUNC__: u32 = 1;
+pub const __CC_SUPPORTS_WARNING: u32 = 1;
+pub const __CC_SUPPORTS_VARADIC_XXX: u32 = 1;
+pub const __CC_SUPPORTS_DYNAMIC_ARRAY_INIT: u32 = 1;
+pub const USB_V2_0: u32 = 512;
+pub const USB_V2_1: u32 = 513;
+pub const USB_CLASS_NO: u32 = 0;
+pub const USB_SUBCLASS_NO: u32 = 0;
+pub const USB_PROTOCOL_NO: u32 = 0;
+pub const USB_CLASS_IAD: u32 = 239;
+pub const USB_SUBCLASS_IAD: u32 = 2;
+pub const USB_PROTOCOL_IAD: u32 = 1;
+pub const USB_REQT_DIR_OUT: u32 = 0;
+pub const USB_REQT_DIR_H2D: u32 = 0;
+pub const USB_REQT_DIR_IN: u32 = 128;
+pub const USB_REQT_DIR_D2H: u32 = 128;
+pub const USB_REQT_DIR_MASK: u32 = 128;
+pub const USB_REQT_TYPE_STANDARD: u32 = 0;
+pub const USB_REQT_TYPE_CLASS: u32 = 32;
+pub const USB_REQT_TYPE_VENDOR: u32 = 64;
+pub const USB_REQT_TYPE_MASK: u32 = 96;
+pub const USB_REQT_RECIP_DEVICE: u32 = 0;
+pub const USB_REQT_RECIP_INTERFACE: u32 = 1;
+pub const USB_REQT_RECIP_ENDPOINT: u32 = 2;
+pub const USB_REQT_RECIP_OTHER: u32 = 3;
+pub const USB_REQT_RECIP_MASK: u32 = 31;
+pub const USB_EP_ADDR_MASK: u32 = 15;
+pub const USB_EP_DIR_IN: u32 = 128;
+pub const USB_EP_DIR_OUT: u32 = 0;
+pub const USB_DESC_LEN_MAX: u32 = 255;
+pub const USB_CONFIG_ATTR_MUST_SET: u32 = 128;
+pub const USB_CONFIG_ATTR_BUS_POWERED: u32 = 0;
+pub const USB_CONFIG_ATTR_SELF_POWERED: u32 = 64;
+pub const USB_CONFIG_ATTR_REMOTE_WAKEUP: u32 = 32;
+pub const USB_DEV_DESC_LEN: u32 = 18;
+pub const USB_CONFIG_DESC_LEN: u32 = 9;
+pub const USB_IAD_DESC_LEN: u32 = 8;
+pub const USB_IFACE_DESC_LEN: u32 = 9;
+pub const USB_ENDP_DESC_LEN: u32 = 7;
+pub const CONF_USBD_HS_SP: u32 = 0;
+pub const CONF_USB_CDCD_ACM_STR_EN: u32 = 0;
+pub const CONF_USB_CDCD_ACM_LANGID: &'static [u8; 7usize] = b"0x0409\0";
+pub const CONF_USB_CDCD_ACM_BCDUSB: u32 = 512;
+pub const CONF_USB_CDCD_ACM_BMAXPKSZ0: u32 = 64;
+pub const CONF_USB_CDCD_ACM_IDVENDER: u32 = 1003;
+pub const CONF_USB_CDCD_ACM_IDPRODUCT: u32 = 9220;
+pub const CONF_USB_CDCD_ACM_BCDDEVICE: u32 = 256;
+pub const CONF_USB_CDCD_ACM_IMANUFACT_EN: u32 = 0;
+pub const CONF_USB_CDCD_ACM_IMANUFACT: u32 = 0;
+pub const CONF_USB_CDCD_ACM_IMANUFACT_STR: &'static [u8; 6usize] = b"Atmel\0";
+pub const CONF_USB_CDCD_ACM_IPRODUCT_EN: u32 = 0;
+pub const CONF_USB_CDCD_ACM_IPRODUCT: u32 = 0;
+pub const CONF_USB_CDCD_ACM_IPRODUCT_STR: &'static [u8; 27usize] = b"CDC ACM Serial Bridge Demo\0";
+pub const CONF_USB_CDCD_ACM_ISERIALNUM_EN: u32 = 0;
+pub const CONF_USB_CDCD_ACM_ISERIALNUM: u32 = 0;
+pub const CONF_USB_CDCD_ACM_ISERIALNUM_STR: &'static [u8; 16usize] = b"123456789ABCDEF\0";
+pub const CONF_USB_CDCD_ACM_BNUMCONFIG: u32 = 1;
+pub const CONF_USB_CDCD_ACM_BCONFIGVAL: u32 = 1;
+pub const CONF_USB_CDCD_ACM_ICONFIG_EN: u32 = 0;
+pub const CONF_USB_CDCD_ACM_ICONFIG: u32 = 0;
+pub const CONF_USB_CDCD_ACM_ICONFIG_STR: &'static [u8; 1usize] = b"\0";
+pub const CONF_USB_CDCD_ACM_BMATTRI: u32 = 128;
+pub const CONF_USB_CDCD_ACM_BMAXPOWER: u32 = 50;
+pub const CONF_USB_CDCD_ACM_COMM_BIFCNUM: u32 = 0;
+pub const CONF_USB_CDCD_ACM_COMM_BALTSET: u32 = 0;
+pub const CONF_USB_CDCD_ACM_COMM_IIFC: u32 = 0;
+pub const CONF_USB_CDCD_ACM_COMM_INT_EPADDR: u32 = 130;
+pub const CONF_USB_CDCD_ACM_COMM_INT_MAXPKSZ: u32 = 64;
+pub const CONF_USB_CDCD_ACM_COMM_INT_INTERVAL: u32 = 10;
+pub const CONF_USB_CDCD_ACM_DATA_BIFCNUM: u32 = 1;
+pub const CONF_USB_CDCD_ACM_DATA_BALTSET: u32 = 0;
+pub const CONF_USB_CDCD_ACM_DATA_IIFC: u32 = 0;
+pub const CONF_USB_CDCD_ACM_DATA_BULKIN_EPADDR: u32 = 129;
+pub const CONF_USB_CDCD_ACM_DATA_BULKIN_MAXPKSZ: u32 = 64;
+pub const CONF_USB_CDCD_ACM_DATA_BULKIN_MAXPKSZ_HS: u32 = 512;
+pub const CONF_USB_CDCD_ACM_DATA_BULKOUT_EPADDR: u32 = 1;
+pub const CONF_USB_CDCD_ACM_DATA_BULKOUT_MAXPKSZ: u32 = 64;
+pub const CONF_USB_CDCD_ACM_DATA_BULKOUT_MAXPKSZ_HS: u32 = 512;
+pub const CDC_CLASS_DEVICE: u32 = 2;
+pub const CDC_CLASS_COMM: u32 = 2;
+pub const CDC_CLASS_DATA: u32 = 10;
+pub const CDC_SUBCLASS_DLCM: u32 = 1;
+pub const CDC_SUBCLASS_ACM: u32 = 2;
+pub const CDC_SUBCLASS_TCM: u32 = 3;
+pub const CDC_SUBCLASS_MCCM: u32 = 4;
+pub const CDC_SUBCLASS_CCM: u32 = 5;
+pub const CDC_SUBCLASS_ETH: u32 = 6;
+pub const CDC_SUBCLASS_ATM: u32 = 7;
+pub const CDC_PROTOCOL_V25TER: u32 = 1;
+pub const CDC_PROTOCOL_I430: u32 = 48;
+pub const CDC_PROTOCOL_HDLC: u32 = 49;
+pub const CDC_PROTOCOL_TRANS: u32 = 50;
+pub const CDC_PROTOCOL_Q921M: u32 = 80;
+pub const CDC_PROTOCOL_Q921: u32 = 81;
+pub const CDC_PROTOCOL_Q921TM: u32 = 82;
+pub const CDC_PROTOCOL_V42BIS: u32 = 144;
+pub const CDC_PROTOCOL_Q931: u32 = 145;
+pub const CDC_PROTOCOL_V120: u32 = 146;
+pub const CDC_PROTOCOL_CAPI20: u32 = 147;
+pub const CDC_PROTOCOL_HOST: u32 = 253;
+pub const CDC_PROTOCOL_PUFD: u32 = 254;
+pub const CDC_CS_INTERFACE: u32 = 36;
+pub const CDC_CS_ENDPOINT: u32 = 37;
+pub const CDC_SCS_HEADER: u32 = 0;
+pub const CDC_SCS_CALL_MGMT: u32 = 1;
+pub const CDC_SCS_ACM: u32 = 2;
+pub const CDC_SCS_UNION: u32 = 6;
+pub const USB_REQ_CDC_SEND_ENCAPSULATED_COMMAND: u32 = 0;
+pub const USB_REQ_CDC_GET_ENCAPSULATED_RESPONSE: u32 = 1;
+pub const USB_REQ_CDC_SET_COMM_FEATURE: u32 = 2;
+pub const USB_REQ_CDC_GET_COMM_FEATURE: u32 = 3;
+pub const USB_REQ_CDC_CLEAR_COMM_FEATURE: u32 = 4;
+pub const USB_REQ_CDC_SET_AUX_LINE_STATE: u32 = 16;
+pub const USB_REQ_CDC_SET_HOOK_STATE: u32 = 17;
+pub const USB_REQ_CDC_PULSE_SETUP: u32 = 18;
+pub const USB_REQ_CDC_SEND_PULSE: u32 = 19;
+pub const USB_REQ_CDC_SET_PULSE_TIME: u32 = 20;
+pub const USB_REQ_CDC_RING_AUX_JACK: u32 = 21;
+pub const USB_REQ_CDC_SET_LINE_CODING: u32 = 32;
+pub const USB_REQ_CDC_GET_LINE_CODING: u32 = 33;
+pub const USB_REQ_CDC_SET_CONTROL_LINE_STATE: u32 = 34;
+pub const USB_REQ_CDC_SEND_BREAK: u32 = 35;
+pub const USB_REQ_CDC_SET_RINGER_PARMS: u32 = 48;
+pub const USB_REQ_CDC_GET_RINGER_PARMS: u32 = 49;
+pub const USB_REQ_CDC_SET_OPERATION_PARMS: u32 = 50;
+pub const USB_REQ_CDC_GET_OPERATION_PARMS: u32 = 51;
+pub const USB_REQ_CDC_SET_LINE_PARMS: u32 = 52;
+pub const USB_REQ_CDC_GET_LINE_PARMS: u32 = 53;
+pub const USB_REQ_CDC_DIAL_DIGITS: u32 = 54;
+pub const USB_REQ_CDC_SET_UNIT_PARAMETER: u32 = 55;
+pub const USB_REQ_CDC_GET_UNIT_PARAMETER: u32 = 56;
+pub const USB_REQ_CDC_CLEAR_UNIT_PARAMETER: u32 = 57;
+pub const USB_REQ_CDC_GET_PROFILE: u32 = 58;
+pub const USB_REQ_CDC_SET_ETHERNET_MULTICAST_FILTERS: u32 = 64;
+pub const USB_REQ_CDC_SET_ETHERNET_POWER_MANAGEMENT_PATTERNFILTER: u32 = 65;
+pub const USB_REQ_CDC_GET_ETHERNET_POWER_MANAGEMENT_PATTERNFILTER: u32 = 66;
+pub const USB_REQ_CDC_SET_ETHERNET_PACKET_FILTER: u32 = 67;
+pub const USB_REQ_CDC_GET_ETHERNET_STATISTIC: u32 = 68;
+pub const USB_REQ_CDC_SET_ATM_DATA_FORMAT: u32 = 80;
+pub const USB_REQ_CDC_GET_ATM_DEVICE_STATISTICS: u32 = 81;
+pub const USB_REQ_CDC_SET_ATM_DEFAULT_VC: u32 = 82;
+pub const USB_REQ_CDC_GET_ATM_VC_STATISTICS: u32 = 83;
+pub const USB_REQ_CDC_NOTIFY_RING_DETECT: u32 = 9;
+pub const USB_REQ_CDC_NOTIFY_SERIAL_STATE: u32 = 32;
+pub const USB_REQ_CDC_NOTIFY_CALL_STATE_CHANGE: u32 = 40;
+pub const USB_REQ_CDC_NOTIFY_LINE_STATE_CHANGE: u32 = 41;
+pub const USB_CDC_HDR_DESC_LEN: u32 = 5;
+pub const USB_CDC_CALL_MGMT_DESC_LEN: u32 = 5;
+pub const USB_CDC_ACM_DESC_LEN: u32 = 4;
+pub const USB_CDC_UNION_DESC_LEN: u32 = 5;
+pub const CDC_CALL_MGMT_SUPPORTED: u32 = 1;
+pub const CDC_CALL_MGMT_OVER_DCI: u32 = 2;
+pub const CDC_ACM_SUPPORT_FEATURE_REQUESTS: u32 = 1;
+pub const CDC_ACM_SUPPORT_LINE_REQUESTS: u32 = 2;
+pub const CDC_ACM_SUPPORT_SENDBREAK_REQUESTS: u32 = 4;
+pub const CDC_ACM_SUPPORT_NOTIFY_REQUESTS: u32 = 8;
+pub const CDC_CTRL_SIGNAL_ACTIVATE_CARRIER: u32 = 2;
+pub const CDC_CTRL_SIGNAL_DTE_PRESENT: u32 = 1;
 pub type size_t = cty::c_uint;
 pub type wchar_t = cty::c_uint;
 #[repr(C)]
@@ -2994,24 +3307,44 @@ fn bindgen_test_layout_max_align_t() {
         )
     );
 }
-pub type int_least64_t = i64;
-pub type uint_least64_t = u64;
-pub type int_fast64_t = i64;
-pub type uint_fast64_t = u64;
-pub type int_least32_t = i32;
-pub type uint_least32_t = u32;
-pub type int_fast32_t = i32;
-pub type uint_fast32_t = u32;
-pub type int_least16_t = i16;
-pub type uint_least16_t = u16;
-pub type int_fast16_t = i16;
-pub type uint_fast16_t = u16;
-pub type int_least8_t = i8;
-pub type uint_least8_t = u8;
-pub type int_fast8_t = i8;
-pub type uint_fast8_t = u8;
-pub type intmax_t = cty::c_longlong;
-pub type uintmax_t = cty::c_ulonglong;
+pub type __int8_t = cty::c_schar;
+pub type __uint8_t = cty::c_uchar;
+pub type __int16_t = cty::c_short;
+pub type __uint16_t = cty::c_ushort;
+pub type __int32_t = cty::c_int;
+pub type __uint32_t = cty::c_uint;
+pub type __int64_t = cty::c_longlong;
+pub type __uint64_t = cty::c_ulonglong;
+pub type __int_least8_t = cty::c_schar;
+pub type __uint_least8_t = cty::c_uchar;
+pub type __int_least16_t = cty::c_short;
+pub type __uint_least16_t = cty::c_ushort;
+pub type __int_least32_t = cty::c_int;
+pub type __uint_least32_t = cty::c_uint;
+pub type __int_least64_t = cty::c_longlong;
+pub type __uint_least64_t = cty::c_ulonglong;
+pub type __intmax_t = cty::c_longlong;
+pub type __uintmax_t = cty::c_ulonglong;
+pub type __intptr_t = cty::c_int;
+pub type __uintptr_t = cty::c_uint;
+pub type intmax_t = __intmax_t;
+pub type uintmax_t = __uintmax_t;
+pub type int_least8_t = __int_least8_t;
+pub type uint_least8_t = __uint_least8_t;
+pub type int_least16_t = __int_least16_t;
+pub type uint_least16_t = __uint_least16_t;
+pub type int_least32_t = __int_least32_t;
+pub type uint_least32_t = __uint_least32_t;
+pub type int_least64_t = __int_least64_t;
+pub type uint_least64_t = __uint_least64_t;
+pub type int_fast8_t = cty::c_schar;
+pub type uint_fast8_t = cty::c_uchar;
+pub type int_fast16_t = cty::c_short;
+pub type uint_fast16_t = cty::c_ushort;
+pub type int_fast32_t = cty::c_int;
+pub type uint_fast32_t = cty::c_uint;
+pub type int_fast64_t = cty::c_longlong;
+pub type uint_fast64_t = cty::c_ulonglong;
 pub type RoReg = u32;
 pub type RoReg16 = u16;
 pub type RoReg8 = u8;
@@ -70238,10 +70571,6793 @@ extern "C" {
     #[doc = " \\return Current driver version."]
     pub fn sleep_get_version() -> u32;
 }
+#[doc = " \\brief Pointer to function"]
+pub type FUNC_PTR = ::core::option::Option<unsafe extern "C" fn()>;
+#[doc = " USB Low Speed."]
+pub const usb_speed_USB_SPEED_LS: usb_speed = 0;
+#[doc = " USB Full Speed."]
+pub const usb_speed_USB_SPEED_FS: usb_speed = 1;
+#[doc = " USB High Speed."]
+pub const usb_speed_USB_SPEED_HS: usb_speed = 2;
+#[doc = " USB Super Speed."]
+pub const usb_speed_USB_SPEED_SS: usb_speed = 3;
+#[doc = " USB speed."]
+pub type usb_speed = u32;
+#[doc = " USB SETUP transaction."]
+pub const usb_trans_type_USB_TRANS_SETUP: usb_trans_type = 0;
+#[doc = " USB IN transaction."]
+pub const usb_trans_type_USB_TRANS_IN: usb_trans_type = 1;
+#[doc = " USB OUT transaction."]
+pub const usb_trans_type_USB_TRANS_OUT: usb_trans_type = 2;
+#[doc = " USB transaction type."]
+pub type usb_trans_type = u32;
+#[doc = " USB VBus changed, with parameter as present/not present."]
+pub const usb_event_USB_EV_VBUS: usb_event = 0;
+#[doc = " USB RESET detected on bus."]
+pub const usb_event_USB_EV_RESET: usb_event = 1;
+#[doc = " USB wakeup."]
+pub const usb_event_USB_EV_WAKEUP: usb_event = 2;
+#[doc = " USB LPM suspend, with parameter as \\ref usb_lpm_attributes."]
+pub const usb_event_USB_EV_LPM_SUSPEND: usb_event = 3;
+#[doc = " USB suspend."]
+pub const usb_event_USB_EV_SUSPEND: usb_event = 4;
+#[doc = " USB error, with parameter as error code."]
+pub const usb_event_USB_EV_ERROR: usb_event = 5;
+#[doc = " Number of USB event types."]
+pub const usb_event_USB_EV_N: usb_event = 6;
+#[doc = " USB events that generates the device callbacks."]
+pub type usb_event = u32;
+#[doc = " Clear stall of the endpoint."]
+pub const usb_ep_stall_ctrl_USB_EP_STALL_CLR: usb_ep_stall_ctrl = 0;
+#[doc = " Stall the endpoint."]
+pub const usb_ep_stall_ctrl_USB_EP_STALL_SET: usb_ep_stall_ctrl = 1;
+#[doc = " Return the stall status."]
+pub const usb_ep_stall_ctrl_USB_EP_STALL_GET: usb_ep_stall_ctrl = 2;
+#[doc = " Control action for USB device endpoint stall."]
+pub type usb_ep_stall_ctrl = u32;
+#[doc = " Clear halt of the endpoint."]
+pub const usb_ep_halt_ctrl_USB_EP_HALT_CLR: usb_ep_halt_ctrl = 0;
+#[doc = " Stall the endpoint."]
+pub const usb_ep_halt_ctrl_USB_EP_HALT_SET: usb_ep_halt_ctrl = 1;
+#[doc = " Return the halt status."]
+pub const usb_ep_halt_ctrl_USB_EP_HALT_GET: usb_ep_halt_ctrl = 2;
+#[doc = " Control action for USB device endpoint halt."]
+pub type usb_ep_halt_ctrl = u32;
+#[doc = " TX or RX has been done without error."]
+pub const usb_trans_code_USB_TRANS_DONE: usb_trans_code = 0;
+#[doc = " The endpoint is stalled."]
+pub const usb_trans_code_USB_TRANS_STALL: usb_trans_code = 1;
+#[doc = " The endpoint transactions are aborted (cancel, control setup/status)."]
+pub const usb_trans_code_USB_TRANS_ABORT: usb_trans_code = 2;
+#[doc = " The endpoint transactions are aborted by reset/disable."]
+pub const usb_trans_code_USB_TRANS_RESET: usb_trans_code = 3;
+#[doc = " Error is reported on the endpoint."]
+pub const usb_trans_code_USB_TRANS_ERROR: usb_trans_code = 4;
+#[doc = " USB transactions status codes."]
+pub type usb_trans_code = u32;
+#[doc = " Transfer is done without error, for ctrl it means status packet done."]
+pub const usb_xfer_code_USB_XFER_DONE: usb_xfer_code = 0;
+#[doc = " For control transfer only, data stage is done without error."]
+pub const usb_xfer_code_USB_XFER_DATA: usb_xfer_code = 1;
+#[doc = " Endpoint stall is set."]
+pub const usb_xfer_code_USB_XFER_HALT: usb_xfer_code = 2;
+#[doc = " Endpoint stall is cleared."]
+pub const usb_xfer_code_USB_XFER_UNHALT: usb_xfer_code = 3;
+#[doc = " Transfer is aborted."]
+pub const usb_xfer_code_USB_XFER_ABORT: usb_xfer_code = 4;
+#[doc = " Transfer is aborted because endpoint reset/disable."]
+pub const usb_xfer_code_USB_XFER_RESET: usb_xfer_code = 5;
+#[doc = " There was an error."]
+pub const usb_xfer_code_USB_XFER_ERROR: usb_xfer_code = 6;
+#[doc = " Transfer status codes."]
+pub type usb_xfer_code = u32;
+#[doc = " No error."]
+pub const usb_ep_error_USB_EP_NO_ERROR: usb_ep_error = 0;
+#[doc = " CRC error."]
+pub const usb_ep_error_USB_EP_ERR_CRC: usb_ep_error = 1;
+#[doc = " Endpoint transfer overflow."]
+pub const usb_ep_error_USB_EP_ERR_OVERFLOW: usb_ep_error = 2;
+#[doc = " Other endpoint errors."]
+pub const usb_ep_error_USB_EP_ERR_GENERAL: usb_ep_error = 3;
+#[doc = " USB endpoint errors."]
+pub type usb_ep_error = u32;
+#[doc = " Endpoint is disabled."]
+pub const usb_ep_state_USB_EP_S_DISABLED: usb_ep_state = 0;
+#[doc = " Endpoint is not busy."]
+pub const usb_ep_state_USB_EP_S_IDLE: usb_ep_state = 1;
+#[doc = " Control transfer only, endpoint is transferring setup packet."]
+pub const usb_ep_state_USB_EP_S_X_SETUP: usb_ep_state = 2;
+#[doc = " Endpoint is transferring data."]
+pub const usb_ep_state_USB_EP_S_X_DATA: usb_ep_state = 3;
+#[doc = " Control transfer only, endpoint is in status stage."]
+pub const usb_ep_state_USB_EP_S_X_STATUS: usb_ep_state = 4;
+#[doc = " Endpoint is halted."]
+pub const usb_ep_state_USB_EP_S_HALTED: usb_ep_state = 5;
+#[doc = " Endpoint error."]
+pub const usb_ep_state_USB_EP_S_ERROR: usb_ep_state = 6;
+#[doc = " Endpoint transfer state."]
+pub type usb_ep_state = u32;
+#[doc = " USB device SOF callback."]
+pub const usb_d_cb_type_USB_D_CB_SOF: usb_d_cb_type = 0;
+#[doc = " USB device events callbacks."]
+pub const usb_d_cb_type_USB_D_CB_EVENT: usb_d_cb_type = 1;
+#[doc = " Number of types of USB device callback types."]
+pub const usb_d_cb_type_USB_D_CB_N: usb_d_cb_type = 2;
+#[doc = " USB Device callback type."]
+pub type usb_d_cb_type = u32;
+#[doc = " USB device endpoint setup callback."]
+pub const usb_d_ep_cb_type_USB_D_EP_CB_SETUP: usb_d_ep_cb_type = 0;
+#[doc = " USB device endpoint more data callback."]
+pub const usb_d_ep_cb_type_USB_D_EP_CB_MORE: usb_d_ep_cb_type = 1;
+#[doc = " USB device endpoint transaction done or error callback."]
+pub const usb_d_ep_cb_type_USB_D_EP_CB_XFER: usb_d_ep_cb_type = 2;
+#[doc = " Number of types of USB device endpoint callback types."]
+pub const usb_d_ep_cb_type_USB_D_EP_CB_N: usb_d_ep_cb_type = 3;
+#[doc = " USB Device endpoint callback type."]
+pub type usb_d_ep_cb_type = u32;
+#[doc = " No LPM handshake, not supported."]
+pub const usb_d_lpm_ctrl_USB_D_LPM_DISABLE: usb_d_lpm_ctrl = 0;
+#[doc = " ACK the LPM transaction."]
+pub const usb_d_lpm_ctrl_USB_D_LPM_ACK: usb_d_lpm_ctrl = 1;
+#[doc = " NYET the LPM transaction."]
+pub const usb_d_lpm_ctrl_USB_D_LPM_NYET: usb_d_lpm_ctrl = 2;
+#[doc = " Control action for USB device LPM handshake."]
+pub type usb_d_lpm_ctrl = u32;
+#[doc = "  USB device transfer descriptor."]
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_d_transfer {
+    #[doc = " Pointer to data buffer to transfer."]
+    #[doc = "  Note that it's recommended that the buffer is 32-bit aligned since"]
+    #[doc = "  some of USB peripheral require this."]
+    pub buf: *mut u8,
+    #[doc = " Transfer size, in number of bytes."]
+    #[doc = "  Note that it's recommended that the buffer size is 32-bit aligned"]
+    #[doc = "  (modeled by 4) since some of USB peripheral require this."]
+    pub size: u32,
+    #[doc = " Endpoint address."]
+    pub ep: u8,
+    #[doc = " Append ZLP for IN transfer, wait ZLP for OUT transfer."]
+    pub zlp: u8,
+}
+#[test]
+fn bindgen_test_layout_usb_d_transfer() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_d_transfer>(),
+        12usize,
+        concat!("Size of: ", stringify!(usb_d_transfer))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_d_transfer>(),
+        4usize,
+        concat!("Alignment of ", stringify!(usb_d_transfer))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_d_transfer>())).buf as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_d_transfer),
+            "::",
+            stringify!(buf)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_d_transfer>())).size as *const _ as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_d_transfer),
+            "::",
+            stringify!(size)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_d_transfer>())).ep as *const _ as usize },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_d_transfer),
+            "::",
+            stringify!(ep)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_d_transfer>())).zlp as *const _ as usize },
+        9usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_d_transfer),
+            "::",
+            stringify!(zlp)
+        )
+    );
+}
+#[doc = " USB device transactions status structure."]
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_d_trans_status {
+    #[doc = " Total data size."]
+    pub size: u32,
+    #[doc = " Total transfered data count."]
+    pub count: u32,
+    #[doc = " Endpoint address."]
+    pub ep: u8,
+    pub _bitfield_1: __BindgenBitfieldUnit<[u8; 1usize], u8>,
+    pub __bindgen_padding_0: u16,
+}
+#[test]
+fn bindgen_test_layout_usb_d_trans_status() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_d_trans_status>(),
+        12usize,
+        concat!("Size of: ", stringify!(usb_d_trans_status))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_d_trans_status>(),
+        4usize,
+        concat!("Alignment of ", stringify!(usb_d_trans_status))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_d_trans_status>())).size as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_d_trans_status),
+            "::",
+            stringify!(size)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_d_trans_status>())).count as *const _ as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_d_trans_status),
+            "::",
+            stringify!(count)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_d_trans_status>())).ep as *const _ as usize },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_d_trans_status),
+            "::",
+            stringify!(ep)
+        )
+    );
+}
+impl usb_d_trans_status {
+    #[inline]
+    pub fn xtype(&self) -> u8 {
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(0usize, 2u8) as u8) }
+    }
+    #[inline]
+    pub fn set_xtype(&mut self, val: u8) {
+        unsafe {
+            let val: u8 = ::core::mem::transmute(val);
+            self._bitfield_1.set(0usize, 2u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn busy(&self) -> u8 {
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(2usize, 1u8) as u8) }
+    }
+    #[inline]
+    pub fn set_busy(&mut self, val: u8) {
+        unsafe {
+            let val: u8 = ::core::mem::transmute(val);
+            self._bitfield_1.set(2usize, 1u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn setup(&self) -> u8 {
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(3usize, 1u8) as u8) }
+    }
+    #[inline]
+    pub fn set_setup(&mut self, val: u8) {
+        unsafe {
+            let val: u8 = ::core::mem::transmute(val);
+            self._bitfield_1.set(3usize, 1u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn stall(&self) -> u8 {
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(4usize, 1u8) as u8) }
+    }
+    #[inline]
+    pub fn set_stall(&mut self, val: u8) {
+        unsafe {
+            let val: u8 = ::core::mem::transmute(val);
+            self._bitfield_1.set(4usize, 1u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn dir(&self) -> u8 {
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(5usize, 1u8) as u8) }
+    }
+    #[inline]
+    pub fn set_dir(&mut self, val: u8) {
+        unsafe {
+            let val: u8 = ::core::mem::transmute(val);
+            self._bitfield_1.set(5usize, 1u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn new_bitfield_1(
+        xtype: u8,
+        busy: u8,
+        setup: u8,
+        stall: u8,
+        dir: u8,
+    ) -> __BindgenBitfieldUnit<[u8; 1usize], u8> {
+        let mut __bindgen_bitfield_unit: __BindgenBitfieldUnit<[u8; 1usize], u8> =
+            Default::default();
+        __bindgen_bitfield_unit.set(0usize, 2u8, {
+            let xtype: u8 = unsafe { ::core::mem::transmute(xtype) };
+            xtype as u64
+        });
+        __bindgen_bitfield_unit.set(2usize, 1u8, {
+            let busy: u8 = unsafe { ::core::mem::transmute(busy) };
+            busy as u64
+        });
+        __bindgen_bitfield_unit.set(3usize, 1u8, {
+            let setup: u8 = unsafe { ::core::mem::transmute(setup) };
+            setup as u64
+        });
+        __bindgen_bitfield_unit.set(4usize, 1u8, {
+            let stall: u8 = unsafe { ::core::mem::transmute(stall) };
+            stall as u64
+        });
+        __bindgen_bitfield_unit.set(5usize, 1u8, {
+            let dir: u8 = unsafe { ::core::mem::transmute(dir) };
+            dir as u64
+        });
+        __bindgen_bitfield_unit
+    }
+}
+#[doc = " Prototype function for callback that is invoked on USB device SOF."]
+pub type _usb_d_dev_sof_cb_t = ::core::option::Option<unsafe extern "C" fn()>;
+#[doc = " Prototype function for callback that is invoked on USB device events."]
+pub type _usb_d_dev_event_cb_t =
+    ::core::option::Option<unsafe extern "C" fn(arg1: usb_event, param: u32)>;
+#[doc = " HPL USB device callbacks."]
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct _usb_d_dev_callbacks {
+    #[doc = " Callback that is invoked on SOF."]
+    pub sof: _usb_d_dev_sof_cb_t,
+    #[doc = " Callback that is invoked on USB RESET/WAKEUP/RESUME/SUSPEND."]
+    pub event: _usb_d_dev_event_cb_t,
+}
+#[test]
+fn bindgen_test_layout__usb_d_dev_callbacks() {
+    assert_eq!(
+        ::core::mem::size_of::<_usb_d_dev_callbacks>(),
+        8usize,
+        concat!("Size of: ", stringify!(_usb_d_dev_callbacks))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<_usb_d_dev_callbacks>(),
+        4usize,
+        concat!("Alignment of ", stringify!(_usb_d_dev_callbacks))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_usb_d_dev_callbacks>())).sof as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_usb_d_dev_callbacks),
+            "::",
+            stringify!(sof)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_usb_d_dev_callbacks>())).event as *const _ as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_usb_d_dev_callbacks),
+            "::",
+            stringify!(event)
+        )
+    );
+}
+#[doc = " Setup packet is received."]
+pub const usb_d_dev_ep_cb_type_USB_D_DEV_EP_CB_SETUP: usb_d_dev_ep_cb_type = 0;
+#[doc = " Try to require more data."]
+pub const usb_d_dev_ep_cb_type_USB_D_DEV_EP_CB_MORE: usb_d_dev_ep_cb_type = 1;
+#[doc = " Transaction done OK/ERROR."]
+pub const usb_d_dev_ep_cb_type_USB_D_DEV_EP_CB_DONE: usb_d_dev_ep_cb_type = 2;
+#[doc = " Number of device endpoint callbacks."]
+pub const usb_d_dev_ep_cb_type_USB_D_DEV_EP_CB_N: usb_d_dev_ep_cb_type = 3;
+#[doc = " USB device endpoint callbacks."]
+pub type usb_d_dev_ep_cb_type = u32;
+#[doc = "  Callback that is invoked when control SETUP packet has bee received."]
+#[doc = "  \\ref _usb_d_dev_ep_read_req() must be invoked to read setup data, and allow"]
+#[doc = "  IN/OUT transactions on control endpoint."]
+pub type _usb_d_dev_ep_cb_setup_t = ::core::option::Option<unsafe extern "C" fn(ep: u8)>;
+#[doc = " Callback that is invoked when buffer is done, but last packet is full size"]
+#[doc = "  packet without ZLP. Return \\c true if more data has been requested."]
+pub type _usb_d_dev_ep_cb_more_t =
+    ::core::option::Option<unsafe extern "C" fn(ep: u8, transfered: u32) -> bool>;
+#[doc = " Callback that is invoked when all data is finished, including background"]
+#[doc = "  transfer, or error happens."]
+pub type _usb_d_dev_ep_cb_done_t =
+    ::core::option::Option<unsafe extern "C" fn(ep: u8, code: i32, transfered: u32)>;
+#[doc = " Callbacks for HPL USB device endpoint."]
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct _usb_d_dev_ep_callbacks {
+    #[doc = " Callback that is invoked when SETUP packet is received."]
+    #[doc = "  \\ref _usb_d_dev_ep_read_req() must be invoked to read setup data, and"]
+    #[doc = "  allow IN/OUT transactions on control endpoint."]
+    pub setup: _usb_d_dev_ep_cb_setup_t,
+    #[doc = " Callback that is invoked to check if buffer is NULL and more data is"]
+    #[doc = "  required."]
+    #[doc = "  It's called when last packet is full size packet, without"]
+    #[doc = "  auto ZLP enabled."]
+    #[doc = "  It could be called when background transfer is still in progress."]
+    pub more: _usb_d_dev_ep_cb_more_t,
+    #[doc = " Callback that is invoked when transaction is done, including background"]
+    #[doc = "  transfer, or error occurs."]
+    pub done: _usb_d_dev_ep_cb_done_t,
+}
+#[test]
+fn bindgen_test_layout__usb_d_dev_ep_callbacks() {
+    assert_eq!(
+        ::core::mem::size_of::<_usb_d_dev_ep_callbacks>(),
+        12usize,
+        concat!("Size of: ", stringify!(_usb_d_dev_ep_callbacks))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<_usb_d_dev_ep_callbacks>(),
+        4usize,
+        concat!("Alignment of ", stringify!(_usb_d_dev_ep_callbacks))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_usb_d_dev_ep_callbacks>())).setup as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_usb_d_dev_ep_callbacks),
+            "::",
+            stringify!(setup)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_usb_d_dev_ep_callbacks>())).more as *const _ as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_usb_d_dev_ep_callbacks),
+            "::",
+            stringify!(more)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_usb_d_dev_ep_callbacks>())).done as *const _ as usize },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_usb_d_dev_ep_callbacks),
+            "::",
+            stringify!(done)
+        )
+    );
+}
+extern "C" {
+    #[doc = " \\brief Initialize the USB device instance"]
+    #[doc = " \\return Operation result status."]
+    #[doc = " \\retval 0 Success."]
+    #[doc = " \\retval <0 Error code."]
+    pub fn _usb_d_dev_init() -> i32;
+}
+extern "C" {
+    #[doc = " \\brief Deinitialize the USB device instance"]
+    #[doc = " \\return Operation result status."]
+    #[doc = " \\retval 0 Success."]
+    #[doc = " \\retval <0 Error code."]
+    pub fn _usb_d_dev_deinit();
+}
+extern "C" {
+    #[doc = " \\brief Register callback to handle USB device events"]
+    #[doc = " \\param[in] type Callback type. See \\ref usb_d_cb_type."]
+    #[doc = " \\param[in] func Pointer to callback function."]
+    #[doc = "         Refer to \\ref _usb_d_dev_callbacks for the prototypes."]
+    pub fn _usb_d_dev_register_callback(type_: usb_d_cb_type, func: FUNC_PTR);
+}
+extern "C" {
+    #[doc = " \\brief Register callback to handle USB device endpoint events"]
+    #[doc = " \\param[in] type Callback type. See \\ref usb_d_dev_ep_cb_type."]
+    #[doc = " \\param[in] func Pointer to callback function."]
+    #[doc = "         Refer to \\ref _usb_d_dev_ep_callbacks for the prototypes."]
+    pub fn _usb_d_dev_register_ep_callback(type_: usb_d_dev_ep_cb_type, func: FUNC_PTR);
+}
+extern "C" {
+    #[doc = " \\brief Enable the USB device"]
+    #[doc = " \\return Operation result status."]
+    #[doc = " \\retval 0 Success."]
+    #[doc = " \\retval <0 Error code."]
+    pub fn _usb_d_dev_enable() -> i32;
+}
+extern "C" {
+    #[doc = " \\brief Disable the USB device"]
+    #[doc = " \\return Operation result status."]
+    #[doc = " \\retval 0 Success."]
+    #[doc = " \\retval <0 Error code."]
+    pub fn _usb_d_dev_disable() -> i32;
+}
+extern "C" {
+    #[doc = " \\brief Attach the USB device"]
+    pub fn _usb_d_dev_attach();
+}
+extern "C" {
+    #[doc = " \\brief Detach the USB device"]
+    pub fn _usb_d_dev_detach();
+}
+extern "C" {
+    #[doc = " \\brief Send the USB device remote wakeup to host"]
+    pub fn _usb_d_dev_send_remotewakeup();
+}
+extern "C" {
+    #[doc = " \\brief Get the USB device working speed"]
+    #[doc = " \\return USB speed. See \\ref usb_speed."]
+    pub fn _usb_d_dev_get_speed() -> usb_speed;
+}
+extern "C" {
+    #[doc = " \\brief Set the USB device address"]
+    #[doc = " \\param[in] addr Address to be used."]
+    pub fn _usb_d_dev_set_address(addr: u8);
+}
+extern "C" {
+    #[doc = " \\brief Get the USB device address"]
+    #[doc = " \\return Address that is used."]
+    pub fn _usb_d_dev_get_address() -> u8;
+}
+extern "C" {
+    #[doc = " \\brief Get the USB device frame number"]
+    #[doc = " \\return The frame number."]
+    pub fn _usb_d_dev_get_frame_n() -> u16;
+}
+extern "C" {
+    #[doc = " \\brief Get the USB device micro frame number"]
+    #[doc = " \\return The micro frame number inside one frame (0~7)."]
+    pub fn _usb_d_dev_get_uframe_n() -> u8;
+}
+extern "C" {
+    #[doc = " \\brief Initialize and enable the USB device default endpoint 0"]
+    #[doc = " \\param[in] max_pkt_siz Max endpoint size."]
+    #[doc = " \\return Operation result status."]
+    #[doc = " \\retval 0 Success."]
+    #[doc = " \\retval <0 Error code."]
+    pub fn _usb_d_dev_ep0_init(max_pkt_siz: u8) -> i32;
+}
+extern "C" {
+    #[doc = " \\brief Initialize and enable the USB device endpoint"]
+    #[doc = " \\param[in] ep Endpoint address,"]
+    #[doc = "               see endpoint descriptor details in USB spec."]
+    #[doc = " \\param[in] attr Endpoint attributes,"]
+    #[doc = "                 see endpoint descriptor details in USB spec."]
+    #[doc = " \\param[in] max_pkt_siz Endpoint size,"]
+    #[doc = "                        see endpoint descriptor details in USB spec."]
+    #[doc = " \\return Operation result status."]
+    #[doc = " \\retval 0 Success."]
+    #[doc = " \\retval <0 Error code."]
+    pub fn _usb_d_dev_ep_init(ep: u8, attr: u8, max_pkt_siz: u16) -> i32;
+}
+extern "C" {
+    #[doc = " \\brief Disable and deinitialize the USB device endpoint"]
+    #[doc = ""]
+    #[doc = " \\param[in] ep The endpoint to deinitialize."]
+    pub fn _usb_d_dev_ep_deinit(ep: u8);
+}
+extern "C" {
+    #[doc = " \\brief Enable the endpoint"]
+    #[doc = " \\param[in] ep The endpoint to enable."]
+    #[doc = " \\return Operation result status."]
+    #[doc = " \\retval 0 Success."]
+    #[doc = " \\retval <0 Error code."]
+    pub fn _usb_d_dev_ep_enable(ep: u8) -> i32;
+}
+extern "C" {
+    #[doc = " \\brief Disable the endpoint"]
+    #[doc = " \\param[in] ep The endpoint to disable."]
+    pub fn _usb_d_dev_ep_disable(ep: u8);
+}
+extern "C" {
+    #[doc = " \\brief Set/Clear/Get USB device endpoint stall status"]
+    #[doc = " \\param[in] ep Endpoint address."]
+    #[doc = " \\param[in] ctrl Operation selector. See \\ref usb_ep_stall_ctrl."]
+    #[doc = " \\return Operation result or stall status."]
+    #[doc = " \\retval 0 Success or not stall."]
+    #[doc = " \\retval 1 Endpoint is stalled."]
+    #[doc = " \\retval -1 error."]
+    pub fn _usb_d_dev_ep_stall(ep: u8, ctrl: usb_ep_stall_ctrl) -> i32;
+}
+extern "C" {
+    #[doc = " \\brief Read setup request data from specific endpoint"]
+    #[doc = " \\param[in] ep Endpoint address."]
+    #[doc = " \\param[out] req_buf Pointer to buffer to locate the setup packet."]
+    #[doc = " \\return Number of bytes or error code."]
+    #[doc = " \\retval <0 error code."]
+    #[doc = " \\retval 0 No setup packet ready for read."]
+    #[doc = " \\retval >0 Size of bytes read, and ready to start IN/OUT. Note that if"]
+    #[doc = "         this number is over 8, only first 8 bytes will be copied."]
+    pub fn _usb_d_dev_ep_read_req(ep: u8, req_buf: *mut u8) -> i32;
+}
+extern "C" {
+    #[doc = " \\brief Start USB device transfer"]
+    #[doc = ""]
+    #[doc = " On different USB peripheral hardware the transaction buffer address and size"]
+    #[doc = " may have different constraints. E.g., some hardware may require input address"]
+    #[doc = " 32-bit aligned, and input size 32-bit aligned. Refer to the corresponding"]
+    #[doc = " hardware usage reference documents."]
+    #[doc = " The constraints are checked in implementation, with error code returned."]
+    #[doc = ""]
+    #[doc = " \\param[in] trans Pointer to the transaction description."]
+    #[doc = " \\return Operation result status."]
+    #[doc = " \\retval 1 Busy."]
+    #[doc = " \\retval 0 Success."]
+    #[doc = " \\retval <0 Error code."]
+    pub fn _usb_d_dev_ep_trans(trans: *const usb_d_transfer) -> i32;
+}
+extern "C" {
+    #[doc = " \\brief Abort pending USB device transaction on specific endpoint"]
+    #[doc = " \\param[in] ep Endpoint address to abort."]
+    pub fn _usb_d_dev_ep_abort(ep: u8);
+}
+extern "C" {
+    #[doc = " \\brief Retrieve endpoint status."]
+    #[doc = " \\param[in] ep Endpoint address."]
+    #[doc = " \\param[out] stat Pointer to buffer to fill status description."]
+    #[doc = " \\return Status."]
+    #[doc = " \\retval 2 Packet writing."]
+    #[doc = " \\retval 1 Busy."]
+    #[doc = " \\retval 0 Ready."]
+    #[doc = " \\retval <0 Error code."]
+    pub fn _usb_d_dev_ep_get_status(ep: u8, stat: *mut usb_d_trans_status) -> i32;
+}
+#[doc = " USB device endpoint status structure."]
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_d_ep_status {
+    #[doc = " Endpoint address, including direction."]
+    pub ep: u8,
+    #[doc = " Endpoint transfer status code that triggers the callback."]
+    #[doc = "  \\ref usb_xfer_code."]
+    pub code: u8,
+    #[doc = " Endpoint error, if \\c code is \\ref USB_TRANS_ERROR."]
+    pub error: u8,
+    #[doc = " Transfer state, \\ref usb_ep_state."]
+    pub state: u8,
+    #[doc = " Transfer count."]
+    pub count: u32,
+    #[doc = " Transfer size."]
+    pub size: u32,
+}
+#[test]
+fn bindgen_test_layout_usb_d_ep_status() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_d_ep_status>(),
+        12usize,
+        concat!("Size of: ", stringify!(usb_d_ep_status))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_d_ep_status>(),
+        4usize,
+        concat!("Alignment of ", stringify!(usb_d_ep_status))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_d_ep_status>())).ep as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_d_ep_status),
+            "::",
+            stringify!(ep)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_d_ep_status>())).code as *const _ as usize },
+        1usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_d_ep_status),
+            "::",
+            stringify!(code)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_d_ep_status>())).error as *const _ as usize },
+        2usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_d_ep_status),
+            "::",
+            stringify!(error)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_d_ep_status>())).state as *const _ as usize },
+        3usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_d_ep_status),
+            "::",
+            stringify!(state)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_d_ep_status>())).count as *const _ as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_d_ep_status),
+            "::",
+            stringify!(count)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_d_ep_status>())).size as *const _ as usize },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_d_ep_status),
+            "::",
+            stringify!(size)
+        )
+    );
+}
+#[doc = " Prototype function for callback that is invoked on USB device SOF."]
+pub type usb_d_sof_cb_t = ::core::option::Option<unsafe extern "C" fn()>;
+#[doc = " Prototype function for callback that is invoked on USB device events."]
+pub type usb_d_event_cb_t =
+    ::core::option::Option<unsafe extern "C" fn(event: usb_event, param: u32)>;
+#[doc = " USB device callbacks."]
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_d_callbacks {
+    #[doc = " Callback that is invoked on SOF."]
+    pub sof: usb_d_sof_cb_t,
+    #[doc = " Callback that is invoked on USB RESET/WAKEUP/RESUME/SUSPEND."]
+    pub event: usb_d_event_cb_t,
+}
+#[test]
+fn bindgen_test_layout_usb_d_callbacks() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_d_callbacks>(),
+        8usize,
+        concat!("Size of: ", stringify!(usb_d_callbacks))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_d_callbacks>(),
+        4usize,
+        concat!("Alignment of ", stringify!(usb_d_callbacks))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_d_callbacks>())).sof as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_d_callbacks),
+            "::",
+            stringify!(sof)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_d_callbacks>())).event as *const _ as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_d_callbacks),
+            "::",
+            stringify!(event)
+        )
+    );
+}
+#[doc = " Callback that is invoked when setup packet is received."]
+#[doc = "  Return \\c true if request has been handled, or control endpoint will"]
+#[doc = "  stall IN/OUT transactions."]
+pub type usb_d_ep_cb_setup_t =
+    ::core::option::Option<unsafe extern "C" fn(ep: u8, req: *const u8) -> bool>;
+#[doc = " Callback that is invoked when buffer is done without error, but last packet"]
+#[doc = "  is full size packet without ZLP."]
+#[doc = "  Return \\c true if more data has been requested."]
+pub type usb_d_ep_cb_more_t =
+    ::core::option::Option<unsafe extern "C" fn(ep: u8, count: u32) -> bool>;
+#[doc = " Callback that is invoked when all data is finished, including background"]
+#[doc = "  transfer, or error happens."]
+#[doc = "  In control transfer data stage, return value is checked,"]
+#[doc = "  return \\c false if no error happens."]
+pub type usb_d_ep_cb_xfer_t = ::core::option::Option<
+    unsafe extern "C" fn(ep: u8, code: usb_xfer_code, param: *mut cty::c_void) -> bool,
+>;
+extern "C" {
+    #[doc = "  \\brief Initialize the USB device driver"]
+    #[doc = "  \\return Operation status."]
+    #[doc = "  \\retval 0 Success."]
+    #[doc = "  \\retval <0 Error code."]
+    pub fn usb_d_init() -> i32;
+}
+extern "C" {
+    #[doc = "  \\brief Deinitialize the USB device driver"]
+    pub fn usb_d_deinit();
+}
+extern "C" {
+    #[doc = "  \\brief Register the USB device callback"]
+    #[doc = "  \\param[in] type The callback type to register."]
+    #[doc = "  \\param[in] func The callback function, NULL to disable callback."]
+    pub fn usb_d_register_callback(type_: usb_d_cb_type, func: FUNC_PTR);
+}
+extern "C" {
+    #[doc = "  \\brief Enable the USB device driver"]
+    #[doc = "  \\return Operation status."]
+    #[doc = "  \\retval 0 Success."]
+    #[doc = "  \\retval <0 Error code."]
+    pub fn usb_d_enable() -> i32;
+}
+extern "C" {
+    #[doc = "  \\brief Disable the USB device driver"]
+    pub fn usb_d_disable();
+}
+extern "C" {
+    #[doc = "  \\brief Attach the USB device"]
+    pub fn usb_d_attach();
+}
+extern "C" {
+    #[doc = "  \\brief Detach the USB device"]
+    pub fn usb_d_detach();
+}
+extern "C" {
+    #[doc = "  \\brief Retrieve current USB working speed."]
+    #[doc = "  \\return USB Speed. See \\ref usb_speed."]
+    pub fn usb_d_get_speed() -> usb_speed;
+}
+extern "C" {
+    #[doc = "  \\brief Retrieve current USB frame number."]
+    #[doc = "  \\return Frame number."]
+    pub fn usb_d_get_frame_num() -> u16;
+}
+extern "C" {
+    #[doc = "  \\brief Retrieve current USB micro frame number."]
+    #[doc = "  \\return Micro frame number inside a frame (0~7)."]
+    #[doc = "          0 if not available (not HS)."]
+    pub fn usb_d_get_uframe_num() -> u8;
+}
+extern "C" {
+    #[doc = "  \\brief Set the USB address that is used."]
+    #[doc = "  \\param[in] addr The address to set."]
+    pub fn usb_d_set_address(addr: u8);
+}
+extern "C" {
+    #[doc = "  \\brief Send remote wakeup to host"]
+    #[doc = "  \\return Operation status."]
+    pub fn usb_d_send_remotewakeup();
+}
+extern "C" {
+    #[doc = "  \\brief Initialize the endpoint 0."]
+    #[doc = ""]
+    #[doc = "  Note that endpoint 0 must be initialized as control endpoint."]
+    #[doc = ""]
+    #[doc = "  \\param[in] max_pkt_size Max. packet size of EP0."]
+    #[doc = "  \\return Operation status."]
+    #[doc = "  \\retval 0 Success."]
+    #[doc = "  \\retval <0 Error code."]
+    pub fn usb_d_ep0_init(max_pkt_size: u8) -> i32;
+}
+extern "C" {
+    #[doc = "  \\brief Initialize the endpoint."]
+    #[doc = ""]
+    #[doc = "  \\param[in] ep The endpoint address."]
+    #[doc = "  \\param[in] attr The endpoint attributes."]
+    #[doc = "  \\param[in] max_pkt_size Max. packet size of EP0."]
+    #[doc = "  \\return Operation status."]
+    #[doc = "  \\retval 0 Success."]
+    #[doc = "  \\retval <0 Error code."]
+    pub fn usb_d_ep_init(ep: u8, attr: u8, max_pkt_size: u16) -> i32;
+}
+extern "C" {
+    #[doc = "  \\brief Disable and deinitialize the endpoint."]
+    #[doc = "  \\param[in] ep The endpoint address to deinitialize."]
+    pub fn usb_d_ep_deinit(ep: u8);
+}
+extern "C" {
+    #[doc = "  \\brief Register the USB device endpoint callback on initialized endpoint."]
+    #[doc = ""]
+    #[doc = "  \\param[in] ep The endpoint address."]
+    #[doc = "  \\param[in] type The callback type to register."]
+    #[doc = "  \\param[in] func The callback function, NULL to disable callback."]
+    pub fn usb_d_ep_register_callback(ep: u8, type_: usb_d_ep_cb_type, func: FUNC_PTR);
+}
+extern "C" {
+    #[doc = "  \\brief Enabled the initialized endpoint."]
+    #[doc = ""]
+    #[doc = "  Setup request will be monitored after enabling a control endpoint."]
+    #[doc = ""]
+    #[doc = "  \\param[in] ep The endpoint address."]
+    #[doc = "  \\return Operation status."]
+    #[doc = "  \\retval 0 Success."]
+    #[doc = "  \\retval <0 Error code."]
+    pub fn usb_d_ep_enable(ep: u8) -> i32;
+}
+extern "C" {
+    #[doc = "  \\brief Disable the initialized endpoint."]
+    #[doc = "  \\param[in] ep The endpoint address."]
+    pub fn usb_d_ep_disable(ep: u8);
+}
+extern "C" {
+    #[doc = "  \\brief Get request data pointer to access received setup request packet"]
+    #[doc = "  \\param[in] ep The endpoint address."]
+    #[doc = "  \\return Pointer to the request data."]
+    #[doc = "  \\retval NULL The endpoint is not a control endpoint."]
+    pub fn usb_d_ep_get_req(ep: u8) -> *mut u8;
+}
+extern "C" {
+    #[doc = "  \\brief Endpoint transfer."]
+    #[doc = ""]
+    #[doc = "  For control endpoints, start the transfer according to the direction in the bmRequest"]
+    #[doc = "  type, and finish with STATUS stage."]
+    #[doc = "  For non-control endpoints, the transfer will be unique direction. Defined by"]
+    #[doc = "  bit 8 of the endpoint address."]
+    #[doc = ""]
+    #[doc = "  \\param[in] xfer Pointer to the transfer description."]
+    #[doc = "  \\return Operation status."]
+    #[doc = "  \\retval 0 Success."]
+    #[doc = "  \\retval <0 Error code."]
+    pub fn usb_d_ep_transfer(xfer: *const usb_d_transfer) -> i32;
+}
+extern "C" {
+    #[doc = "  \\brief Abort an on-going transfer on a specific endpoint."]
+    #[doc = ""]
+    #[doc = "  \\param[in] ep The endpoint address."]
+    pub fn usb_d_ep_abort(ep: u8);
+}
+extern "C" {
+    #[doc = "  \\brief Retrieve the endpoint status."]
+    #[doc = ""]
+    #[doc = "  \\param[in] ep The endpoint address."]
+    #[doc = "  \\param[out] stat Pointer to the buffer to fill the status description."]
+    #[doc = ""]
+    #[doc = "  \\return Endpoint status."]
+    #[doc = "  \\retval 1 Busy."]
+    #[doc = "  \\retval 0 Idle."]
+    #[doc = "  \\retval <0 Error code."]
+    pub fn usb_d_ep_get_status(ep: u8, stat: *mut usb_d_ep_status) -> i32;
+}
+extern "C" {
+    #[doc = "  \\brief Endpoint halt control."]
+    #[doc = ""]
+    #[doc = "  \\param[in] ep The endpoint address."]
+    #[doc = "  \\param[in] ctrl Control code (SET/CLEAR/GET)."]
+    #[doc = ""]
+    #[doc = "  \\return Operation status or HALT state (if \\c ctrl is \\ref USB_EP_HALT_GET)."]
+    pub fn usb_d_ep_halt(ep: u8, ctrl: usb_ep_halt_ctrl) -> i32;
+}
+extern "C" {
+    #[doc = " \\brief Retrieve the current driver version"]
+    #[doc = ""]
+    #[doc = "  \\return Current driver version."]
+    pub fn usb_d_get_version() -> u32;
+}
+extern "C" {
+    pub fn USB_DEVICE_INSTANCE_CLOCK_init();
+}
+extern "C" {
+    pub fn USB_DEVICE_INSTANCE_init();
+}
 extern "C" {
     #[doc = " \\brief Perform system initialization, initialize pins and clocks for"]
     #[doc = " peripherals"]
     pub fn system_init();
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct __lock {
+    _unused: [u8; 0],
+}
+pub type _LOCK_T = *mut __lock;
+extern "C" {
+    pub fn __retarget_lock_init(lock: *mut _LOCK_T);
+}
+extern "C" {
+    pub fn __retarget_lock_init_recursive(lock: *mut _LOCK_T);
+}
+extern "C" {
+    pub fn __retarget_lock_close(lock: _LOCK_T);
+}
+extern "C" {
+    pub fn __retarget_lock_close_recursive(lock: _LOCK_T);
+}
+extern "C" {
+    pub fn __retarget_lock_acquire(lock: _LOCK_T);
+}
+extern "C" {
+    pub fn __retarget_lock_acquire_recursive(lock: _LOCK_T);
+}
+extern "C" {
+    pub fn __retarget_lock_try_acquire(lock: _LOCK_T) -> cty::c_int;
+}
+extern "C" {
+    pub fn __retarget_lock_try_acquire_recursive(lock: _LOCK_T) -> cty::c_int;
+}
+extern "C" {
+    pub fn __retarget_lock_release(lock: _LOCK_T);
+}
+extern "C" {
+    pub fn __retarget_lock_release_recursive(lock: _LOCK_T);
+}
+pub type __blkcnt_t = cty::c_long;
+pub type __blksize_t = cty::c_long;
+pub type __fsblkcnt_t = __uint64_t;
+pub type __fsfilcnt_t = __uint32_t;
+pub type _off_t = cty::c_long;
+pub type __pid_t = cty::c_int;
+pub type __dev_t = cty::c_short;
+pub type __uid_t = cty::c_ushort;
+pub type __gid_t = cty::c_ushort;
+pub type __id_t = __uint32_t;
+pub type __ino_t = cty::c_ushort;
+pub type __mode_t = __uint32_t;
+pub type _off64_t = cty::c_longlong;
+pub type __off_t = _off_t;
+pub type __loff_t = _off64_t;
+pub type __key_t = cty::c_long;
+pub type _fpos_t = cty::c_long;
+pub type __size_t = cty::c_uint;
+pub type _ssize_t = cty::c_int;
+pub type __ssize_t = _ssize_t;
+pub type wint_t = cty::c_int;
+#[repr(C)]
+#[derive(Copy, Clone)]
+pub struct _mbstate_t {
+    pub __count: cty::c_int,
+    pub __value: _mbstate_t__bindgen_ty_1,
+}
+#[repr(C)]
+#[derive(Copy, Clone)]
+pub union _mbstate_t__bindgen_ty_1 {
+    pub __wch: wint_t,
+    pub __wchb: [cty::c_uchar; 4usize],
+    _bindgen_union_align: u32,
+}
+#[test]
+fn bindgen_test_layout__mbstate_t__bindgen_ty_1() {
+    assert_eq!(
+        ::core::mem::size_of::<_mbstate_t__bindgen_ty_1>(),
+        4usize,
+        concat!("Size of: ", stringify!(_mbstate_t__bindgen_ty_1))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<_mbstate_t__bindgen_ty_1>(),
+        4usize,
+        concat!("Alignment of ", stringify!(_mbstate_t__bindgen_ty_1))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_mbstate_t__bindgen_ty_1>())).__wch as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_mbstate_t__bindgen_ty_1),
+            "::",
+            stringify!(__wch)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<_mbstate_t__bindgen_ty_1>())).__wchb as *const _ as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_mbstate_t__bindgen_ty_1),
+            "::",
+            stringify!(__wchb)
+        )
+    );
+}
+#[test]
+fn bindgen_test_layout__mbstate_t() {
+    assert_eq!(
+        ::core::mem::size_of::<_mbstate_t>(),
+        8usize,
+        concat!("Size of: ", stringify!(_mbstate_t))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<_mbstate_t>(),
+        4usize,
+        concat!("Alignment of ", stringify!(_mbstate_t))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_mbstate_t>())).__count as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_mbstate_t),
+            "::",
+            stringify!(__count)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_mbstate_t>())).__value as *const _ as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_mbstate_t),
+            "::",
+            stringify!(__value)
+        )
+    );
+}
+pub type _flock_t = _LOCK_T;
+pub type _iconv_t = *mut cty::c_void;
+pub type __clock_t = cty::c_ulong;
+pub type __time_t = __int_least64_t;
+pub type __clockid_t = cty::c_ulong;
+pub type __timer_t = cty::c_ulong;
+pub type __sa_family_t = __uint8_t;
+pub type __socklen_t = __uint32_t;
+pub type __nl_item = cty::c_int;
+pub type __nlink_t = cty::c_ushort;
+pub type __suseconds_t = cty::c_long;
+pub type __useconds_t = cty::c_ulong;
+pub type __va_list = *mut cty::c_char;
+pub type __ULong = cty::c_ulong;
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct __locale_t {
+    _unused: [u8; 0],
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct _Bigint {
+    pub _next: *mut _Bigint,
+    pub _k: cty::c_int,
+    pub _maxwds: cty::c_int,
+    pub _sign: cty::c_int,
+    pub _wds: cty::c_int,
+    pub _x: [__ULong; 1usize],
+}
+#[test]
+fn bindgen_test_layout__Bigint() {
+    assert_eq!(
+        ::core::mem::size_of::<_Bigint>(),
+        24usize,
+        concat!("Size of: ", stringify!(_Bigint))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<_Bigint>(),
+        4usize,
+        concat!("Alignment of ", stringify!(_Bigint))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_Bigint>()))._next as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_Bigint),
+            "::",
+            stringify!(_next)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_Bigint>()))._k as *const _ as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_Bigint),
+            "::",
+            stringify!(_k)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_Bigint>()))._maxwds as *const _ as usize },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_Bigint),
+            "::",
+            stringify!(_maxwds)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_Bigint>()))._sign as *const _ as usize },
+        12usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_Bigint),
+            "::",
+            stringify!(_sign)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_Bigint>()))._wds as *const _ as usize },
+        16usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_Bigint),
+            "::",
+            stringify!(_wds)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_Bigint>()))._x as *const _ as usize },
+        20usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_Bigint),
+            "::",
+            stringify!(_x)
+        )
+    );
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct __tm {
+    pub __tm_sec: cty::c_int,
+    pub __tm_min: cty::c_int,
+    pub __tm_hour: cty::c_int,
+    pub __tm_mday: cty::c_int,
+    pub __tm_mon: cty::c_int,
+    pub __tm_year: cty::c_int,
+    pub __tm_wday: cty::c_int,
+    pub __tm_yday: cty::c_int,
+    pub __tm_isdst: cty::c_int,
+}
+#[test]
+fn bindgen_test_layout___tm() {
+    assert_eq!(
+        ::core::mem::size_of::<__tm>(),
+        36usize,
+        concat!("Size of: ", stringify!(__tm))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<__tm>(),
+        4usize,
+        concat!("Alignment of ", stringify!(__tm))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__tm>())).__tm_sec as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__tm),
+            "::",
+            stringify!(__tm_sec)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__tm>())).__tm_min as *const _ as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__tm),
+            "::",
+            stringify!(__tm_min)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__tm>())).__tm_hour as *const _ as usize },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__tm),
+            "::",
+            stringify!(__tm_hour)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__tm>())).__tm_mday as *const _ as usize },
+        12usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__tm),
+            "::",
+            stringify!(__tm_mday)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__tm>())).__tm_mon as *const _ as usize },
+        16usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__tm),
+            "::",
+            stringify!(__tm_mon)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__tm>())).__tm_year as *const _ as usize },
+        20usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__tm),
+            "::",
+            stringify!(__tm_year)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__tm>())).__tm_wday as *const _ as usize },
+        24usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__tm),
+            "::",
+            stringify!(__tm_wday)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__tm>())).__tm_yday as *const _ as usize },
+        28usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__tm),
+            "::",
+            stringify!(__tm_yday)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__tm>())).__tm_isdst as *const _ as usize },
+        32usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__tm),
+            "::",
+            stringify!(__tm_isdst)
+        )
+    );
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct _on_exit_args {
+    pub _fnargs: [*mut cty::c_void; 32usize],
+    pub _dso_handle: [*mut cty::c_void; 32usize],
+    pub _fntypes: __ULong,
+    pub _is_cxa: __ULong,
+}
+#[test]
+fn bindgen_test_layout__on_exit_args() {
+    assert_eq!(
+        ::core::mem::size_of::<_on_exit_args>(),
+        264usize,
+        concat!("Size of: ", stringify!(_on_exit_args))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<_on_exit_args>(),
+        4usize,
+        concat!("Alignment of ", stringify!(_on_exit_args))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_on_exit_args>()))._fnargs as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_on_exit_args),
+            "::",
+            stringify!(_fnargs)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_on_exit_args>()))._dso_handle as *const _ as usize },
+        128usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_on_exit_args),
+            "::",
+            stringify!(_dso_handle)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_on_exit_args>()))._fntypes as *const _ as usize },
+        256usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_on_exit_args),
+            "::",
+            stringify!(_fntypes)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_on_exit_args>()))._is_cxa as *const _ as usize },
+        260usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_on_exit_args),
+            "::",
+            stringify!(_is_cxa)
+        )
+    );
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct _atexit {
+    pub _next: *mut _atexit,
+    pub _ind: cty::c_int,
+    pub _fns: [::core::option::Option<unsafe extern "C" fn()>; 32usize],
+    pub _on_exit_args: _on_exit_args,
+}
+#[test]
+fn bindgen_test_layout__atexit() {
+    assert_eq!(
+        ::core::mem::size_of::<_atexit>(),
+        400usize,
+        concat!("Size of: ", stringify!(_atexit))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<_atexit>(),
+        4usize,
+        concat!("Alignment of ", stringify!(_atexit))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_atexit>()))._next as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_atexit),
+            "::",
+            stringify!(_next)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_atexit>()))._ind as *const _ as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_atexit),
+            "::",
+            stringify!(_ind)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_atexit>()))._fns as *const _ as usize },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_atexit),
+            "::",
+            stringify!(_fns)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_atexit>()))._on_exit_args as *const _ as usize },
+        136usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_atexit),
+            "::",
+            stringify!(_on_exit_args)
+        )
+    );
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct __sbuf {
+    pub _base: *mut cty::c_uchar,
+    pub _size: cty::c_int,
+}
+#[test]
+fn bindgen_test_layout___sbuf() {
+    assert_eq!(
+        ::core::mem::size_of::<__sbuf>(),
+        8usize,
+        concat!("Size of: ", stringify!(__sbuf))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<__sbuf>(),
+        4usize,
+        concat!("Alignment of ", stringify!(__sbuf))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__sbuf>()))._base as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__sbuf),
+            "::",
+            stringify!(_base)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__sbuf>()))._size as *const _ as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__sbuf),
+            "::",
+            stringify!(_size)
+        )
+    );
+}
+#[repr(C)]
+#[derive(Copy, Clone)]
+pub struct __sFILE {
+    pub _p: *mut cty::c_uchar,
+    pub _r: cty::c_int,
+    pub _w: cty::c_int,
+    pub _flags: cty::c_short,
+    pub _file: cty::c_short,
+    pub _bf: __sbuf,
+    pub _lbfsize: cty::c_int,
+    pub _cookie: *mut cty::c_void,
+    pub _read: ::core::option::Option<
+        unsafe extern "C" fn(
+            arg1: *mut _reent,
+            arg2: *mut cty::c_void,
+            arg3: *mut cty::c_char,
+            arg4: cty::c_int,
+        ) -> cty::c_int,
+    >,
+    pub _write: ::core::option::Option<
+        unsafe extern "C" fn(
+            arg1: *mut _reent,
+            arg2: *mut cty::c_void,
+            arg3: *const cty::c_char,
+            arg4: cty::c_int,
+        ) -> cty::c_int,
+    >,
+    pub _seek: ::core::option::Option<
+        unsafe extern "C" fn(
+            arg1: *mut _reent,
+            arg2: *mut cty::c_void,
+            arg3: _fpos_t,
+            arg4: cty::c_int,
+        ) -> _fpos_t,
+    >,
+    pub _close: ::core::option::Option<
+        unsafe extern "C" fn(arg1: *mut _reent, arg2: *mut cty::c_void) -> cty::c_int,
+    >,
+    pub _ub: __sbuf,
+    pub _up: *mut cty::c_uchar,
+    pub _ur: cty::c_int,
+    pub _ubuf: [cty::c_uchar; 3usize],
+    pub _nbuf: [cty::c_uchar; 1usize],
+    pub _lb: __sbuf,
+    pub _blksize: cty::c_int,
+    pub _offset: _off_t,
+    pub _data: *mut _reent,
+    pub _lock: _flock_t,
+    pub _mbstate: _mbstate_t,
+    pub _flags2: cty::c_int,
+}
+#[test]
+fn bindgen_test_layout___sFILE() {
+    assert_eq!(
+        ::core::mem::size_of::<__sFILE>(),
+        104usize,
+        concat!("Size of: ", stringify!(__sFILE))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<__sFILE>(),
+        4usize,
+        concat!("Alignment of ", stringify!(__sFILE))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__sFILE>()))._p as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__sFILE),
+            "::",
+            stringify!(_p)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__sFILE>()))._r as *const _ as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__sFILE),
+            "::",
+            stringify!(_r)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__sFILE>()))._w as *const _ as usize },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__sFILE),
+            "::",
+            stringify!(_w)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__sFILE>()))._flags as *const _ as usize },
+        12usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__sFILE),
+            "::",
+            stringify!(_flags)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__sFILE>()))._file as *const _ as usize },
+        14usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__sFILE),
+            "::",
+            stringify!(_file)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__sFILE>()))._bf as *const _ as usize },
+        16usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__sFILE),
+            "::",
+            stringify!(_bf)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__sFILE>()))._lbfsize as *const _ as usize },
+        24usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__sFILE),
+            "::",
+            stringify!(_lbfsize)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__sFILE>()))._cookie as *const _ as usize },
+        28usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__sFILE),
+            "::",
+            stringify!(_cookie)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__sFILE>()))._read as *const _ as usize },
+        32usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__sFILE),
+            "::",
+            stringify!(_read)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__sFILE>()))._write as *const _ as usize },
+        36usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__sFILE),
+            "::",
+            stringify!(_write)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__sFILE>()))._seek as *const _ as usize },
+        40usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__sFILE),
+            "::",
+            stringify!(_seek)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__sFILE>()))._close as *const _ as usize },
+        44usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__sFILE),
+            "::",
+            stringify!(_close)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__sFILE>()))._ub as *const _ as usize },
+        48usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__sFILE),
+            "::",
+            stringify!(_ub)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__sFILE>()))._up as *const _ as usize },
+        56usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__sFILE),
+            "::",
+            stringify!(_up)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__sFILE>()))._ur as *const _ as usize },
+        60usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__sFILE),
+            "::",
+            stringify!(_ur)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__sFILE>()))._ubuf as *const _ as usize },
+        64usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__sFILE),
+            "::",
+            stringify!(_ubuf)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__sFILE>()))._nbuf as *const _ as usize },
+        67usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__sFILE),
+            "::",
+            stringify!(_nbuf)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__sFILE>()))._lb as *const _ as usize },
+        68usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__sFILE),
+            "::",
+            stringify!(_lb)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__sFILE>()))._blksize as *const _ as usize },
+        76usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__sFILE),
+            "::",
+            stringify!(_blksize)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__sFILE>()))._offset as *const _ as usize },
+        80usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__sFILE),
+            "::",
+            stringify!(_offset)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__sFILE>()))._data as *const _ as usize },
+        84usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__sFILE),
+            "::",
+            stringify!(_data)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__sFILE>()))._lock as *const _ as usize },
+        88usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__sFILE),
+            "::",
+            stringify!(_lock)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__sFILE>()))._mbstate as *const _ as usize },
+        92usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__sFILE),
+            "::",
+            stringify!(_mbstate)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<__sFILE>()))._flags2 as *const _ as usize },
+        100usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__sFILE),
+            "::",
+            stringify!(_flags2)
+        )
+    );
+}
+pub type __FILE = __sFILE;
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct _glue {
+    pub _next: *mut _glue,
+    pub _niobs: cty::c_int,
+    pub _iobs: *mut __FILE,
+}
+#[test]
+fn bindgen_test_layout__glue() {
+    assert_eq!(
+        ::core::mem::size_of::<_glue>(),
+        12usize,
+        concat!("Size of: ", stringify!(_glue))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<_glue>(),
+        4usize,
+        concat!("Alignment of ", stringify!(_glue))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_glue>()))._next as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_glue),
+            "::",
+            stringify!(_next)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_glue>()))._niobs as *const _ as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_glue),
+            "::",
+            stringify!(_niobs)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_glue>()))._iobs as *const _ as usize },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_glue),
+            "::",
+            stringify!(_iobs)
+        )
+    );
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct _rand48 {
+    pub _seed: [cty::c_ushort; 3usize],
+    pub _mult: [cty::c_ushort; 3usize],
+    pub _add: cty::c_ushort,
+}
+#[test]
+fn bindgen_test_layout__rand48() {
+    assert_eq!(
+        ::core::mem::size_of::<_rand48>(),
+        14usize,
+        concat!("Size of: ", stringify!(_rand48))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<_rand48>(),
+        2usize,
+        concat!("Alignment of ", stringify!(_rand48))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_rand48>()))._seed as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_rand48),
+            "::",
+            stringify!(_seed)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_rand48>()))._mult as *const _ as usize },
+        6usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_rand48),
+            "::",
+            stringify!(_mult)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_rand48>()))._add as *const _ as usize },
+        12usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_rand48),
+            "::",
+            stringify!(_add)
+        )
+    );
+}
+#[repr(C)]
+#[derive(Copy, Clone)]
+pub struct _reent {
+    pub _errno: cty::c_int,
+    pub _stdin: *mut __FILE,
+    pub _stdout: *mut __FILE,
+    pub _stderr: *mut __FILE,
+    pub _inc: cty::c_int,
+    pub _emergency: [cty::c_char; 25usize],
+    pub _unspecified_locale_info: cty::c_int,
+    pub _locale: *mut __locale_t,
+    pub __sdidinit: cty::c_int,
+    pub __cleanup: ::core::option::Option<unsafe extern "C" fn(arg1: *mut _reent)>,
+    pub _result: *mut _Bigint,
+    pub _result_k: cty::c_int,
+    pub _p5s: *mut _Bigint,
+    pub _freelist: *mut *mut _Bigint,
+    pub _cvtlen: cty::c_int,
+    pub _cvtbuf: *mut cty::c_char,
+    pub _new: _reent__bindgen_ty_1,
+    pub _atexit: *mut _atexit,
+    pub _atexit0: _atexit,
+    pub _sig_func: *mut ::core::option::Option<unsafe extern "C" fn(arg1: cty::c_int)>,
+    pub __sglue: _glue,
+    pub __sf: [__FILE; 3usize],
+}
+#[repr(C)]
+#[derive(Copy, Clone)]
+pub union _reent__bindgen_ty_1 {
+    pub _reent: _reent__bindgen_ty_1__bindgen_ty_1,
+    pub _unused: _reent__bindgen_ty_1__bindgen_ty_2,
+    _bindgen_union_align: [u64; 30usize],
+}
+#[repr(C)]
+#[derive(Copy, Clone)]
+pub struct _reent__bindgen_ty_1__bindgen_ty_1 {
+    pub _unused_rand: cty::c_uint,
+    pub _strtok_last: *mut cty::c_char,
+    pub _asctime_buf: [cty::c_char; 26usize],
+    pub _localtime_buf: __tm,
+    pub _gamma_signgam: cty::c_int,
+    pub _rand_next: cty::c_ulonglong,
+    pub _r48: _rand48,
+    pub _mblen_state: _mbstate_t,
+    pub _mbtowc_state: _mbstate_t,
+    pub _wctomb_state: _mbstate_t,
+    pub _l64a_buf: [cty::c_char; 8usize],
+    pub _signal_buf: [cty::c_char; 24usize],
+    pub _getdate_err: cty::c_int,
+    pub _mbrlen_state: _mbstate_t,
+    pub _mbrtowc_state: _mbstate_t,
+    pub _mbsrtowcs_state: _mbstate_t,
+    pub _wcrtomb_state: _mbstate_t,
+    pub _wcsrtombs_state: _mbstate_t,
+    pub _h_errno: cty::c_int,
+}
+#[test]
+fn bindgen_test_layout__reent__bindgen_ty_1__bindgen_ty_1() {
+    assert_eq!(
+        ::core::mem::size_of::<_reent__bindgen_ty_1__bindgen_ty_1>(),
+        208usize,
+        concat!("Size of: ", stringify!(_reent__bindgen_ty_1__bindgen_ty_1))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<_reent__bindgen_ty_1__bindgen_ty_1>(),
+        8usize,
+        concat!(
+            "Alignment of ",
+            stringify!(_reent__bindgen_ty_1__bindgen_ty_1)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<_reent__bindgen_ty_1__bindgen_ty_1>()))._unused_rand as *const _
+                as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent__bindgen_ty_1__bindgen_ty_1),
+            "::",
+            stringify!(_unused_rand)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<_reent__bindgen_ty_1__bindgen_ty_1>()))._strtok_last as *const _
+                as usize
+        },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent__bindgen_ty_1__bindgen_ty_1),
+            "::",
+            stringify!(_strtok_last)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<_reent__bindgen_ty_1__bindgen_ty_1>()))._asctime_buf as *const _
+                as usize
+        },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent__bindgen_ty_1__bindgen_ty_1),
+            "::",
+            stringify!(_asctime_buf)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<_reent__bindgen_ty_1__bindgen_ty_1>()))._localtime_buf
+                as *const _ as usize
+        },
+        36usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent__bindgen_ty_1__bindgen_ty_1),
+            "::",
+            stringify!(_localtime_buf)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<_reent__bindgen_ty_1__bindgen_ty_1>()))._gamma_signgam
+                as *const _ as usize
+        },
+        72usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent__bindgen_ty_1__bindgen_ty_1),
+            "::",
+            stringify!(_gamma_signgam)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<_reent__bindgen_ty_1__bindgen_ty_1>()))._rand_next as *const _
+                as usize
+        },
+        80usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent__bindgen_ty_1__bindgen_ty_1),
+            "::",
+            stringify!(_rand_next)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<_reent__bindgen_ty_1__bindgen_ty_1>()))._r48 as *const _
+                as usize
+        },
+        88usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent__bindgen_ty_1__bindgen_ty_1),
+            "::",
+            stringify!(_r48)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<_reent__bindgen_ty_1__bindgen_ty_1>()))._mblen_state as *const _
+                as usize
+        },
+        104usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent__bindgen_ty_1__bindgen_ty_1),
+            "::",
+            stringify!(_mblen_state)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<_reent__bindgen_ty_1__bindgen_ty_1>()))._mbtowc_state
+                as *const _ as usize
+        },
+        112usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent__bindgen_ty_1__bindgen_ty_1),
+            "::",
+            stringify!(_mbtowc_state)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<_reent__bindgen_ty_1__bindgen_ty_1>()))._wctomb_state
+                as *const _ as usize
+        },
+        120usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent__bindgen_ty_1__bindgen_ty_1),
+            "::",
+            stringify!(_wctomb_state)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<_reent__bindgen_ty_1__bindgen_ty_1>()))._l64a_buf as *const _
+                as usize
+        },
+        128usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent__bindgen_ty_1__bindgen_ty_1),
+            "::",
+            stringify!(_l64a_buf)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<_reent__bindgen_ty_1__bindgen_ty_1>()))._signal_buf as *const _
+                as usize
+        },
+        136usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent__bindgen_ty_1__bindgen_ty_1),
+            "::",
+            stringify!(_signal_buf)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<_reent__bindgen_ty_1__bindgen_ty_1>()))._getdate_err as *const _
+                as usize
+        },
+        160usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent__bindgen_ty_1__bindgen_ty_1),
+            "::",
+            stringify!(_getdate_err)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<_reent__bindgen_ty_1__bindgen_ty_1>()))._mbrlen_state
+                as *const _ as usize
+        },
+        164usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent__bindgen_ty_1__bindgen_ty_1),
+            "::",
+            stringify!(_mbrlen_state)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<_reent__bindgen_ty_1__bindgen_ty_1>()))._mbrtowc_state
+                as *const _ as usize
+        },
+        172usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent__bindgen_ty_1__bindgen_ty_1),
+            "::",
+            stringify!(_mbrtowc_state)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<_reent__bindgen_ty_1__bindgen_ty_1>()))._mbsrtowcs_state
+                as *const _ as usize
+        },
+        180usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent__bindgen_ty_1__bindgen_ty_1),
+            "::",
+            stringify!(_mbsrtowcs_state)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<_reent__bindgen_ty_1__bindgen_ty_1>()))._wcrtomb_state
+                as *const _ as usize
+        },
+        188usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent__bindgen_ty_1__bindgen_ty_1),
+            "::",
+            stringify!(_wcrtomb_state)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<_reent__bindgen_ty_1__bindgen_ty_1>()))._wcsrtombs_state
+                as *const _ as usize
+        },
+        196usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent__bindgen_ty_1__bindgen_ty_1),
+            "::",
+            stringify!(_wcsrtombs_state)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<_reent__bindgen_ty_1__bindgen_ty_1>()))._h_errno as *const _
+                as usize
+        },
+        204usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent__bindgen_ty_1__bindgen_ty_1),
+            "::",
+            stringify!(_h_errno)
+        )
+    );
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct _reent__bindgen_ty_1__bindgen_ty_2 {
+    pub _nextf: [*mut cty::c_uchar; 30usize],
+    pub _nmalloc: [cty::c_uint; 30usize],
+}
+#[test]
+fn bindgen_test_layout__reent__bindgen_ty_1__bindgen_ty_2() {
+    assert_eq!(
+        ::core::mem::size_of::<_reent__bindgen_ty_1__bindgen_ty_2>(),
+        240usize,
+        concat!("Size of: ", stringify!(_reent__bindgen_ty_1__bindgen_ty_2))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<_reent__bindgen_ty_1__bindgen_ty_2>(),
+        4usize,
+        concat!(
+            "Alignment of ",
+            stringify!(_reent__bindgen_ty_1__bindgen_ty_2)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<_reent__bindgen_ty_1__bindgen_ty_2>()))._nextf as *const _
+                as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent__bindgen_ty_1__bindgen_ty_2),
+            "::",
+            stringify!(_nextf)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<_reent__bindgen_ty_1__bindgen_ty_2>()))._nmalloc as *const _
+                as usize
+        },
+        120usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent__bindgen_ty_1__bindgen_ty_2),
+            "::",
+            stringify!(_nmalloc)
+        )
+    );
+}
+#[test]
+fn bindgen_test_layout__reent__bindgen_ty_1() {
+    assert_eq!(
+        ::core::mem::size_of::<_reent__bindgen_ty_1>(),
+        240usize,
+        concat!("Size of: ", stringify!(_reent__bindgen_ty_1))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<_reent__bindgen_ty_1>(),
+        8usize,
+        concat!("Alignment of ", stringify!(_reent__bindgen_ty_1))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_reent__bindgen_ty_1>()))._reent as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent__bindgen_ty_1),
+            "::",
+            stringify!(_reent)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_reent__bindgen_ty_1>()))._unused as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent__bindgen_ty_1),
+            "::",
+            stringify!(_unused)
+        )
+    );
+}
+#[test]
+fn bindgen_test_layout__reent() {
+    assert_eq!(
+        ::core::mem::size_of::<_reent>(),
+        1064usize,
+        concat!("Size of: ", stringify!(_reent))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<_reent>(),
+        8usize,
+        concat!("Alignment of ", stringify!(_reent))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_reent>()))._errno as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent),
+            "::",
+            stringify!(_errno)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_reent>()))._stdin as *const _ as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent),
+            "::",
+            stringify!(_stdin)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_reent>()))._stdout as *const _ as usize },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent),
+            "::",
+            stringify!(_stdout)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_reent>()))._stderr as *const _ as usize },
+        12usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent),
+            "::",
+            stringify!(_stderr)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_reent>()))._inc as *const _ as usize },
+        16usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent),
+            "::",
+            stringify!(_inc)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_reent>()))._emergency as *const _ as usize },
+        20usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent),
+            "::",
+            stringify!(_emergency)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<_reent>()))._unspecified_locale_info as *const _ as usize
+        },
+        48usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent),
+            "::",
+            stringify!(_unspecified_locale_info)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_reent>()))._locale as *const _ as usize },
+        52usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent),
+            "::",
+            stringify!(_locale)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_reent>())).__sdidinit as *const _ as usize },
+        56usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent),
+            "::",
+            stringify!(__sdidinit)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_reent>())).__cleanup as *const _ as usize },
+        60usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent),
+            "::",
+            stringify!(__cleanup)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_reent>()))._result as *const _ as usize },
+        64usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent),
+            "::",
+            stringify!(_result)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_reent>()))._result_k as *const _ as usize },
+        68usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent),
+            "::",
+            stringify!(_result_k)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_reent>()))._p5s as *const _ as usize },
+        72usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent),
+            "::",
+            stringify!(_p5s)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_reent>()))._freelist as *const _ as usize },
+        76usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent),
+            "::",
+            stringify!(_freelist)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_reent>()))._cvtlen as *const _ as usize },
+        80usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent),
+            "::",
+            stringify!(_cvtlen)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_reent>()))._cvtbuf as *const _ as usize },
+        84usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent),
+            "::",
+            stringify!(_cvtbuf)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_reent>()))._new as *const _ as usize },
+        88usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent),
+            "::",
+            stringify!(_new)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_reent>()))._atexit as *const _ as usize },
+        328usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent),
+            "::",
+            stringify!(_atexit)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_reent>()))._atexit0 as *const _ as usize },
+        332usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent),
+            "::",
+            stringify!(_atexit0)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_reent>()))._sig_func as *const _ as usize },
+        732usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent),
+            "::",
+            stringify!(_sig_func)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_reent>())).__sglue as *const _ as usize },
+        736usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent),
+            "::",
+            stringify!(__sglue)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_reent>())).__sf as *const _ as usize },
+        748usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_reent),
+            "::",
+            stringify!(__sf)
+        )
+    );
+}
+extern "C" {
+    pub static mut _impure_ptr: *mut _reent;
+}
+extern "C" {
+    pub static _global_impure_ptr: *mut _reent;
+}
+extern "C" {
+    pub fn _reclaim_reent(arg1: *mut _reent);
+}
+pub type locale_t = *mut __locale_t;
+extern "C" {
+    pub fn bcmp(
+        arg1: *const cty::c_void,
+        arg2: *const cty::c_void,
+        arg3: cty::c_uint,
+    ) -> cty::c_int;
+}
+extern "C" {
+    pub fn bcopy(arg1: *const cty::c_void, arg2: *mut cty::c_void, arg3: size_t);
+}
+extern "C" {
+    pub fn bzero(arg1: *mut cty::c_void, arg2: cty::c_uint);
+}
+extern "C" {
+    pub fn explicit_bzero(arg1: *mut cty::c_void, arg2: size_t);
+}
+extern "C" {
+    pub fn ffs(arg1: cty::c_int) -> cty::c_int;
+}
+extern "C" {
+    pub fn ffsl(arg1: cty::c_long) -> cty::c_int;
+}
+extern "C" {
+    pub fn ffsll(arg1: cty::c_longlong) -> cty::c_int;
+}
+extern "C" {
+    pub fn fls(arg1: cty::c_int) -> cty::c_int;
+}
+extern "C" {
+    pub fn flsl(arg1: cty::c_long) -> cty::c_int;
+}
+extern "C" {
+    pub fn flsll(arg1: cty::c_longlong) -> cty::c_int;
+}
+extern "C" {
+    pub fn index(arg1: *const cty::c_char, arg2: cty::c_int) -> *mut cty::c_char;
+}
+extern "C" {
+    pub fn rindex(arg1: *const cty::c_char, arg2: cty::c_int) -> *mut cty::c_char;
+}
+extern "C" {
+    pub fn strcasecmp(arg1: *const cty::c_char, arg2: *const cty::c_char) -> cty::c_int;
+}
+extern "C" {
+    pub fn strncasecmp(
+        arg1: *const cty::c_char,
+        arg2: *const cty::c_char,
+        arg3: cty::c_uint,
+    ) -> cty::c_int;
+}
+extern "C" {
+    pub fn strcasecmp_l(
+        arg1: *const cty::c_char,
+        arg2: *const cty::c_char,
+        arg3: locale_t,
+    ) -> cty::c_int;
+}
+extern "C" {
+    pub fn strncasecmp_l(
+        arg1: *const cty::c_char,
+        arg2: *const cty::c_char,
+        arg3: size_t,
+        arg4: locale_t,
+    ) -> cty::c_int;
+}
+extern "C" {
+    pub fn memchr(
+        arg1: *const cty::c_void,
+        arg2: cty::c_int,
+        arg3: cty::c_uint,
+    ) -> *mut cty::c_void;
+}
+extern "C" {
+    pub fn memcmp(
+        arg1: *const cty::c_void,
+        arg2: *const cty::c_void,
+        arg3: cty::c_uint,
+    ) -> cty::c_int;
+}
+extern "C" {
+    pub fn memcpy(
+        arg1: *mut cty::c_void,
+        arg2: *const cty::c_void,
+        arg3: cty::c_uint,
+    ) -> *mut cty::c_void;
+}
+extern "C" {
+    pub fn memmove(
+        arg1: *mut cty::c_void,
+        arg2: *const cty::c_void,
+        arg3: cty::c_uint,
+    ) -> *mut cty::c_void;
+}
+extern "C" {
+    pub fn memset(arg1: *mut cty::c_void, arg2: cty::c_int, arg3: cty::c_uint) -> *mut cty::c_void;
+}
+extern "C" {
+    pub fn strcat(arg1: *mut cty::c_char, arg2: *const cty::c_char) -> *mut cty::c_char;
+}
+extern "C" {
+    pub fn strchr(arg1: *const cty::c_char, arg2: cty::c_int) -> *mut cty::c_char;
+}
+extern "C" {
+    pub fn strcmp(arg1: *const cty::c_char, arg2: *const cty::c_char) -> cty::c_int;
+}
+extern "C" {
+    pub fn strcoll(arg1: *const cty::c_char, arg2: *const cty::c_char) -> cty::c_int;
+}
+extern "C" {
+    pub fn strcpy(arg1: *mut cty::c_char, arg2: *const cty::c_char) -> *mut cty::c_char;
+}
+extern "C" {
+    pub fn strcspn(arg1: *const cty::c_char, arg2: *const cty::c_char) -> cty::c_uint;
+}
+extern "C" {
+    pub fn strerror(arg1: cty::c_int) -> *mut cty::c_char;
+}
+extern "C" {
+    pub fn strlen(arg1: *const cty::c_char) -> cty::c_uint;
+}
+extern "C" {
+    pub fn strncat(
+        arg1: *mut cty::c_char,
+        arg2: *const cty::c_char,
+        arg3: cty::c_uint,
+    ) -> *mut cty::c_char;
+}
+extern "C" {
+    pub fn strncmp(
+        arg1: *const cty::c_char,
+        arg2: *const cty::c_char,
+        arg3: cty::c_uint,
+    ) -> cty::c_int;
+}
+extern "C" {
+    pub fn strncpy(
+        arg1: *mut cty::c_char,
+        arg2: *const cty::c_char,
+        arg3: cty::c_uint,
+    ) -> *mut cty::c_char;
+}
+extern "C" {
+    pub fn strpbrk(arg1: *const cty::c_char, arg2: *const cty::c_char) -> *mut cty::c_char;
+}
+extern "C" {
+    pub fn strrchr(arg1: *const cty::c_char, arg2: cty::c_int) -> *mut cty::c_char;
+}
+extern "C" {
+    pub fn strspn(arg1: *const cty::c_char, arg2: *const cty::c_char) -> cty::c_uint;
+}
+extern "C" {
+    pub fn strstr(arg1: *const cty::c_char, arg2: *const cty::c_char) -> *mut cty::c_char;
+}
+extern "C" {
+    pub fn strtok(arg1: *mut cty::c_char, arg2: *const cty::c_char) -> *mut cty::c_char;
+}
+extern "C" {
+    pub fn strxfrm(
+        arg1: *mut cty::c_char,
+        arg2: *const cty::c_char,
+        arg3: cty::c_uint,
+    ) -> cty::c_uint;
+}
+extern "C" {
+    pub fn strcoll_l(
+        arg1: *const cty::c_char,
+        arg2: *const cty::c_char,
+        arg3: locale_t,
+    ) -> cty::c_int;
+}
+extern "C" {
+    pub fn strerror_l(arg1: cty::c_int, arg2: locale_t) -> *mut cty::c_char;
+}
+extern "C" {
+    pub fn strxfrm_l(
+        arg1: *mut cty::c_char,
+        arg2: *const cty::c_char,
+        arg3: size_t,
+        arg4: locale_t,
+    ) -> size_t;
+}
+extern "C" {
+    pub fn strtok_r(
+        arg1: *mut cty::c_char,
+        arg2: *const cty::c_char,
+        arg3: *mut *mut cty::c_char,
+    ) -> *mut cty::c_char;
+}
+extern "C" {
+    pub fn timingsafe_bcmp(
+        arg1: *const cty::c_void,
+        arg2: *const cty::c_void,
+        arg3: size_t,
+    ) -> cty::c_int;
+}
+extern "C" {
+    pub fn timingsafe_memcmp(
+        arg1: *const cty::c_void,
+        arg2: *const cty::c_void,
+        arg3: size_t,
+    ) -> cty::c_int;
+}
+extern "C" {
+    pub fn memccpy(
+        arg1: *mut cty::c_void,
+        arg2: *const cty::c_void,
+        arg3: cty::c_int,
+        arg4: size_t,
+    ) -> *mut cty::c_void;
+}
+extern "C" {
+    pub fn stpcpy(arg1: *mut cty::c_char, arg2: *const cty::c_char) -> *mut cty::c_char;
+}
+extern "C" {
+    pub fn stpncpy(
+        arg1: *mut cty::c_char,
+        arg2: *const cty::c_char,
+        arg3: cty::c_uint,
+    ) -> *mut cty::c_char;
+}
+extern "C" {
+    pub fn strdup(arg1: *const cty::c_char) -> *mut cty::c_char;
+}
+extern "C" {
+    pub fn _strdup_r(arg1: *mut _reent, arg2: *const cty::c_char) -> *mut cty::c_char;
+}
+extern "C" {
+    pub fn strndup(arg1: *const cty::c_char, arg2: cty::c_uint) -> *mut cty::c_char;
+}
+extern "C" {
+    pub fn _strndup_r(
+        arg1: *mut _reent,
+        arg2: *const cty::c_char,
+        arg3: size_t,
+    ) -> *mut cty::c_char;
+}
+extern "C" {
+    pub fn strerror_r(arg1: cty::c_int, arg2: *mut cty::c_char, arg3: size_t) -> cty::c_int;
+}
+extern "C" {
+    pub fn _strerror_r(
+        arg1: *mut _reent,
+        arg2: cty::c_int,
+        arg3: cty::c_int,
+        arg4: *mut cty::c_int,
+    ) -> *mut cty::c_char;
+}
+extern "C" {
+    pub fn strlcat(
+        arg1: *mut cty::c_char,
+        arg2: *const cty::c_char,
+        arg3: cty::c_uint,
+    ) -> cty::c_uint;
+}
+extern "C" {
+    pub fn strlcpy(
+        arg1: *mut cty::c_char,
+        arg2: *const cty::c_char,
+        arg3: cty::c_uint,
+    ) -> cty::c_uint;
+}
+extern "C" {
+    pub fn strnlen(arg1: *const cty::c_char, arg2: size_t) -> size_t;
+}
+extern "C" {
+    pub fn strsep(arg1: *mut *mut cty::c_char, arg2: *const cty::c_char) -> *mut cty::c_char;
+}
+extern "C" {
+    pub fn strnstr(
+        arg1: *const cty::c_char,
+        arg2: *const cty::c_char,
+        arg3: size_t,
+    ) -> *mut cty::c_char;
+}
+extern "C" {
+    pub fn strlwr(arg1: *mut cty::c_char) -> *mut cty::c_char;
+}
+extern "C" {
+    pub fn strupr(arg1: *mut cty::c_char) -> *mut cty::c_char;
+}
+extern "C" {
+    pub fn strsignal(__signo: cty::c_int) -> *mut cty::c_char;
+}
+#[doc = " \\brief List element type"]
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct list_element {
+    pub next: *mut list_element,
+}
+#[test]
+fn bindgen_test_layout_list_element() {
+    assert_eq!(
+        ::core::mem::size_of::<list_element>(),
+        4usize,
+        concat!("Size of: ", stringify!(list_element))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<list_element>(),
+        4usize,
+        concat!("Alignment of ", stringify!(list_element))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<list_element>())).next as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(list_element),
+            "::",
+            stringify!(next)
+        )
+    );
+}
+#[doc = " \\brief List head type"]
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct list_descriptor {
+    pub head: *mut list_element,
+}
+#[test]
+fn bindgen_test_layout_list_descriptor() {
+    assert_eq!(
+        ::core::mem::size_of::<list_descriptor>(),
+        4usize,
+        concat!("Size of: ", stringify!(list_descriptor))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<list_descriptor>(),
+        4usize,
+        concat!("Alignment of ", stringify!(list_descriptor))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<list_descriptor>())).head as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(list_descriptor),
+            "::",
+            stringify!(head)
+        )
+    );
+}
+extern "C" {
+    #[doc = " \\brief Insert an element as list head"]
+    #[doc = ""]
+    #[doc = " \\param[in] list The pointer to a list element"]
+    #[doc = " \\param[in] element An element to insert to the given list"]
+    pub fn list_insert_as_head(list: *mut list_descriptor, element: *mut cty::c_void);
+}
+extern "C" {
+    #[doc = " \\brief Insert an element after the given list element"]
+    #[doc = ""]
+    #[doc = " \\param[in] after An element to insert after"]
+    #[doc = " \\param[in] element Element to insert to the given list"]
+    pub fn list_insert_after(after: *mut cty::c_void, element: *mut cty::c_void);
+}
+extern "C" {
+    #[doc = " \\brief Insert an element at list end"]
+    #[doc = ""]
+    #[doc = " \\param[in] after An element to insert after"]
+    #[doc = " \\param[in] element Element to insert to the given list"]
+    pub fn list_insert_at_end(list: *mut list_descriptor, element: *mut cty::c_void);
+}
+extern "C" {
+    #[doc = " \\brief Check whether an element belongs to a list"]
+    #[doc = ""]
+    #[doc = " \\param[in] list The pointer to a list"]
+    #[doc = " \\param[in] element An element to check"]
+    #[doc = ""]
+    #[doc = " \\return The result of checking"]
+    #[doc = " \\retval true If the given element is an element of the given list"]
+    #[doc = " \\retval false Otherwise"]
+    pub fn is_list_element(list: *const list_descriptor, element: *const cty::c_void) -> bool;
+}
+extern "C" {
+    #[doc = " \\brief Removes list head"]
+    #[doc = ""]
+    #[doc = " This function removes the list head and sets the next element after the list"]
+    #[doc = " head as a new list head."]
+    #[doc = ""]
+    #[doc = " \\param[in] list The pointer to a list"]
+    #[doc = ""]
+    #[doc = " \\return The pointer to the new list head of NULL if the list head is NULL"]
+    pub fn list_remove_head(list: *mut list_descriptor) -> *mut cty::c_void;
+}
+extern "C" {
+    #[doc = " \\brief Removes the list element"]
+    #[doc = ""]
+    #[doc = " \\param[in] list The pointer to a list"]
+    #[doc = " \\param[in] element An element to remove"]
+    #[doc = ""]
+    #[doc = " \\return The result of element removing"]
+    #[doc = " \\retval true The given element is removed from the given list"]
+    #[doc = " \\retval false The given element is not an element of the given list"]
+    pub fn list_delete_element(list: *mut list_descriptor, element: *const cty::c_void) -> bool;
+}
+pub type le16_t = u16;
+pub type le32_t = u32;
+pub type be16_t = u16;
+pub type be32_t = u32;
+pub const usb_ctrl_stage_USB_SETUP_STAGE: usb_ctrl_stage = 0;
+pub const usb_ctrl_stage_USB_DATA_STAGE: usb_ctrl_stage = 1;
+pub const usb_ctrl_stage_USB_STATUS_STAGE: usb_ctrl_stage = 2;
+#[doc = " \\brief Standard USB control transfer stages."]
+pub type usb_ctrl_stage = u32;
+pub const usb_req_code_USB_REQ_GET_STATUS: usb_req_code = 0;
+pub const usb_req_code_USB_REQ_CLEAR_FTR: usb_req_code = 1;
+pub const usb_req_code_USB_REQ_SET_FTR: usb_req_code = 3;
+pub const usb_req_code_USB_REQ_SET_ADDRESS: usb_req_code = 5;
+pub const usb_req_code_USB_REQ_GET_DESC: usb_req_code = 6;
+pub const usb_req_code_USB_REQ_SET_DESC: usb_req_code = 7;
+pub const usb_req_code_USB_REQ_GET_CONFIG: usb_req_code = 8;
+pub const usb_req_code_USB_REQ_SET_CONFIG: usb_req_code = 9;
+pub const usb_req_code_USB_REQ_GET_INTERFACE: usb_req_code = 10;
+pub const usb_req_code_USB_REQ_SET_INTERFACE: usb_req_code = 11;
+pub const usb_req_code_USB_REQ_SYNCH_FRAME: usb_req_code = 12;
+pub const usb_req_code_USB_REQ_SET_SEL: usb_req_code = 48;
+pub const usb_req_code_USB_REQ_ISOCH_DELAY: usb_req_code = 49;
+#[doc = " \\brief Standard USB requests (bRequest)"]
+pub type usb_req_code = u32;
+pub const usb_dev_status_USB_DEV_STAT_BUS_POWERED: usb_dev_status = 0;
+pub const usb_dev_status_USB_DEV_STAT_SELF_POWERED: usb_dev_status = 1;
+pub const usb_dev_status_USB_DEV_STAT_REMOTEWAKEUP: usb_dev_status = 2;
+pub const usb_dev_status_USB_DEV_STAT_U1_ENABLE: usb_dev_status = 4;
+pub const usb_dev_status_USB_DEV_STAT_U2_ENABLE: usb_dev_status = 8;
+pub const usb_dev_status_USB_DEV_STAT_LTM_ENABLE: usb_dev_status = 16;
+#[doc = " \\brief Standard USB device status flags"]
+#[doc = ""]
+pub type usb_dev_status = u32;
+pub const usb_interface_status_USB_IFACE_STAT_RESERVED: usb_interface_status = 0;
+pub const usb_interface_status_USB_IFACE_STAT_REMOTEWAKE_CAP: usb_interface_status = 1;
+pub const usb_interface_status_USB_IFACE_STAT_REMOTEWAKE: usb_interface_status = 2;
+#[doc = " \\brief Standard USB Interface status flags"]
+#[doc = ""]
+pub type usb_interface_status = u32;
+pub const usb_endpoint_status_USB_EP_STAT_HALT: usb_endpoint_status = 1;
+#[doc = " \\brief Standard USB endpoint status flags"]
+#[doc = ""]
+pub type usb_endpoint_status = u32;
+#[doc = "< Remote wakeup enabled"]
+pub const usb_device_feature_USB_DEV_FTR_REMOTE_WAKEUP: usb_device_feature = 1;
+#[doc = "< USB test mode"]
+pub const usb_device_feature_USB_DEV_FTR_TEST_MODE: usb_device_feature = 2;
+pub const usb_device_feature_USB_DEV_FTR_OTG_B_HNP_ENABLE: usb_device_feature = 3;
+pub const usb_device_feature_USB_DEV_FTR_OTG_A_HNP_SP: usb_device_feature = 4;
+pub const usb_device_feature_USB_DEV_FTR_OTG_A_ALT_HNP_SP: usb_device_feature = 5;
+pub const usb_device_feature_USB_DEV_FTR_U1_ENABLE: usb_device_feature = 48;
+pub const usb_device_feature_USB_DEV_FTR_U2_ENABLE: usb_device_feature = 49;
+pub const usb_device_feature_USB_DEV_FTR_LTM_ENABLE: usb_device_feature = 50;
+#[doc = " \\brief Standard USB device feature flags"]
+#[doc = ""]
+#[doc = " \\note valid for SetFeature request."]
+pub type usb_device_feature = u32;
+pub const usb_device_hs_test_mode_USB_DEV_TEST_MODE_J: usb_device_hs_test_mode = 1;
+pub const usb_device_hs_test_mode_USB_DEV_TEST_MODE_K: usb_device_hs_test_mode = 2;
+pub const usb_device_hs_test_mode_USB_DEV_TEST_MODE_SE0_NAK: usb_device_hs_test_mode = 3;
+pub const usb_device_hs_test_mode_USB_DEV_TEST_MODE_PACKET: usb_device_hs_test_mode = 4;
+pub const usb_device_hs_test_mode_USB_DEV_TEST_MODE_FORCE_ENABLE: usb_device_hs_test_mode = 5;
+#[doc = " \\brief Test Mode possible on HS USB device"]
+#[doc = ""]
+#[doc = " \\note valid for USB_DEV_FTR_TEST_MODE request."]
+pub type usb_device_hs_test_mode = u32;
+pub const usb_iface_feature_USB_IFACE_FTR_FUNC_SUSP: usb_iface_feature = 0;
+#[doc = " \\brief Standard Feature Selectors for Interface"]
+pub type usb_iface_feature = u32;
+pub const usb_endpoint_feature_USB_EP_FTR_HALT: usb_endpoint_feature = 0;
+#[doc = " \\brief Standard USB endpoint feature/status flags"]
+pub type usb_endpoint_feature = u32;
+pub const usb_test_mode_selector_USB_TEST_J: usb_test_mode_selector = 1;
+pub const usb_test_mode_selector_USB_TEST_K: usb_test_mode_selector = 2;
+pub const usb_test_mode_selector_USB_TEST_SE0_NAK: usb_test_mode_selector = 3;
+pub const usb_test_mode_selector_USB_TEST_PACKET: usb_test_mode_selector = 4;
+pub const usb_test_mode_selector_USB_TEST_FORCE_ENABLE: usb_test_mode_selector = 5;
+#[doc = " \\brief Standard USB Test Mode Selectors"]
+pub type usb_test_mode_selector = u32;
+pub const usb_descriptor_type_USB_DT_DEVICE: usb_descriptor_type = 1;
+pub const usb_descriptor_type_USB_DT_CONFIG: usb_descriptor_type = 2;
+pub const usb_descriptor_type_USB_DT_STRING: usb_descriptor_type = 3;
+pub const usb_descriptor_type_USB_DT_INTERFACE: usb_descriptor_type = 4;
+pub const usb_descriptor_type_USB_DT_ENDPOINT: usb_descriptor_type = 5;
+pub const usb_descriptor_type_USB_DT_DEVICE_QUALIFIER: usb_descriptor_type = 6;
+pub const usb_descriptor_type_USB_DT_OTHER_SPEED_CONFIG: usb_descriptor_type = 7;
+pub const usb_descriptor_type_USB_DT_INTERFACE_POWER: usb_descriptor_type = 8;
+pub const usb_descriptor_type_USB_DT_OTG: usb_descriptor_type = 9;
+pub const usb_descriptor_type_USB_DT_DEBUG: usb_descriptor_type = 10;
+pub const usb_descriptor_type_USB_DT_IAD: usb_descriptor_type = 11;
+pub const usb_descriptor_type_USB_DT_BOS: usb_descriptor_type = 15;
+pub const usb_descriptor_type_USB_DT_DEV_CAP: usb_descriptor_type = 16;
+pub const usb_descriptor_type_USB_DT_SS_EP_COMPANION: usb_descriptor_type = 48;
+#[doc = " \\brief Standard USB descriptor types"]
+pub type usb_descriptor_type = u32;
+pub const usb_capability_type_USB_CAPT_WIRELESS: usb_capability_type = 1;
+pub const usb_capability_type_USB_CAPT_2_0_EXT: usb_capability_type = 2;
+pub const usb_capability_type_USB_CAPT_SUPER_SPEED: usb_capability_type = 3;
+pub const usb_capability_type_USB_CAPT_CONTAINER_ID: usb_capability_type = 4;
+#[doc = " \\brief Capability types"]
+pub type usb_capability_type = u32;
+pub const usb_2_0_ext_attr_USB_2_0_EXT_LPM_SP: usb_2_0_ext_attr = 1;
+#[doc = " \\brief USB 2.0 Extension attributes"]
+pub type usb_2_0_ext_attr = u32;
+pub const usb_ss_cap_attr_USB_SS_LTM_SP: usb_ss_cap_attr = 0;
+#[doc = " \\brief USB SuperSpeed Capability attributes"]
+pub type usb_ss_cap_attr = u32;
+pub const usb_speed_sp_USB_SPEED_LOW_SP: usb_speed_sp = 1;
+pub const usb_speed_sp_USB_SPEED_LS_SP: usb_speed_sp = 1;
+pub const usb_speed_sp_USB_SPEED_FULL_SP: usb_speed_sp = 2;
+pub const usb_speed_sp_USB_SPEED_FS_SP: usb_speed_sp = 2;
+pub const usb_speed_sp_USB_SPEED_HIGH_SP: usb_speed_sp = 4;
+pub const usb_speed_sp_USB_SPEED_HS_SP: usb_speed_sp = 4;
+pub const usb_speed_sp_USB_SPEED_SUPER_SP: usb_speed_sp = 8;
+pub const usb_speed_sp_USB_SPEED_SS_SP: usb_speed_sp = 8;
+#[doc = " \\brief USB Speed Supports"]
+pub type usb_speed_sp = u32;
+pub const usb_ep_type_USB_EP_TYPE_CONTROL: usb_ep_type = 0;
+pub const usb_ep_type_USB_EP_TYPE_ISOCHRONOUS: usb_ep_type = 1;
+pub const usb_ep_type_USB_EP_TYPE_BULK: usb_ep_type = 2;
+pub const usb_ep_type_USB_EP_TYPE_INTERRUPT: usb_ep_type = 3;
+pub const usb_ep_type_USB_EP_TYPE_MASK: usb_ep_type = 3;
+#[doc = " \\brief Standard USB endpoint transfer types"]
+pub type usb_ep_type = u32;
+pub const usb_ep_int_type_USB_EP_INT_T_PERIODIC: usb_ep_int_type = 0;
+pub const usb_ep_int_type_USB_EP_INT_T_NOTIFICATION: usb_ep_int_type = 1;
+pub const usb_ep_int_type_USB_EP_INT_T_MASK: usb_ep_int_type = 3;
+#[doc = " \\brief USB endpoint interrupt types"]
+pub type usb_ep_int_type = u32;
+pub const usb_ep_sync_type_USB_EP_SYNC_T_NO: usb_ep_sync_type = 0;
+pub const usb_ep_sync_type_USB_EP_SYNC_T_ASYNC: usb_ep_sync_type = 2;
+pub const usb_ep_sync_type_USB_EP_SYNC_T_ADAPTIVE: usb_ep_sync_type = 2;
+pub const usb_ep_sync_type_USB_EP_SYNC_T_SYNC: usb_ep_sync_type = 3;
+pub const usb_ep_sync_type_USB_EP_SYNC_T_MASK: usb_ep_sync_type = 3;
+#[doc = " \\brief Standard USB endpoint synchronization types"]
+pub type usb_ep_sync_type = u32;
+pub const usb_ep_usage_type_USB_EP_USAGE_T_DATA: usb_ep_usage_type = 0;
+pub const usb_ep_usage_type_USB_EP_USAGE_T_FEEDBACK: usb_ep_usage_type = 1;
+pub const usb_ep_usage_type_USB_EP_USAGE_T_FEEDBACK_DATA: usb_ep_usage_type = 2;
+pub const usb_ep_usage_type_USB_EP_USAGE_T_MASK: usb_ep_usage_type = 3;
+#[doc = " \\brief Standard USB endpoint usage types"]
+pub type usb_ep_usage_type = u32;
+#[doc = "< English (United States)"]
+pub const usb_langid_USB_LANGID_EN_US: usb_langid = 1033;
+#[doc = " \\brief Standard USB language IDs for string descriptors"]
+pub type usb_langid = u32;
+#[doc = " \\brief A USB Device SETUP request"]
+#[doc = ""]
+#[doc = " The data payload of SETUP packets always follows this structure."]
+#[repr(C)]
+#[derive(Copy, Clone)]
+pub struct usb_req {
+    pub bmRequestType: u8,
+    pub bRequest: u8,
+    pub __bindgen_anon_1: usb_req__bindgen_ty_1,
+    pub __bindgen_anon_2: usb_req__bindgen_ty_2,
+    pub __bindgen_anon_3: usb_req__bindgen_ty_3,
+}
+#[repr(C, packed)]
+#[derive(Copy, Clone)]
+pub union usb_req__bindgen_ty_1 {
+    pub wValue: le16_t,
+    pub wValueBytes: usb_req__bindgen_ty_1__bindgen_ty_1,
+    _bindgen_union_align: [u8; 2usize],
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_req__bindgen_ty_1__bindgen_ty_1 {
+    pub l: u8,
+    pub h: u8,
+}
+#[test]
+fn bindgen_test_layout_usb_req__bindgen_ty_1__bindgen_ty_1() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_req__bindgen_ty_1__bindgen_ty_1>(),
+        2usize,
+        concat!("Size of: ", stringify!(usb_req__bindgen_ty_1__bindgen_ty_1))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_req__bindgen_ty_1__bindgen_ty_1>(),
+        1usize,
+        concat!(
+            "Alignment of ",
+            stringify!(usb_req__bindgen_ty_1__bindgen_ty_1)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_req__bindgen_ty_1__bindgen_ty_1>())).l as *const _ as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_req__bindgen_ty_1__bindgen_ty_1),
+            "::",
+            stringify!(l)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_req__bindgen_ty_1__bindgen_ty_1>())).h as *const _ as usize
+        },
+        1usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_req__bindgen_ty_1__bindgen_ty_1),
+            "::",
+            stringify!(h)
+        )
+    );
+}
+#[test]
+fn bindgen_test_layout_usb_req__bindgen_ty_1() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_req__bindgen_ty_1>(),
+        2usize,
+        concat!("Size of: ", stringify!(usb_req__bindgen_ty_1))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_req__bindgen_ty_1>(),
+        1usize,
+        concat!("Alignment of ", stringify!(usb_req__bindgen_ty_1))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_req__bindgen_ty_1>())).wValue as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_req__bindgen_ty_1),
+            "::",
+            stringify!(wValue)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_req__bindgen_ty_1>())).wValueBytes as *const _ as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_req__bindgen_ty_1),
+            "::",
+            stringify!(wValueBytes)
+        )
+    );
+}
+#[repr(C, packed)]
+#[derive(Copy, Clone)]
+pub union usb_req__bindgen_ty_2 {
+    pub wIndex: le16_t,
+    pub wIndexBytes: usb_req__bindgen_ty_2__bindgen_ty_1,
+    _bindgen_union_align: [u8; 2usize],
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_req__bindgen_ty_2__bindgen_ty_1 {
+    pub l: u8,
+    pub h: u8,
+}
+#[test]
+fn bindgen_test_layout_usb_req__bindgen_ty_2__bindgen_ty_1() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_req__bindgen_ty_2__bindgen_ty_1>(),
+        2usize,
+        concat!("Size of: ", stringify!(usb_req__bindgen_ty_2__bindgen_ty_1))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_req__bindgen_ty_2__bindgen_ty_1>(),
+        1usize,
+        concat!(
+            "Alignment of ",
+            stringify!(usb_req__bindgen_ty_2__bindgen_ty_1)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_req__bindgen_ty_2__bindgen_ty_1>())).l as *const _ as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_req__bindgen_ty_2__bindgen_ty_1),
+            "::",
+            stringify!(l)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_req__bindgen_ty_2__bindgen_ty_1>())).h as *const _ as usize
+        },
+        1usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_req__bindgen_ty_2__bindgen_ty_1),
+            "::",
+            stringify!(h)
+        )
+    );
+}
+#[test]
+fn bindgen_test_layout_usb_req__bindgen_ty_2() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_req__bindgen_ty_2>(),
+        2usize,
+        concat!("Size of: ", stringify!(usb_req__bindgen_ty_2))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_req__bindgen_ty_2>(),
+        1usize,
+        concat!("Alignment of ", stringify!(usb_req__bindgen_ty_2))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_req__bindgen_ty_2>())).wIndex as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_req__bindgen_ty_2),
+            "::",
+            stringify!(wIndex)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_req__bindgen_ty_2>())).wIndexBytes as *const _ as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_req__bindgen_ty_2),
+            "::",
+            stringify!(wIndexBytes)
+        )
+    );
+}
+#[repr(C, packed)]
+#[derive(Copy, Clone)]
+pub union usb_req__bindgen_ty_3 {
+    pub wLength: le16_t,
+    pub wLengthBytes: usb_req__bindgen_ty_3__bindgen_ty_1,
+    _bindgen_union_align: [u8; 2usize],
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_req__bindgen_ty_3__bindgen_ty_1 {
+    pub l: u8,
+    pub h: u8,
+}
+#[test]
+fn bindgen_test_layout_usb_req__bindgen_ty_3__bindgen_ty_1() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_req__bindgen_ty_3__bindgen_ty_1>(),
+        2usize,
+        concat!("Size of: ", stringify!(usb_req__bindgen_ty_3__bindgen_ty_1))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_req__bindgen_ty_3__bindgen_ty_1>(),
+        1usize,
+        concat!(
+            "Alignment of ",
+            stringify!(usb_req__bindgen_ty_3__bindgen_ty_1)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_req__bindgen_ty_3__bindgen_ty_1>())).l as *const _ as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_req__bindgen_ty_3__bindgen_ty_1),
+            "::",
+            stringify!(l)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_req__bindgen_ty_3__bindgen_ty_1>())).h as *const _ as usize
+        },
+        1usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_req__bindgen_ty_3__bindgen_ty_1),
+            "::",
+            stringify!(h)
+        )
+    );
+}
+#[test]
+fn bindgen_test_layout_usb_req__bindgen_ty_3() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_req__bindgen_ty_3>(),
+        2usize,
+        concat!("Size of: ", stringify!(usb_req__bindgen_ty_3))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_req__bindgen_ty_3>(),
+        1usize,
+        concat!("Alignment of ", stringify!(usb_req__bindgen_ty_3))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_req__bindgen_ty_3>())).wLength as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_req__bindgen_ty_3),
+            "::",
+            stringify!(wLength)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_req__bindgen_ty_3>())).wLengthBytes as *const _ as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_req__bindgen_ty_3),
+            "::",
+            stringify!(wLengthBytes)
+        )
+    );
+}
+#[test]
+fn bindgen_test_layout_usb_req() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_req>(),
+        8usize,
+        concat!("Size of: ", stringify!(usb_req))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_req>(),
+        1usize,
+        concat!("Alignment of ", stringify!(usb_req))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_req>())).bmRequestType as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_req),
+            "::",
+            stringify!(bmRequestType)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_req>())).bRequest as *const _ as usize },
+        1usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_req),
+            "::",
+            stringify!(bRequest)
+        )
+    );
+}
+pub type usb_req_t = usb_req;
+#[doc = " \\brief Standard USB device descriptor structure"]
+#[repr(C, packed)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_dev_desc {
+    pub bLength: u8,
+    pub bDescriptorType: u8,
+    pub bcdUSB: le16_t,
+    pub bDeviceClass: u8,
+    pub bDeviceSubClass: u8,
+    pub bDeviceProtocol: u8,
+    pub bMaxPacketSize0: u8,
+    pub idVendor: le16_t,
+    pub idProduct: le16_t,
+    pub bcdDevice: le16_t,
+    pub iManufacturer: u8,
+    pub iProduct: u8,
+    pub iSerialNumber: u8,
+    pub bNumConfigurations: u8,
+}
+#[test]
+fn bindgen_test_layout_usb_dev_desc() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_dev_desc>(),
+        18usize,
+        concat!("Size of: ", stringify!(usb_dev_desc))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_dev_desc>(),
+        1usize,
+        concat!("Alignment of ", stringify!(usb_dev_desc))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_dev_desc>())).bLength as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_dev_desc),
+            "::",
+            stringify!(bLength)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_dev_desc>())).bDescriptorType as *const _ as usize },
+        1usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_dev_desc),
+            "::",
+            stringify!(bDescriptorType)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_dev_desc>())).bcdUSB as *const _ as usize },
+        2usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_dev_desc),
+            "::",
+            stringify!(bcdUSB)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_dev_desc>())).bDeviceClass as *const _ as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_dev_desc),
+            "::",
+            stringify!(bDeviceClass)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_dev_desc>())).bDeviceSubClass as *const _ as usize },
+        5usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_dev_desc),
+            "::",
+            stringify!(bDeviceSubClass)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_dev_desc>())).bDeviceProtocol as *const _ as usize },
+        6usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_dev_desc),
+            "::",
+            stringify!(bDeviceProtocol)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_dev_desc>())).bMaxPacketSize0 as *const _ as usize },
+        7usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_dev_desc),
+            "::",
+            stringify!(bMaxPacketSize0)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_dev_desc>())).idVendor as *const _ as usize },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_dev_desc),
+            "::",
+            stringify!(idVendor)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_dev_desc>())).idProduct as *const _ as usize },
+        10usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_dev_desc),
+            "::",
+            stringify!(idProduct)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_dev_desc>())).bcdDevice as *const _ as usize },
+        12usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_dev_desc),
+            "::",
+            stringify!(bcdDevice)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_dev_desc>())).iManufacturer as *const _ as usize },
+        14usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_dev_desc),
+            "::",
+            stringify!(iManufacturer)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_dev_desc>())).iProduct as *const _ as usize },
+        15usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_dev_desc),
+            "::",
+            stringify!(iProduct)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_dev_desc>())).iSerialNumber as *const _ as usize },
+        16usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_dev_desc),
+            "::",
+            stringify!(iSerialNumber)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_dev_desc>())).bNumConfigurations as *const _ as usize
+        },
+        17usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_dev_desc),
+            "::",
+            stringify!(bNumConfigurations)
+        )
+    );
+}
+pub type usb_dev_desc_t = usb_dev_desc;
+#[doc = " \\brief Binary device Object Store (BOS) descriptor structure"]
+#[repr(C, packed)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_bos_desc {
+    pub bLength: u8,
+    pub bDescriptorType: u8,
+    pub wTotalLength: le16_t,
+    pub bNumDeviceCaps: u8,
+}
+#[test]
+fn bindgen_test_layout_usb_bos_desc() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_bos_desc>(),
+        5usize,
+        concat!("Size of: ", stringify!(usb_bos_desc))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_bos_desc>(),
+        1usize,
+        concat!("Alignment of ", stringify!(usb_bos_desc))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_bos_desc>())).bLength as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_bos_desc),
+            "::",
+            stringify!(bLength)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_bos_desc>())).bDescriptorType as *const _ as usize },
+        1usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_bos_desc),
+            "::",
+            stringify!(bDescriptorType)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_bos_desc>())).wTotalLength as *const _ as usize },
+        2usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_bos_desc),
+            "::",
+            stringify!(wTotalLength)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_bos_desc>())).bNumDeviceCaps as *const _ as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_bos_desc),
+            "::",
+            stringify!(bNumDeviceCaps)
+        )
+    );
+}
+pub type usb_bos_desc_t = usb_bos_desc;
+#[doc = " \\brief Device Capability Descriptor structure"]
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_cap_desc {
+    pub bLength: u8,
+    pub bDescriptorType: u8,
+    pub bDevCapabilityType: u8,
+    pub Vars: [u8; 1usize],
+}
+#[test]
+fn bindgen_test_layout_usb_cap_desc() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_cap_desc>(),
+        4usize,
+        concat!("Size of: ", stringify!(usb_cap_desc))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_cap_desc>(),
+        1usize,
+        concat!("Alignment of ", stringify!(usb_cap_desc))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_cap_desc>())).bLength as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cap_desc),
+            "::",
+            stringify!(bLength)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_cap_desc>())).bDescriptorType as *const _ as usize },
+        1usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cap_desc),
+            "::",
+            stringify!(bDescriptorType)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cap_desc>())).bDevCapabilityType as *const _ as usize
+        },
+        2usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cap_desc),
+            "::",
+            stringify!(bDevCapabilityType)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_cap_desc>())).Vars as *const _ as usize },
+        3usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cap_desc),
+            "::",
+            stringify!(Vars)
+        )
+    );
+}
+pub type usb_cap_desc_t = usb_cap_desc;
+#[doc = " \\brief USB 2.0 Extension Descriptor structure"]
+#[repr(C, packed)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_2_0_ext {
+    pub bLength: u8,
+    pub bDescriptorType: u8,
+    pub bDevCapabilityType: u8,
+    pub bmAttributes: u32,
+}
+#[test]
+fn bindgen_test_layout_usb_2_0_ext() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_2_0_ext>(),
+        7usize,
+        concat!("Size of: ", stringify!(usb_2_0_ext))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_2_0_ext>(),
+        1usize,
+        concat!("Alignment of ", stringify!(usb_2_0_ext))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_2_0_ext>())).bLength as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_2_0_ext),
+            "::",
+            stringify!(bLength)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_2_0_ext>())).bDescriptorType as *const _ as usize },
+        1usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_2_0_ext),
+            "::",
+            stringify!(bDescriptorType)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_2_0_ext>())).bDevCapabilityType as *const _ as usize },
+        2usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_2_0_ext),
+            "::",
+            stringify!(bDevCapabilityType)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_2_0_ext>())).bmAttributes as *const _ as usize },
+        3usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_2_0_ext),
+            "::",
+            stringify!(bmAttributes)
+        )
+    );
+}
+pub type usb_2_0_ext_t = usb_2_0_ext;
+#[doc = " \\brief LPM Device Capabilities descriptor structure"]
+pub type usb_lpm_cap_desc_t = usb_2_0_ext;
+#[doc = " \\brief SuperSpeed USB Device Capability structure"]
+#[repr(C, packed)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_ss_cap_desc {
+    pub bLength: u8,
+    pub bDescriptorType: u8,
+    pub bDevCapabilityType: u8,
+    pub bmAttributes: u8,
+    pub wSpeedsSupported: le16_t,
+    pub bFunctionalitySupport: u8,
+    pub bU1DevExitLat: u8,
+    pub bU2DevExitLat: u8,
+}
+#[test]
+fn bindgen_test_layout_usb_ss_cap_desc() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_ss_cap_desc>(),
+        9usize,
+        concat!("Size of: ", stringify!(usb_ss_cap_desc))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_ss_cap_desc>(),
+        1usize,
+        concat!("Alignment of ", stringify!(usb_ss_cap_desc))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_ss_cap_desc>())).bLength as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_ss_cap_desc),
+            "::",
+            stringify!(bLength)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_ss_cap_desc>())).bDescriptorType as *const _ as usize
+        },
+        1usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_ss_cap_desc),
+            "::",
+            stringify!(bDescriptorType)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_ss_cap_desc>())).bDevCapabilityType as *const _ as usize
+        },
+        2usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_ss_cap_desc),
+            "::",
+            stringify!(bDevCapabilityType)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_ss_cap_desc>())).bmAttributes as *const _ as usize },
+        3usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_ss_cap_desc),
+            "::",
+            stringify!(bmAttributes)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_ss_cap_desc>())).wSpeedsSupported as *const _ as usize
+        },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_ss_cap_desc),
+            "::",
+            stringify!(wSpeedsSupported)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_ss_cap_desc>())).bFunctionalitySupport as *const _ as usize
+        },
+        6usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_ss_cap_desc),
+            "::",
+            stringify!(bFunctionalitySupport)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_ss_cap_desc>())).bU1DevExitLat as *const _ as usize },
+        7usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_ss_cap_desc),
+            "::",
+            stringify!(bU1DevExitLat)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_ss_cap_desc>())).bU2DevExitLat as *const _ as usize },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_ss_cap_desc),
+            "::",
+            stringify!(bU2DevExitLat)
+        )
+    );
+}
+pub type usb_ss_cap_desc_t = usb_ss_cap_desc;
+#[doc = " \\brief USB Container ID Descriptor structure"]
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_container_id_desc {
+    pub bLength: u8,
+    pub bDescriptorType: u8,
+    pub bDevCapabilityType: u8,
+    pub bReserved: u8,
+    pub ContainerID: [u8; 16usize],
+}
+#[test]
+fn bindgen_test_layout_usb_container_id_desc() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_container_id_desc>(),
+        20usize,
+        concat!("Size of: ", stringify!(usb_container_id_desc))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_container_id_desc>(),
+        1usize,
+        concat!("Alignment of ", stringify!(usb_container_id_desc))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_container_id_desc>())).bLength as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_container_id_desc),
+            "::",
+            stringify!(bLength)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_container_id_desc>())).bDescriptorType as *const _ as usize
+        },
+        1usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_container_id_desc),
+            "::",
+            stringify!(bDescriptorType)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_container_id_desc>())).bDevCapabilityType as *const _
+                as usize
+        },
+        2usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_container_id_desc),
+            "::",
+            stringify!(bDevCapabilityType)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_container_id_desc>())).bReserved as *const _ as usize
+        },
+        3usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_container_id_desc),
+            "::",
+            stringify!(bReserved)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_container_id_desc>())).ContainerID as *const _ as usize
+        },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_container_id_desc),
+            "::",
+            stringify!(ContainerID)
+        )
+    );
+}
+pub type usb_container_id_desc_t = usb_container_id_desc;
+#[doc = " \\brief Standard USB device qualifier descriptor structure"]
+#[doc = ""]
+#[doc = " This descriptor contains information about the device when running at"]
+#[doc = " the \"other\" speed (i.e. if the device is currently operating at high"]
+#[doc = " speed, this descriptor can be used to determine what would change if"]
+#[doc = " the device was operating at full speed.)"]
+#[repr(C, packed)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_dev_qual_desc {
+    pub bLength: u8,
+    pub bDescriptorType: u8,
+    pub bcdUSB: le16_t,
+    pub bDeviceClass: u8,
+    pub bDeviceSubClass: u8,
+    pub bDeviceProtocol: u8,
+    pub bMaxPacketSize0: u8,
+    pub bNumConfigurations: u8,
+    pub bReserved: u8,
+}
+#[test]
+fn bindgen_test_layout_usb_dev_qual_desc() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_dev_qual_desc>(),
+        10usize,
+        concat!("Size of: ", stringify!(usb_dev_qual_desc))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_dev_qual_desc>(),
+        1usize,
+        concat!("Alignment of ", stringify!(usb_dev_qual_desc))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_dev_qual_desc>())).bLength as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_dev_qual_desc),
+            "::",
+            stringify!(bLength)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_dev_qual_desc>())).bDescriptorType as *const _ as usize
+        },
+        1usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_dev_qual_desc),
+            "::",
+            stringify!(bDescriptorType)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_dev_qual_desc>())).bcdUSB as *const _ as usize },
+        2usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_dev_qual_desc),
+            "::",
+            stringify!(bcdUSB)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_dev_qual_desc>())).bDeviceClass as *const _ as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_dev_qual_desc),
+            "::",
+            stringify!(bDeviceClass)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_dev_qual_desc>())).bDeviceSubClass as *const _ as usize
+        },
+        5usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_dev_qual_desc),
+            "::",
+            stringify!(bDeviceSubClass)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_dev_qual_desc>())).bDeviceProtocol as *const _ as usize
+        },
+        6usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_dev_qual_desc),
+            "::",
+            stringify!(bDeviceProtocol)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_dev_qual_desc>())).bMaxPacketSize0 as *const _ as usize
+        },
+        7usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_dev_qual_desc),
+            "::",
+            stringify!(bMaxPacketSize0)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_dev_qual_desc>())).bNumConfigurations as *const _ as usize
+        },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_dev_qual_desc),
+            "::",
+            stringify!(bNumConfigurations)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_dev_qual_desc>())).bReserved as *const _ as usize },
+        9usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_dev_qual_desc),
+            "::",
+            stringify!(bReserved)
+        )
+    );
+}
+pub type usb_dev_qual_desc_t = usb_dev_qual_desc;
+#[doc = " \\brief Standard USB configuration descriptor structure"]
+#[repr(C, packed)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_config_desc {
+    pub bLength: u8,
+    pub bDescriptorType: u8,
+    pub wTotalLength: le16_t,
+    pub bNumInterfaces: u8,
+    pub bConfigurationValue: u8,
+    pub iConfiguration: u8,
+    pub bmAttributes: u8,
+    pub bMaxPower: u8,
+}
+#[test]
+fn bindgen_test_layout_usb_config_desc() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_config_desc>(),
+        9usize,
+        concat!("Size of: ", stringify!(usb_config_desc))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_config_desc>(),
+        1usize,
+        concat!("Alignment of ", stringify!(usb_config_desc))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_config_desc>())).bLength as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_config_desc),
+            "::",
+            stringify!(bLength)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_config_desc>())).bDescriptorType as *const _ as usize
+        },
+        1usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_config_desc),
+            "::",
+            stringify!(bDescriptorType)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_config_desc>())).wTotalLength as *const _ as usize },
+        2usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_config_desc),
+            "::",
+            stringify!(wTotalLength)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_config_desc>())).bNumInterfaces as *const _ as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_config_desc),
+            "::",
+            stringify!(bNumInterfaces)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_config_desc>())).bConfigurationValue as *const _ as usize
+        },
+        5usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_config_desc),
+            "::",
+            stringify!(bConfigurationValue)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_config_desc>())).iConfiguration as *const _ as usize },
+        6usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_config_desc),
+            "::",
+            stringify!(iConfiguration)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_config_desc>())).bmAttributes as *const _ as usize },
+        7usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_config_desc),
+            "::",
+            stringify!(bmAttributes)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_config_desc>())).bMaxPower as *const _ as usize },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_config_desc),
+            "::",
+            stringify!(bMaxPower)
+        )
+    );
+}
+pub type usb_config_desc_t = usb_config_desc;
+#[doc = " \\brief Standard USB association descriptor structure"]
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_iad_desc {
+    #[doc = "< Size of this descriptor in bytes"]
+    pub bLength: u8,
+    #[doc = "< Interface descriptor type"]
+    pub bDescriptorType: u8,
+    #[doc = "< Number of interface"]
+    pub bFirstInterface: u8,
+    #[doc = "< value to select alternate setting"]
+    pub bInterfaceCount: u8,
+    #[doc = "< Class code assigned by the USB"]
+    pub bFunctionClass: u8,
+    #[doc = "< Sub-class code assigned by the USB"]
+    pub bFunctionSubClass: u8,
+    #[doc = "< Protocol code assigned by the USB"]
+    pub bFunctionProtocol: u8,
+    #[doc = "< Index of string descriptor"]
+    pub iFunction: u8,
+}
+#[test]
+fn bindgen_test_layout_usb_iad_desc() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_iad_desc>(),
+        8usize,
+        concat!("Size of: ", stringify!(usb_iad_desc))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_iad_desc>(),
+        1usize,
+        concat!("Alignment of ", stringify!(usb_iad_desc))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_iad_desc>())).bLength as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_iad_desc),
+            "::",
+            stringify!(bLength)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_iad_desc>())).bDescriptorType as *const _ as usize },
+        1usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_iad_desc),
+            "::",
+            stringify!(bDescriptorType)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_iad_desc>())).bFirstInterface as *const _ as usize },
+        2usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_iad_desc),
+            "::",
+            stringify!(bFirstInterface)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_iad_desc>())).bInterfaceCount as *const _ as usize },
+        3usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_iad_desc),
+            "::",
+            stringify!(bInterfaceCount)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_iad_desc>())).bFunctionClass as *const _ as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_iad_desc),
+            "::",
+            stringify!(bFunctionClass)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_iad_desc>())).bFunctionSubClass as *const _ as usize },
+        5usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_iad_desc),
+            "::",
+            stringify!(bFunctionSubClass)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_iad_desc>())).bFunctionProtocol as *const _ as usize },
+        6usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_iad_desc),
+            "::",
+            stringify!(bFunctionProtocol)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_iad_desc>())).iFunction as *const _ as usize },
+        7usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_iad_desc),
+            "::",
+            stringify!(iFunction)
+        )
+    );
+}
+pub type usb_iad_desc_t = usb_iad_desc;
+#[doc = " \\brief Standard USB interface descriptor structure"]
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_iface_desc {
+    pub bLength: u8,
+    pub bDescriptorType: u8,
+    pub bInterfaceNumber: u8,
+    pub bAlternateSetting: u8,
+    pub bNumEndpoints: u8,
+    pub bInterfaceClass: u8,
+    pub bInterfaceSubClass: u8,
+    pub bInterfaceProtocol: u8,
+    pub iInterface: u8,
+}
+#[test]
+fn bindgen_test_layout_usb_iface_desc() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_iface_desc>(),
+        9usize,
+        concat!("Size of: ", stringify!(usb_iface_desc))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_iface_desc>(),
+        1usize,
+        concat!("Alignment of ", stringify!(usb_iface_desc))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_iface_desc>())).bLength as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_iface_desc),
+            "::",
+            stringify!(bLength)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_iface_desc>())).bDescriptorType as *const _ as usize },
+        1usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_iface_desc),
+            "::",
+            stringify!(bDescriptorType)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_iface_desc>())).bInterfaceNumber as *const _ as usize
+        },
+        2usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_iface_desc),
+            "::",
+            stringify!(bInterfaceNumber)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_iface_desc>())).bAlternateSetting as *const _ as usize
+        },
+        3usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_iface_desc),
+            "::",
+            stringify!(bAlternateSetting)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_iface_desc>())).bNumEndpoints as *const _ as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_iface_desc),
+            "::",
+            stringify!(bNumEndpoints)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_iface_desc>())).bInterfaceClass as *const _ as usize },
+        5usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_iface_desc),
+            "::",
+            stringify!(bInterfaceClass)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_iface_desc>())).bInterfaceSubClass as *const _ as usize
+        },
+        6usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_iface_desc),
+            "::",
+            stringify!(bInterfaceSubClass)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_iface_desc>())).bInterfaceProtocol as *const _ as usize
+        },
+        7usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_iface_desc),
+            "::",
+            stringify!(bInterfaceProtocol)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_iface_desc>())).iInterface as *const _ as usize },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_iface_desc),
+            "::",
+            stringify!(iInterface)
+        )
+    );
+}
+pub type usb_iface_desc_t = usb_iface_desc;
+#[doc = " \\brief Standard USB endpoint descriptor structure"]
+#[repr(C, packed)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_ep_desc {
+    pub bLength: u8,
+    pub bDescriptorType: u8,
+    pub bEndpointAddress: u8,
+    pub bmAttributes: u8,
+    pub wMaxPacketSize: le16_t,
+    pub bInterval: u8,
+}
+#[test]
+fn bindgen_test_layout_usb_ep_desc() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_ep_desc>(),
+        7usize,
+        concat!("Size of: ", stringify!(usb_ep_desc))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_ep_desc>(),
+        1usize,
+        concat!("Alignment of ", stringify!(usb_ep_desc))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_ep_desc>())).bLength as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_ep_desc),
+            "::",
+            stringify!(bLength)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_ep_desc>())).bDescriptorType as *const _ as usize },
+        1usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_ep_desc),
+            "::",
+            stringify!(bDescriptorType)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_ep_desc>())).bEndpointAddress as *const _ as usize },
+        2usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_ep_desc),
+            "::",
+            stringify!(bEndpointAddress)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_ep_desc>())).bmAttributes as *const _ as usize },
+        3usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_ep_desc),
+            "::",
+            stringify!(bmAttributes)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_ep_desc>())).wMaxPacketSize as *const _ as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_ep_desc),
+            "::",
+            stringify!(wMaxPacketSize)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_ep_desc>())).bInterval as *const _ as usize },
+        6usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_ep_desc),
+            "::",
+            stringify!(bInterval)
+        )
+    );
+}
+pub type usb_ep_desc_t = usb_ep_desc;
+#[doc = " \\brief SuperSpeed Endpoint Companion descriptor structure"]
+#[repr(C, packed)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_ss_ep_comp_desc {
+    pub bLength: u8,
+    pub bDescriptorType: u8,
+    pub bMaxBurst: u8,
+    pub bmAttributes: u8,
+    pub wBytesPerInterval: le16_t,
+}
+#[test]
+fn bindgen_test_layout_usb_ss_ep_comp_desc() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_ss_ep_comp_desc>(),
+        6usize,
+        concat!("Size of: ", stringify!(usb_ss_ep_comp_desc))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_ss_ep_comp_desc>(),
+        1usize,
+        concat!("Alignment of ", stringify!(usb_ss_ep_comp_desc))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_ss_ep_comp_desc>())).bLength as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_ss_ep_comp_desc),
+            "::",
+            stringify!(bLength)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_ss_ep_comp_desc>())).bDescriptorType as *const _ as usize
+        },
+        1usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_ss_ep_comp_desc),
+            "::",
+            stringify!(bDescriptorType)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_ss_ep_comp_desc>())).bMaxBurst as *const _ as usize },
+        2usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_ss_ep_comp_desc),
+            "::",
+            stringify!(bMaxBurst)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_ss_ep_comp_desc>())).bmAttributes as *const _ as usize
+        },
+        3usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_ss_ep_comp_desc),
+            "::",
+            stringify!(bmAttributes)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_ss_ep_comp_desc>())).wBytesPerInterval as *const _ as usize
+        },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_ss_ep_comp_desc),
+            "::",
+            stringify!(wBytesPerInterval)
+        )
+    );
+}
+pub type usb_ss_ep_comp_desc_t = usb_ss_ep_comp_desc;
+#[doc = " \\brief LPM Token bmAttributes structure"]
+#[repr(C, packed)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_lpm_attributes {
+    pub _bitfield_1: __BindgenBitfieldUnit<[u8; 2usize], u8>,
+}
+#[test]
+fn bindgen_test_layout_usb_lpm_attributes() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_lpm_attributes>(),
+        2usize,
+        concat!("Size of: ", stringify!(usb_lpm_attributes))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_lpm_attributes>(),
+        1usize,
+        concat!("Alignment of ", stringify!(usb_lpm_attributes))
+    );
+}
+impl usb_lpm_attributes {
+    #[inline]
+    pub fn bLinkState(&self) -> u8 {
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(0usize, 4u8) as u8) }
+    }
+    #[inline]
+    pub fn set_bLinkState(&mut self, val: u8) {
+        unsafe {
+            let val: u8 = ::core::mem::transmute(val);
+            self._bitfield_1.set(0usize, 4u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn HIRD(&self) -> u8 {
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(4usize, 4u8) as u8) }
+    }
+    #[inline]
+    pub fn set_HIRD(&mut self, val: u8) {
+        unsafe {
+            let val: u8 = ::core::mem::transmute(val);
+            self._bitfield_1.set(4usize, 4u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn bRemoteWake(&self) -> u8 {
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(8usize, 1u8) as u8) }
+    }
+    #[inline]
+    pub fn set_bRemoteWake(&mut self, val: u8) {
+        unsafe {
+            let val: u8 = ::core::mem::transmute(val);
+            self._bitfield_1.set(8usize, 1u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn Reserved(&self) -> u8 {
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(9usize, 2u8) as u8) }
+    }
+    #[inline]
+    pub fn set_Reserved(&mut self, val: u8) {
+        unsafe {
+            let val: u8 = ::core::mem::transmute(val);
+            self._bitfield_1.set(9usize, 2u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn new_bitfield_1(
+        bLinkState: u8,
+        HIRD: u8,
+        bRemoteWake: u8,
+        Reserved: u8,
+    ) -> __BindgenBitfieldUnit<[u8; 2usize], u8> {
+        let mut __bindgen_bitfield_unit: __BindgenBitfieldUnit<[u8; 2usize], u8> =
+            Default::default();
+        __bindgen_bitfield_unit.set(0usize, 4u8, {
+            let bLinkState: u8 = unsafe { ::core::mem::transmute(bLinkState) };
+            bLinkState as u64
+        });
+        __bindgen_bitfield_unit.set(4usize, 4u8, {
+            let HIRD: u8 = unsafe { ::core::mem::transmute(HIRD) };
+            HIRD as u64
+        });
+        __bindgen_bitfield_unit.set(8usize, 1u8, {
+            let bRemoteWake: u8 = unsafe { ::core::mem::transmute(bRemoteWake) };
+            bRemoteWake as u64
+        });
+        __bindgen_bitfield_unit.set(9usize, 2u8, {
+            let Reserved: u8 = unsafe { ::core::mem::transmute(Reserved) };
+            Reserved as u64
+        });
+        __bindgen_bitfield_unit
+    }
+}
+pub type usb_lpm_attributes_t = usb_lpm_attributes;
+#[doc = " \\brief A standard USB string descriptor structure"]
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_str_desc {
+    pub bLength: u8,
+    pub bDescriptorType: u8,
+}
+#[test]
+fn bindgen_test_layout_usb_str_desc() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_str_desc>(),
+        2usize,
+        concat!("Size of: ", stringify!(usb_str_desc))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_str_desc>(),
+        1usize,
+        concat!("Alignment of ", stringify!(usb_str_desc))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_str_desc>())).bLength as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_str_desc),
+            "::",
+            stringify!(bLength)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_str_desc>())).bDescriptorType as *const _ as usize },
+        1usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_str_desc),
+            "::",
+            stringify!(bDescriptorType)
+        )
+    );
+}
+pub type usb_str_desc_t = usb_str_desc;
+#[repr(C, packed)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_str_langid_desc {
+    pub desc: usb_str_desc_t,
+    pub string: [le16_t; 1usize],
+}
+#[test]
+fn bindgen_test_layout_usb_str_langid_desc() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_str_langid_desc>(),
+        4usize,
+        concat!("Size of: ", stringify!(usb_str_langid_desc))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_str_langid_desc>(),
+        1usize,
+        concat!("Alignment of ", stringify!(usb_str_langid_desc))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_str_langid_desc>())).desc as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_str_langid_desc),
+            "::",
+            stringify!(desc)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_str_langid_desc>())).string as *const _ as usize },
+        2usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_str_langid_desc),
+            "::",
+            stringify!(string)
+        )
+    );
+}
+pub type usb_str_langid_desc_t = usb_str_langid_desc;
+extern "C" {
+    #[doc = " \\brief Find specific USB Descriptor by its type"]
+    #[doc = "  \\param[in] desc Byte pointer to the descriptor start address"]
+    #[doc = "  \\param[in] eof  Byte pointer to the descriptor end address"]
+    #[doc = "  \\param[in] type The descriptor type expected"]
+    #[doc = "  \\return Pointer to the descriptor"]
+    #[doc = "  \\retval NULL if not found"]
+    pub fn usb_find_desc(desc: *mut u8, eof: *mut u8, type_: u8) -> *mut u8;
+}
+extern "C" {
+    #[doc = " Get interface descriptor next to the specified one (by interface number)"]
+    #[doc = "  \\param[in] desc Byte pointer to the descriptor start address"]
+    #[doc = "  \\param[in] eof  Byte pointer to the descriptor end address"]
+    #[doc = "  \\param[in] iface_n The interface number to check"]
+    #[doc = "  \\return Pointer to the descriptor"]
+    #[doc = "  \\retval >= eof if not found"]
+    pub fn usb_find_iface_after(desc: *mut u8, eof: *mut u8, iface_n: u8) -> *mut u8;
+}
+extern "C" {
+    #[doc = " Find endpoint descriptor, breaks if interface descriptor detected"]
+    #[doc = "  \\param[in] desc Byte pointer to the descriptor start address"]
+    #[doc = "  \\param[in] eof  Byte pointer to the descriptor end address"]
+    #[doc = "  \\return Pointer to the descriptor"]
+    #[doc = "  \\retval NULL if not found"]
+    pub fn usb_find_ep_desc(desc: *mut u8, eof: *mut u8) -> *mut u8;
+}
+extern "C" {
+    #[doc = " Find configuration descriptor by its configuration number"]
+    #[doc = "  \\param[in] desc Byte pointer to the descriptor start address"]
+    #[doc = "  \\param[in] eof  Byte pointer to the descriptor end address"]
+    #[doc = "  \\param[in] cfg_value The configure value expected"]
+    #[doc = "  \\return Pointer to the descriptor"]
+    #[doc = "  \\retval NULL if not found"]
+    pub fn usb_find_cfg_desc(desc: *mut u8, eof: *mut u8, cfg_value: u8) -> *mut u8;
+}
+extern "C" {
+    #[doc = " Find other speed configuration descriptor by its configuration number"]
+    #[doc = "  \\param[in] desc Byte pointer to the descriptor start address"]
+    #[doc = "  \\param[in] eof  Byte pointer to the descriptor end address"]
+    #[doc = "  \\param[in] cfg_value The configure value expected"]
+    #[doc = "  \\return Pointer to the descriptor"]
+    #[doc = "  \\retval NULL if not found"]
+    pub fn usb_find_othspdcfg_desc(desc: *mut u8, eof: *mut u8, cfg_value: u8) -> *mut u8;
+}
+extern "C" {
+    #[doc = " Find string descriptor by its index"]
+    #[doc = "  \\param[in] desc Byte pointer to the descriptor start address"]
+    #[doc = "  \\param[in] eof  Byte pointer to the descriptor end address"]
+    #[doc = "  \\param[in] str_index The string index expected"]
+    #[doc = "  \\return Pointer to the descriptor"]
+    #[doc = "  \\retval NULL if not found"]
+    pub fn usb_find_str_desc(desc: *mut u8, eof: *mut u8, str_index: u8) -> *mut u8;
+}
+pub const usbd_state_USBD_S_OFF: usbd_state = 0;
+pub const usbd_state_USBD_S_POWER: usbd_state = 1;
+pub const usbd_state_USBD_S_DEFAULT: usbd_state = 2;
+pub const usbd_state_USBD_S_ADDRESS: usbd_state = 3;
+pub const usbd_state_USBD_S_CONFIG: usbd_state = 4;
+pub const usbd_state_USBD_S_SUSPEND: usbd_state = 16;
+#[doc = " USB device states."]
+pub type usbd_state = u32;
+pub const usbdc_handler_type_USBDC_HDL_SOF: usbdc_handler_type = 0;
+pub const usbdc_handler_type_USBDC_HDL_REQ: usbdc_handler_type = 1;
+pub const usbdc_handler_type_USBDC_HDL_CHANGE: usbdc_handler_type = 2;
+#[doc = " USB device core handler type."]
+pub type usbdc_handler_type = u32;
+#[doc = " Change of connection, detected by vbus."]
+pub const usbdc_change_type_USBDC_C_CONN: usbdc_change_type = 0;
+#[doc = " Change of state, by RESET, SetAddress(), SetConfig()."]
+pub const usbdc_change_type_USBDC_C_STATE: usbdc_change_type = 1;
+#[doc = " Change of power."]
+pub const usbdc_change_type_USBDC_C_POWER: usbdc_change_type = 2;
+#[doc = " Change of remote wakeup setting."]
+pub const usbdc_change_type_USBDC_C_REMOTE_WAKEUP: usbdc_change_type = 3;
+#[doc = " USB device core change notification type."]
+pub type usbdc_change_type = u32;
+pub const usbdc_power_type_USBDC_ACTIVE: usbdc_power_type = 0;
+pub const usbdc_power_type_USBDC_SLEEP: usbdc_power_type = 1;
+pub const usbdc_power_type_USBDC_SUSPEND: usbdc_power_type = 2;
+#[doc = " Power change."]
+pub type usbdc_power_type = u32;
+#[doc = " Enable the function."]
+#[doc = "  int32_t ctrl(usbdf, USBDF_ENABLE, struct usbd_descriptors *desc);"]
+#[doc = "  Parameter holds interface descriptor and"]
+#[doc = "  configuration descriptor end position."]
+pub const usbdf_control_USBDF_ENABLE: usbdf_control = 0;
+#[doc = " Disable the function."]
+#[doc = "  int32_t ctrl(usbdf, USBDF_DISABLE, struct usbd_descriptors *desc);"]
+#[doc = "  Parameter holds interface descriptor and"]
+#[doc = "  configuration descriptor end position."]
+#[doc = "  Input NULL to force disable the function anyway."]
+pub const usbdf_control_USBDF_DISABLE: usbdf_control = 1;
+#[doc = " Get interface alternate setting."]
+#[doc = "  int32_t ctrl(usbdf, USBDF_GET_IFACE, struct usb_req *req);"]
+#[doc = "  Parameter holds interface number who should return"]
+#[doc = "  the alternate setting."]
+pub const usbdf_control_USBDF_GET_IFACE: usbdf_control = 2;
+#[doc = " USB device general function control code."]
+pub type usbdf_control = u32;
+#[doc = " Describes a list of USB descriptors."]
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct usbd_descriptors {
+    #[doc = " Pointer to Start of Descriptors."]
+    pub sod: *mut u8,
+    #[doc = " Pointer to End of Descriptors."]
+    pub eod: *mut u8,
+}
+#[test]
+fn bindgen_test_layout_usbd_descriptors() {
+    assert_eq!(
+        ::core::mem::size_of::<usbd_descriptors>(),
+        8usize,
+        concat!("Size of: ", stringify!(usbd_descriptors))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usbd_descriptors>(),
+        4usize,
+        concat!("Alignment of ", stringify!(usbd_descriptors))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usbd_descriptors>())).sod as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usbd_descriptors),
+            "::",
+            stringify!(sod)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usbd_descriptors>())).eod as *const _ as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usbd_descriptors),
+            "::",
+            stringify!(eod)
+        )
+    );
+}
+#[doc = " Describes the USB device core descriptors."]
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct usbdc_descriptors {
+    pub ls_fs: *mut usbd_descriptors,
+}
+#[test]
+fn bindgen_test_layout_usbdc_descriptors() {
+    assert_eq!(
+        ::core::mem::size_of::<usbdc_descriptors>(),
+        4usize,
+        concat!("Size of: ", stringify!(usbdc_descriptors))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usbdc_descriptors>(),
+        4usize,
+        concat!("Alignment of ", stringify!(usbdc_descriptors))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usbdc_descriptors>())).ls_fs as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usbdc_descriptors),
+            "::",
+            stringify!(ls_fs)
+        )
+    );
+}
+#[doc = " Describes a list of core handler descriptor."]
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct usbdc_handler {
+    #[doc = " Pointer to next handler."]
+    pub next: *mut usbdc_handler,
+    #[doc = " Pointer to handler function."]
+    pub func: FUNC_PTR,
+}
+#[test]
+fn bindgen_test_layout_usbdc_handler() {
+    assert_eq!(
+        ::core::mem::size_of::<usbdc_handler>(),
+        8usize,
+        concat!("Size of: ", stringify!(usbdc_handler))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usbdc_handler>(),
+        4usize,
+        concat!("Alignment of ", stringify!(usbdc_handler))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usbdc_handler>())).next as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usbdc_handler),
+            "::",
+            stringify!(next)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usbdc_handler>())).func as *const _ as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usbdc_handler),
+            "::",
+            stringify!(func)
+        )
+    );
+}
+#[doc = " SOF handling function."]
+pub type usbdc_sof_cb_t = ::core::option::Option<unsafe extern "C" fn()>;
+#[doc = " REQ handling function."]
+pub type usbdc_req_cb_t = ::core::option::Option<
+    unsafe extern "C" fn(ep: u8, req: *mut usb_req, stage: usb_ctrl_stage) -> i32,
+>;
+#[doc = " Change notification callback function."]
+pub type usbdc_change_cb_t =
+    ::core::option::Option<unsafe extern "C" fn(change: usbdc_change_type, value: u32)>;
+#[doc = " Control function for USB device general function driver."]
+pub type usbdf_control_cb_t = ::core::option::Option<
+    unsafe extern "C" fn(
+        drv: *mut usbdf_driver,
+        ctrl: usbdf_control,
+        param: *mut cty::c_void,
+    ) -> i32,
+>;
+#[doc = " Forward declaration for USB device function driver."]
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct usbdf_driver {
+    #[doc = " Pointer to next function."]
+    pub next: *mut usbdf_driver,
+    #[doc = " Pointer to control function."]
+    pub ctrl: usbdf_control_cb_t,
+    #[doc = " Pointer to function driver specific data."]
+    pub func_data: *mut cty::c_void,
+}
+#[test]
+fn bindgen_test_layout_usbdf_driver() {
+    assert_eq!(
+        ::core::mem::size_of::<usbdf_driver>(),
+        12usize,
+        concat!("Size of: ", stringify!(usbdf_driver))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usbdf_driver>(),
+        4usize,
+        concat!("Alignment of ", stringify!(usbdf_driver))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usbdf_driver>())).next as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usbdf_driver),
+            "::",
+            stringify!(next)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usbdf_driver>())).ctrl as *const _ as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usbdf_driver),
+            "::",
+            stringify!(ctrl)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usbdf_driver>())).func_data as *const _ as usize },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usbdf_driver),
+            "::",
+            stringify!(func_data)
+        )
+    );
+}
+extern "C" {
+    #[doc = " \\brief Register the handler"]
+    #[doc = " \\param[in] type USB device core handler type."]
+    #[doc = " \\param[in] h Pointer to usb device core handler."]
+    pub fn usbdc_register_handler(type_: usbdc_handler_type, h: *const usbdc_handler);
+}
+extern "C" {
+    #[doc = " \\brief Unregister the handler"]
+    #[doc = " \\param[in] type USB device core handler type."]
+    #[doc = " \\param[in] h Pointer to usb device core handler."]
+    pub fn usbdc_unregister_handler(type_: usbdc_handler_type, h: *const usbdc_handler);
+}
+extern "C" {
+    #[doc = " \\brief Initialize the USB device core driver"]
+    #[doc = " \\param[in] ctrl_buf Pointer to a buffer to be used by usb device ctrl endpoint"]
+    #[doc = "  Note: the size of ctrl_buf should not be less than the size of EP0"]
+    #[doc = " \\return Operation status."]
+    pub fn usbdc_init(ctrl_buf: *mut u8) -> i32;
+}
+extern "C" {
+    #[doc = " \\brief Deinitialize the USB device core driver"]
+    #[doc = " \\return Operation status."]
+    pub fn usbdc_deinit() -> i32;
+}
+extern "C" {
+    #[doc = " \\brief Register function support of a USB device function"]
+    #[doc = " \\param[in] func Pointer to usb device function driver structure"]
+    pub fn usbdc_register_function(func: *mut usbdf_driver);
+}
+extern "C" {
+    #[doc = " \\brief Unregister function support of a USB device function"]
+    #[doc = " \\param[in] func Pointer to usb device function driver structure"]
+    pub fn usbdc_unregister_function(func: *mut usbdf_driver);
+}
+extern "C" {
+    #[doc = " \\brief Validate the descriptors"]
+    #[doc = " \\param[in] desces Pointer to usb device core descriptors"]
+    #[doc = " \\return Operation status."]
+    pub fn usbdc_validate_desces(desces: *mut usbd_descriptors) -> i32;
+}
+extern "C" {
+    #[doc = " \\brief Issue USB device data transfer"]
+    #[doc = " \\param[in] ep endpointer address."]
+    #[doc = " \\param[in] buf Pointer to data transfer buffer."]
+    #[doc = " \\param[in] size the size of data transfer."]
+    #[doc = " \\param[in] zlp flag to indicate zero length packet."]
+    #[doc = " \\return Operation status."]
+    pub fn usbdc_xfer(ep: u8, buf: *mut u8, size: u32, zlp: bool) -> i32;
+}
+extern "C" {
+    #[doc = " \\brief Start the USB device driver with specific descriptors set"]
+    #[doc = " \\param[in] desces Pointer to usb device core descriptors (FS/LS),"]
+    #[doc = "                   or pointer to array of core descriptors (HS), the"]
+    #[doc = "                   very first one includes device descriptor, FS/LS"]
+    #[doc = "                   configuration descriptor, string descriptor, and"]
+    #[doc = "                   may include device qualifier and other speed"]
+    #[doc = "                   configuration descriptor; the second one includes"]
+    #[doc = "                   high speed used descriptors."]
+    #[doc = "                   Note that string descriptor should be included in"]
+    #[doc = "                   first place."]
+    #[doc = " \\return Operation status."]
+    pub fn usbdc_start(desces: *mut usbd_descriptors) -> i32;
+}
+extern "C" {
+    #[doc = " \\brief Stop the USB device driver"]
+    #[doc = " \\return Operation status."]
+    pub fn usbdc_stop() -> i32;
+}
+extern "C" {
+    #[doc = " \\brief Attach the USB device to host"]
+    pub fn usbdc_attach();
+}
+extern "C" {
+    #[doc = " \\brief Detach the USB device from host"]
+    pub fn usbdc_detach();
+}
+extern "C" {
+    #[doc = " \\brief Send remote wakeup to host"]
+    pub fn usbdc_remotewakeup();
+}
+extern "C" {
+    #[doc = " \\brief Return USB device ctrl end pointer buffer start address"]
+    pub fn usbdc_get_ctrl_buffer() -> *mut u8;
+}
+extern "C" {
+    #[doc = " \\brief Return current USB state"]
+    pub fn usbdc_get_state() -> u8;
+}
+extern "C" {
+    #[doc = " \\brief Return version"]
+    pub fn usbdc_get_version() -> u32;
+}
+#[doc = "! CDC Header Functional Descriptor"]
+#[repr(C, packed)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_cdc_hdr_desc {
+    pub bFunctionLength: u8,
+    pub bDescriptorType: u8,
+    pub bDescriptorSubtype: u8,
+    pub bcdCDC: le16_t,
+}
+#[test]
+fn bindgen_test_layout_usb_cdc_hdr_desc() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_cdc_hdr_desc>(),
+        5usize,
+        concat!("Size of: ", stringify!(usb_cdc_hdr_desc))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_cdc_hdr_desc>(),
+        1usize,
+        concat!("Alignment of ", stringify!(usb_cdc_hdr_desc))
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_hdr_desc>())).bFunctionLength as *const _ as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_hdr_desc),
+            "::",
+            stringify!(bFunctionLength)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_hdr_desc>())).bDescriptorType as *const _ as usize
+        },
+        1usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_hdr_desc),
+            "::",
+            stringify!(bDescriptorType)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_hdr_desc>())).bDescriptorSubtype as *const _ as usize
+        },
+        2usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_hdr_desc),
+            "::",
+            stringify!(bDescriptorSubtype)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_cdc_hdr_desc>())).bcdCDC as *const _ as usize },
+        3usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_hdr_desc),
+            "::",
+            stringify!(bcdCDC)
+        )
+    );
+}
+pub type usb_cdc_hdr_desc_t = usb_cdc_hdr_desc;
+#[doc = "! CDC Call Management Functional Descriptor"]
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_cdc_call_mgmt_desc {
+    pub bFunctionLength: u8,
+    pub bDescriptorType: u8,
+    pub bDescriptorSubtype: u8,
+    pub bmCapabilities: u8,
+    pub bDataInterface: u8,
+}
+#[test]
+fn bindgen_test_layout_usb_cdc_call_mgmt_desc() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_cdc_call_mgmt_desc>(),
+        5usize,
+        concat!("Size of: ", stringify!(usb_cdc_call_mgmt_desc))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_cdc_call_mgmt_desc>(),
+        1usize,
+        concat!("Alignment of ", stringify!(usb_cdc_call_mgmt_desc))
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_call_mgmt_desc>())).bFunctionLength as *const _ as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_call_mgmt_desc),
+            "::",
+            stringify!(bFunctionLength)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_call_mgmt_desc>())).bDescriptorType as *const _ as usize
+        },
+        1usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_call_mgmt_desc),
+            "::",
+            stringify!(bDescriptorType)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_call_mgmt_desc>())).bDescriptorSubtype as *const _
+                as usize
+        },
+        2usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_call_mgmt_desc),
+            "::",
+            stringify!(bDescriptorSubtype)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_call_mgmt_desc>())).bmCapabilities as *const _ as usize
+        },
+        3usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_call_mgmt_desc),
+            "::",
+            stringify!(bmCapabilities)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_call_mgmt_desc>())).bDataInterface as *const _ as usize
+        },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_call_mgmt_desc),
+            "::",
+            stringify!(bDataInterface)
+        )
+    );
+}
+pub type usb_cdc_call_mgmt_desc_t = usb_cdc_call_mgmt_desc;
+#[doc = "! CDC ACM Functional Descriptor"]
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_cdc_acm_desc {
+    pub bFunctionLength: u8,
+    pub bDescriptorType: u8,
+    pub bDescriptorSubtype: u8,
+    pub bmCapabilities: u8,
+}
+#[test]
+fn bindgen_test_layout_usb_cdc_acm_desc() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_cdc_acm_desc>(),
+        4usize,
+        concat!("Size of: ", stringify!(usb_cdc_acm_desc))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_cdc_acm_desc>(),
+        1usize,
+        concat!("Alignment of ", stringify!(usb_cdc_acm_desc))
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_acm_desc>())).bFunctionLength as *const _ as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_acm_desc),
+            "::",
+            stringify!(bFunctionLength)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_acm_desc>())).bDescriptorType as *const _ as usize
+        },
+        1usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_acm_desc),
+            "::",
+            stringify!(bDescriptorType)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_acm_desc>())).bDescriptorSubtype as *const _ as usize
+        },
+        2usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_acm_desc),
+            "::",
+            stringify!(bDescriptorSubtype)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_acm_desc>())).bmCapabilities as *const _ as usize
+        },
+        3usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_acm_desc),
+            "::",
+            stringify!(bmCapabilities)
+        )
+    );
+}
+pub type usb_cdc_acm_desc_t = usb_cdc_acm_desc;
+#[doc = "! CDC Union Functional Descriptor"]
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_cdc_union_desc {
+    pub bFunctionLength: u8,
+    pub bDescriptorType: u8,
+    pub bDescriptorSubtype: u8,
+    pub bMasterInterface: u8,
+    pub bSlaveInterface0: u8,
+}
+#[test]
+fn bindgen_test_layout_usb_cdc_union_desc() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_cdc_union_desc>(),
+        5usize,
+        concat!("Size of: ", stringify!(usb_cdc_union_desc))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_cdc_union_desc>(),
+        1usize,
+        concat!("Alignment of ", stringify!(usb_cdc_union_desc))
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_union_desc>())).bFunctionLength as *const _ as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_union_desc),
+            "::",
+            stringify!(bFunctionLength)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_union_desc>())).bDescriptorType as *const _ as usize
+        },
+        1usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_union_desc),
+            "::",
+            stringify!(bDescriptorType)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_union_desc>())).bDescriptorSubtype as *const _ as usize
+        },
+        2usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_union_desc),
+            "::",
+            stringify!(bDescriptorSubtype)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_union_desc>())).bMasterInterface as *const _ as usize
+        },
+        3usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_union_desc),
+            "::",
+            stringify!(bMasterInterface)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_union_desc>())).bSlaveInterface0 as *const _ as usize
+        },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_union_desc),
+            "::",
+            stringify!(bSlaveInterface0)
+        )
+    );
+}
+pub type usb_cdc_union_desc_t = usb_cdc_union_desc;
+#[doc = "! Line Coding structure"]
+#[repr(C, packed)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_cdc_line_coding {
+    #[doc = "!< Data rate, bits per second"]
+    pub dwDTERate: le32_t,
+    #[doc = "!< 0-1 Stop bit,1-1.5 Stop bits,2-2 Stop bits"]
+    pub bCharFormat: u8,
+    #[doc = "!< 0-None,1-Odd,2-Even,3-Mark,4-Space"]
+    pub bParityType: u8,
+    #[doc = "!< 5,6,7,8 or 16"]
+    pub bDataBits: u8,
+}
+#[test]
+fn bindgen_test_layout_usb_cdc_line_coding() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_cdc_line_coding>(),
+        7usize,
+        concat!("Size of: ", stringify!(usb_cdc_line_coding))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_cdc_line_coding>(),
+        1usize,
+        concat!("Alignment of ", stringify!(usb_cdc_line_coding))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_cdc_line_coding>())).dwDTERate as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_line_coding),
+            "::",
+            stringify!(dwDTERate)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_line_coding>())).bCharFormat as *const _ as usize
+        },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_line_coding),
+            "::",
+            stringify!(bCharFormat)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_line_coding>())).bParityType as *const _ as usize
+        },
+        5usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_line_coding),
+            "::",
+            stringify!(bParityType)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_cdc_line_coding>())).bDataBits as *const _ as usize },
+        6usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_line_coding),
+            "::",
+            stringify!(bDataBits)
+        )
+    );
+}
+pub type usb_cdc_line_coding_t = usb_cdc_line_coding;
+#[doc = "!< 1 stop bit"]
+pub const cdc_char_format_CDC_STOP_BITS_1: cdc_char_format = 0;
+#[doc = "!< 1.5 stop bits"]
+pub const cdc_char_format_CDC_STOP_BITS_1_5: cdc_char_format = 1;
+#[doc = "!< 2 stop bits"]
+pub const cdc_char_format_CDC_STOP_BITS_2: cdc_char_format = 2;
+#[doc = "! Possible values of bCharFormat"]
+pub type cdc_char_format = u32;
+#[doc = "!< No parity"]
+pub const cdc_parity_CDC_PAR_NONE: cdc_parity = 0;
+#[doc = "!< Odd parity"]
+pub const cdc_parity_CDC_PAR_ODD: cdc_parity = 1;
+#[doc = "!< Even parity"]
+pub const cdc_parity_CDC_PAR_EVEN: cdc_parity = 2;
+#[doc = "!< Parity forced to 1 (mark)"]
+pub const cdc_parity_CDC_PAR_MARK: cdc_parity = 3;
+#[doc = "!< Parity forced to 0 (space)"]
+pub const cdc_parity_CDC_PAR_SPACE: cdc_parity = 4;
+#[doc = "! Possible values of bParityType"]
+pub type cdc_parity = u32;
+#[doc = "! Control signal structure"]
+#[repr(C)]
+#[derive(Copy, Clone)]
+pub struct usb_cdc_control_signal {
+    pub __bindgen_anon_1: usb_cdc_control_signal__bindgen_ty_1,
+}
+#[repr(C, packed)]
+#[derive(Copy, Clone)]
+pub union usb_cdc_control_signal__bindgen_ty_1 {
+    pub value: le16_t,
+    pub modem: usb_cdc_control_signal__bindgen_ty_1__bindgen_ty_1,
+    pub rs232: usb_cdc_control_signal__bindgen_ty_1__bindgen_ty_2,
+    pub v24: usb_cdc_control_signal__bindgen_ty_1__bindgen_ty_3,
+    _bindgen_union_align: [u8; 2usize],
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_cdc_control_signal__bindgen_ty_1__bindgen_ty_1 {
+    pub dte_present: u8,
+    pub carrier_ctrl: u8,
+}
+#[test]
+fn bindgen_test_layout_usb_cdc_control_signal__bindgen_ty_1__bindgen_ty_1() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_cdc_control_signal__bindgen_ty_1__bindgen_ty_1>(),
+        2usize,
+        concat!(
+            "Size of: ",
+            stringify!(usb_cdc_control_signal__bindgen_ty_1__bindgen_ty_1)
+        )
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_cdc_control_signal__bindgen_ty_1__bindgen_ty_1>(),
+        1usize,
+        concat!(
+            "Alignment of ",
+            stringify!(usb_cdc_control_signal__bindgen_ty_1__bindgen_ty_1)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_control_signal__bindgen_ty_1__bindgen_ty_1>()))
+                .dte_present as *const _ as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_control_signal__bindgen_ty_1__bindgen_ty_1),
+            "::",
+            stringify!(dte_present)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_control_signal__bindgen_ty_1__bindgen_ty_1>()))
+                .carrier_ctrl as *const _ as usize
+        },
+        1usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_control_signal__bindgen_ty_1__bindgen_ty_1),
+            "::",
+            stringify!(carrier_ctrl)
+        )
+    );
+}
+#[repr(C, packed)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_cdc_control_signal__bindgen_ty_1__bindgen_ty_2 {
+    pub _bitfield_1: __BindgenBitfieldUnit<[u8; 1usize], u8>,
+}
+#[test]
+fn bindgen_test_layout_usb_cdc_control_signal__bindgen_ty_1__bindgen_ty_2() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_cdc_control_signal__bindgen_ty_1__bindgen_ty_2>(),
+        1usize,
+        concat!(
+            "Size of: ",
+            stringify!(usb_cdc_control_signal__bindgen_ty_1__bindgen_ty_2)
+        )
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_cdc_control_signal__bindgen_ty_1__bindgen_ty_2>(),
+        1usize,
+        concat!(
+            "Alignment of ",
+            stringify!(usb_cdc_control_signal__bindgen_ty_1__bindgen_ty_2)
+        )
+    );
+}
+impl usb_cdc_control_signal__bindgen_ty_1__bindgen_ty_2 {
+    #[inline]
+    pub fn DTR(&self) -> u8 {
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(0usize, 1u8) as u8) }
+    }
+    #[inline]
+    pub fn set_DTR(&mut self, val: u8) {
+        unsafe {
+            let val: u8 = ::core::mem::transmute(val);
+            self._bitfield_1.set(0usize, 1u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn RTS(&self) -> u8 {
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(1usize, 1u8) as u8) }
+    }
+    #[inline]
+    pub fn set_RTS(&mut self, val: u8) {
+        unsafe {
+            let val: u8 = ::core::mem::transmute(val);
+            self._bitfield_1.set(1usize, 1u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn new_bitfield_1(DTR: u8, RTS: u8) -> __BindgenBitfieldUnit<[u8; 1usize], u8> {
+        let mut __bindgen_bitfield_unit: __BindgenBitfieldUnit<[u8; 1usize], u8> =
+            Default::default();
+        __bindgen_bitfield_unit.set(0usize, 1u8, {
+            let DTR: u8 = unsafe { ::core::mem::transmute(DTR) };
+            DTR as u64
+        });
+        __bindgen_bitfield_unit.set(1usize, 1u8, {
+            let RTS: u8 = unsafe { ::core::mem::transmute(RTS) };
+            RTS as u64
+        });
+        __bindgen_bitfield_unit
+    }
+}
+#[repr(C, packed)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_cdc_control_signal__bindgen_ty_1__bindgen_ty_3 {
+    pub _bitfield_1: __BindgenBitfieldUnit<[u8; 1usize], u8>,
+}
+#[test]
+fn bindgen_test_layout_usb_cdc_control_signal__bindgen_ty_1__bindgen_ty_3() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_cdc_control_signal__bindgen_ty_1__bindgen_ty_3>(),
+        1usize,
+        concat!(
+            "Size of: ",
+            stringify!(usb_cdc_control_signal__bindgen_ty_1__bindgen_ty_3)
+        )
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_cdc_control_signal__bindgen_ty_1__bindgen_ty_3>(),
+        1usize,
+        concat!(
+            "Alignment of ",
+            stringify!(usb_cdc_control_signal__bindgen_ty_1__bindgen_ty_3)
+        )
+    );
+}
+impl usb_cdc_control_signal__bindgen_ty_1__bindgen_ty_3 {
+    #[inline]
+    pub fn s108_2(&self) -> u8 {
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(0usize, 1u8) as u8) }
+    }
+    #[inline]
+    pub fn set_s108_2(&mut self, val: u8) {
+        unsafe {
+            let val: u8 = ::core::mem::transmute(val);
+            self._bitfield_1.set(0usize, 1u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn s105(&self) -> u8 {
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(1usize, 1u8) as u8) }
+    }
+    #[inline]
+    pub fn set_s105(&mut self, val: u8) {
+        unsafe {
+            let val: u8 = ::core::mem::transmute(val);
+            self._bitfield_1.set(1usize, 1u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn new_bitfield_1(s108_2: u8, s105: u8) -> __BindgenBitfieldUnit<[u8; 1usize], u8> {
+        let mut __bindgen_bitfield_unit: __BindgenBitfieldUnit<[u8; 1usize], u8> =
+            Default::default();
+        __bindgen_bitfield_unit.set(0usize, 1u8, {
+            let s108_2: u8 = unsafe { ::core::mem::transmute(s108_2) };
+            s108_2 as u64
+        });
+        __bindgen_bitfield_unit.set(1usize, 1u8, {
+            let s105: u8 = unsafe { ::core::mem::transmute(s105) };
+            s105 as u64
+        });
+        __bindgen_bitfield_unit
+    }
+}
+#[test]
+fn bindgen_test_layout_usb_cdc_control_signal__bindgen_ty_1() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_cdc_control_signal__bindgen_ty_1>(),
+        2usize,
+        concat!(
+            "Size of: ",
+            stringify!(usb_cdc_control_signal__bindgen_ty_1)
+        )
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_cdc_control_signal__bindgen_ty_1>(),
+        1usize,
+        concat!(
+            "Alignment of ",
+            stringify!(usb_cdc_control_signal__bindgen_ty_1)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_control_signal__bindgen_ty_1>())).value as *const _
+                as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_control_signal__bindgen_ty_1),
+            "::",
+            stringify!(value)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_control_signal__bindgen_ty_1>())).modem as *const _
+                as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_control_signal__bindgen_ty_1),
+            "::",
+            stringify!(modem)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_control_signal__bindgen_ty_1>())).rs232 as *const _
+                as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_control_signal__bindgen_ty_1),
+            "::",
+            stringify!(rs232)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_control_signal__bindgen_ty_1>())).v24 as *const _
+                as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_control_signal__bindgen_ty_1),
+            "::",
+            stringify!(v24)
+        )
+    );
+}
+#[test]
+fn bindgen_test_layout_usb_cdc_control_signal() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_cdc_control_signal>(),
+        2usize,
+        concat!("Size of: ", stringify!(usb_cdc_control_signal))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_cdc_control_signal>(),
+        1usize,
+        concat!("Alignment of ", stringify!(usb_cdc_control_signal))
+    );
+}
+pub type usb_cdc_control_signal_t = usb_cdc_control_signal;
+#[repr(C)]
+#[derive(Copy, Clone)]
+pub struct usb_cdc_notify_msg {
+    pub bmRequestType: u8,
+    pub bNotification: u8,
+    pub __bindgen_anon_1: usb_cdc_notify_msg__bindgen_ty_1,
+    pub __bindgen_anon_2: usb_cdc_notify_msg__bindgen_ty_2,
+    pub __bindgen_anon_3: usb_cdc_notify_msg__bindgen_ty_3,
+}
+#[repr(C, packed)]
+#[derive(Copy, Clone)]
+pub union usb_cdc_notify_msg__bindgen_ty_1 {
+    pub wValue: le16_t,
+    pub wValueBytes: usb_cdc_notify_msg__bindgen_ty_1__bindgen_ty_1,
+    _bindgen_union_align: [u8; 2usize],
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_cdc_notify_msg__bindgen_ty_1__bindgen_ty_1 {
+    pub low: u8,
+    pub high: u8,
+}
+#[test]
+fn bindgen_test_layout_usb_cdc_notify_msg__bindgen_ty_1__bindgen_ty_1() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_cdc_notify_msg__bindgen_ty_1__bindgen_ty_1>(),
+        2usize,
+        concat!(
+            "Size of: ",
+            stringify!(usb_cdc_notify_msg__bindgen_ty_1__bindgen_ty_1)
+        )
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_cdc_notify_msg__bindgen_ty_1__bindgen_ty_1>(),
+        1usize,
+        concat!(
+            "Alignment of ",
+            stringify!(usb_cdc_notify_msg__bindgen_ty_1__bindgen_ty_1)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_notify_msg__bindgen_ty_1__bindgen_ty_1>())).low
+                as *const _ as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_notify_msg__bindgen_ty_1__bindgen_ty_1),
+            "::",
+            stringify!(low)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_notify_msg__bindgen_ty_1__bindgen_ty_1>())).high
+                as *const _ as usize
+        },
+        1usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_notify_msg__bindgen_ty_1__bindgen_ty_1),
+            "::",
+            stringify!(high)
+        )
+    );
+}
+#[test]
+fn bindgen_test_layout_usb_cdc_notify_msg__bindgen_ty_1() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_cdc_notify_msg__bindgen_ty_1>(),
+        2usize,
+        concat!("Size of: ", stringify!(usb_cdc_notify_msg__bindgen_ty_1))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_cdc_notify_msg__bindgen_ty_1>(),
+        1usize,
+        concat!(
+            "Alignment of ",
+            stringify!(usb_cdc_notify_msg__bindgen_ty_1)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_notify_msg__bindgen_ty_1>())).wValue as *const _
+                as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_notify_msg__bindgen_ty_1),
+            "::",
+            stringify!(wValue)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_notify_msg__bindgen_ty_1>())).wValueBytes as *const _
+                as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_notify_msg__bindgen_ty_1),
+            "::",
+            stringify!(wValueBytes)
+        )
+    );
+}
+#[repr(C, packed)]
+#[derive(Copy, Clone)]
+pub union usb_cdc_notify_msg__bindgen_ty_2 {
+    pub wIndex: le16_t,
+    pub wIndexBytes: usb_cdc_notify_msg__bindgen_ty_2__bindgen_ty_1,
+    _bindgen_union_align: [u8; 2usize],
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_cdc_notify_msg__bindgen_ty_2__bindgen_ty_1 {
+    pub low: u8,
+    pub high: u8,
+}
+#[test]
+fn bindgen_test_layout_usb_cdc_notify_msg__bindgen_ty_2__bindgen_ty_1() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_cdc_notify_msg__bindgen_ty_2__bindgen_ty_1>(),
+        2usize,
+        concat!(
+            "Size of: ",
+            stringify!(usb_cdc_notify_msg__bindgen_ty_2__bindgen_ty_1)
+        )
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_cdc_notify_msg__bindgen_ty_2__bindgen_ty_1>(),
+        1usize,
+        concat!(
+            "Alignment of ",
+            stringify!(usb_cdc_notify_msg__bindgen_ty_2__bindgen_ty_1)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_notify_msg__bindgen_ty_2__bindgen_ty_1>())).low
+                as *const _ as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_notify_msg__bindgen_ty_2__bindgen_ty_1),
+            "::",
+            stringify!(low)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_notify_msg__bindgen_ty_2__bindgen_ty_1>())).high
+                as *const _ as usize
+        },
+        1usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_notify_msg__bindgen_ty_2__bindgen_ty_1),
+            "::",
+            stringify!(high)
+        )
+    );
+}
+#[test]
+fn bindgen_test_layout_usb_cdc_notify_msg__bindgen_ty_2() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_cdc_notify_msg__bindgen_ty_2>(),
+        2usize,
+        concat!("Size of: ", stringify!(usb_cdc_notify_msg__bindgen_ty_2))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_cdc_notify_msg__bindgen_ty_2>(),
+        1usize,
+        concat!(
+            "Alignment of ",
+            stringify!(usb_cdc_notify_msg__bindgen_ty_2)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_notify_msg__bindgen_ty_2>())).wIndex as *const _
+                as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_notify_msg__bindgen_ty_2),
+            "::",
+            stringify!(wIndex)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_notify_msg__bindgen_ty_2>())).wIndexBytes as *const _
+                as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_notify_msg__bindgen_ty_2),
+            "::",
+            stringify!(wIndexBytes)
+        )
+    );
+}
+#[repr(C, packed)]
+#[derive(Copy, Clone)]
+pub union usb_cdc_notify_msg__bindgen_ty_3 {
+    pub wLength: le16_t,
+    pub wLengthBytes: usb_cdc_notify_msg__bindgen_ty_3__bindgen_ty_1,
+    _bindgen_union_align: [u8; 2usize],
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_cdc_notify_msg__bindgen_ty_3__bindgen_ty_1 {
+    pub low: u8,
+    pub high: u8,
+}
+#[test]
+fn bindgen_test_layout_usb_cdc_notify_msg__bindgen_ty_3__bindgen_ty_1() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_cdc_notify_msg__bindgen_ty_3__bindgen_ty_1>(),
+        2usize,
+        concat!(
+            "Size of: ",
+            stringify!(usb_cdc_notify_msg__bindgen_ty_3__bindgen_ty_1)
+        )
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_cdc_notify_msg__bindgen_ty_3__bindgen_ty_1>(),
+        1usize,
+        concat!(
+            "Alignment of ",
+            stringify!(usb_cdc_notify_msg__bindgen_ty_3__bindgen_ty_1)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_notify_msg__bindgen_ty_3__bindgen_ty_1>())).low
+                as *const _ as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_notify_msg__bindgen_ty_3__bindgen_ty_1),
+            "::",
+            stringify!(low)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_notify_msg__bindgen_ty_3__bindgen_ty_1>())).high
+                as *const _ as usize
+        },
+        1usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_notify_msg__bindgen_ty_3__bindgen_ty_1),
+            "::",
+            stringify!(high)
+        )
+    );
+}
+#[test]
+fn bindgen_test_layout_usb_cdc_notify_msg__bindgen_ty_3() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_cdc_notify_msg__bindgen_ty_3>(),
+        2usize,
+        concat!("Size of: ", stringify!(usb_cdc_notify_msg__bindgen_ty_3))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_cdc_notify_msg__bindgen_ty_3>(),
+        1usize,
+        concat!(
+            "Alignment of ",
+            stringify!(usb_cdc_notify_msg__bindgen_ty_3)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_notify_msg__bindgen_ty_3>())).wLength as *const _
+                as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_notify_msg__bindgen_ty_3),
+            "::",
+            stringify!(wLength)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_notify_msg__bindgen_ty_3>())).wLengthBytes as *const _
+                as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_notify_msg__bindgen_ty_3),
+            "::",
+            stringify!(wLengthBytes)
+        )
+    );
+}
+#[test]
+fn bindgen_test_layout_usb_cdc_notify_msg() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_cdc_notify_msg>(),
+        8usize,
+        concat!("Size of: ", stringify!(usb_cdc_notify_msg))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_cdc_notify_msg>(),
+        1usize,
+        concat!("Alignment of ", stringify!(usb_cdc_notify_msg))
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_notify_msg>())).bmRequestType as *const _ as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_notify_msg),
+            "::",
+            stringify!(bmRequestType)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_notify_msg>())).bNotification as *const _ as usize
+        },
+        1usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_notify_msg),
+            "::",
+            stringify!(bNotification)
+        )
+    );
+}
+pub type usb_cdc_notify_msg_t = usb_cdc_notify_msg;
+#[doc = "! UART State Bitmap (cdc spec 1.1 chapter 6.3.5)"]
+#[repr(C, packed)]
+#[derive(Copy, Clone)]
+pub union usb_cdc_uart_state {
+    pub value: le16_t,
+    pub bitmap: usb_cdc_uart_state__bindgen_ty_1,
+    pub rs232: usb_cdc_uart_state__bindgen_ty_2,
+    pub v24: usb_cdc_uart_state__bindgen_ty_3,
+    _bindgen_union_align: [u8; 2usize],
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_cdc_uart_state__bindgen_ty_1 {
+    pub _bitfield_1: __BindgenBitfieldUnit<[u8; 1usize], u8>,
+    pub bOverRun: u8,
+}
+#[test]
+fn bindgen_test_layout_usb_cdc_uart_state__bindgen_ty_1() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_cdc_uart_state__bindgen_ty_1>(),
+        2usize,
+        concat!("Size of: ", stringify!(usb_cdc_uart_state__bindgen_ty_1))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_cdc_uart_state__bindgen_ty_1>(),
+        1usize,
+        concat!(
+            "Alignment of ",
+            stringify!(usb_cdc_uart_state__bindgen_ty_1)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_uart_state__bindgen_ty_1>())).bOverRun as *const _
+                as usize
+        },
+        1usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_uart_state__bindgen_ty_1),
+            "::",
+            stringify!(bOverRun)
+        )
+    );
+}
+impl usb_cdc_uart_state__bindgen_ty_1 {
+    #[inline]
+    pub fn bRxCarrier(&self) -> u8 {
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(0usize, 1u8) as u8) }
+    }
+    #[inline]
+    pub fn set_bRxCarrier(&mut self, val: u8) {
+        unsafe {
+            let val: u8 = ::core::mem::transmute(val);
+            self._bitfield_1.set(0usize, 1u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn bTxCarrier(&self) -> u8 {
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(1usize, 1u8) as u8) }
+    }
+    #[inline]
+    pub fn set_bTxCarrier(&mut self, val: u8) {
+        unsafe {
+            let val: u8 = ::core::mem::transmute(val);
+            self._bitfield_1.set(1usize, 1u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn bBreak(&self) -> u8 {
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(2usize, 1u8) as u8) }
+    }
+    #[inline]
+    pub fn set_bBreak(&mut self, val: u8) {
+        unsafe {
+            let val: u8 = ::core::mem::transmute(val);
+            self._bitfield_1.set(2usize, 1u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn bRingSignal(&self) -> u8 {
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(3usize, 1u8) as u8) }
+    }
+    #[inline]
+    pub fn set_bRingSignal(&mut self, val: u8) {
+        unsafe {
+            let val: u8 = ::core::mem::transmute(val);
+            self._bitfield_1.set(3usize, 1u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn bFraming(&self) -> u8 {
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(4usize, 1u8) as u8) }
+    }
+    #[inline]
+    pub fn set_bFraming(&mut self, val: u8) {
+        unsafe {
+            let val: u8 = ::core::mem::transmute(val);
+            self._bitfield_1.set(4usize, 1u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn bParity(&self) -> u8 {
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(5usize, 1u8) as u8) }
+    }
+    #[inline]
+    pub fn set_bParity(&mut self, val: u8) {
+        unsafe {
+            let val: u8 = ::core::mem::transmute(val);
+            self._bitfield_1.set(5usize, 1u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn new_bitfield_1(
+        bRxCarrier: u8,
+        bTxCarrier: u8,
+        bBreak: u8,
+        bRingSignal: u8,
+        bFraming: u8,
+        bParity: u8,
+    ) -> __BindgenBitfieldUnit<[u8; 1usize], u8> {
+        let mut __bindgen_bitfield_unit: __BindgenBitfieldUnit<[u8; 1usize], u8> =
+            Default::default();
+        __bindgen_bitfield_unit.set(0usize, 1u8, {
+            let bRxCarrier: u8 = unsafe { ::core::mem::transmute(bRxCarrier) };
+            bRxCarrier as u64
+        });
+        __bindgen_bitfield_unit.set(1usize, 1u8, {
+            let bTxCarrier: u8 = unsafe { ::core::mem::transmute(bTxCarrier) };
+            bTxCarrier as u64
+        });
+        __bindgen_bitfield_unit.set(2usize, 1u8, {
+            let bBreak: u8 = unsafe { ::core::mem::transmute(bBreak) };
+            bBreak as u64
+        });
+        __bindgen_bitfield_unit.set(3usize, 1u8, {
+            let bRingSignal: u8 = unsafe { ::core::mem::transmute(bRingSignal) };
+            bRingSignal as u64
+        });
+        __bindgen_bitfield_unit.set(4usize, 1u8, {
+            let bFraming: u8 = unsafe { ::core::mem::transmute(bFraming) };
+            bFraming as u64
+        });
+        __bindgen_bitfield_unit.set(5usize, 1u8, {
+            let bParity: u8 = unsafe { ::core::mem::transmute(bParity) };
+            bParity as u64
+        });
+        __bindgen_bitfield_unit
+    }
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_cdc_uart_state__bindgen_ty_2 {
+    pub _bitfield_1: __BindgenBitfieldUnit<[u8; 1usize], u8>,
+    pub bOverRun: u8,
+}
+#[test]
+fn bindgen_test_layout_usb_cdc_uart_state__bindgen_ty_2() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_cdc_uart_state__bindgen_ty_2>(),
+        2usize,
+        concat!("Size of: ", stringify!(usb_cdc_uart_state__bindgen_ty_2))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_cdc_uart_state__bindgen_ty_2>(),
+        1usize,
+        concat!(
+            "Alignment of ",
+            stringify!(usb_cdc_uart_state__bindgen_ty_2)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_uart_state__bindgen_ty_2>())).bOverRun as *const _
+                as usize
+        },
+        1usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_uart_state__bindgen_ty_2),
+            "::",
+            stringify!(bOverRun)
+        )
+    );
+}
+impl usb_cdc_uart_state__bindgen_ty_2 {
+    #[inline]
+    pub fn bDCD(&self) -> u8 {
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(0usize, 1u8) as u8) }
+    }
+    #[inline]
+    pub fn set_bDCD(&mut self, val: u8) {
+        unsafe {
+            let val: u8 = ::core::mem::transmute(val);
+            self._bitfield_1.set(0usize, 1u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn bDSR(&self) -> u8 {
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(1usize, 1u8) as u8) }
+    }
+    #[inline]
+    pub fn set_bDSR(&mut self, val: u8) {
+        unsafe {
+            let val: u8 = ::core::mem::transmute(val);
+            self._bitfield_1.set(1usize, 1u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn bBreak(&self) -> u8 {
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(2usize, 1u8) as u8) }
+    }
+    #[inline]
+    pub fn set_bBreak(&mut self, val: u8) {
+        unsafe {
+            let val: u8 = ::core::mem::transmute(val);
+            self._bitfield_1.set(2usize, 1u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn bRingSignal(&self) -> u8 {
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(3usize, 1u8) as u8) }
+    }
+    #[inline]
+    pub fn set_bRingSignal(&mut self, val: u8) {
+        unsafe {
+            let val: u8 = ::core::mem::transmute(val);
+            self._bitfield_1.set(3usize, 1u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn bFraming(&self) -> u8 {
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(4usize, 1u8) as u8) }
+    }
+    #[inline]
+    pub fn set_bFraming(&mut self, val: u8) {
+        unsafe {
+            let val: u8 = ::core::mem::transmute(val);
+            self._bitfield_1.set(4usize, 1u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn bParity(&self) -> u8 {
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(5usize, 1u8) as u8) }
+    }
+    #[inline]
+    pub fn set_bParity(&mut self, val: u8) {
+        unsafe {
+            let val: u8 = ::core::mem::transmute(val);
+            self._bitfield_1.set(5usize, 1u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn new_bitfield_1(
+        bDCD: u8,
+        bDSR: u8,
+        bBreak: u8,
+        bRingSignal: u8,
+        bFraming: u8,
+        bParity: u8,
+    ) -> __BindgenBitfieldUnit<[u8; 1usize], u8> {
+        let mut __bindgen_bitfield_unit: __BindgenBitfieldUnit<[u8; 1usize], u8> =
+            Default::default();
+        __bindgen_bitfield_unit.set(0usize, 1u8, {
+            let bDCD: u8 = unsafe { ::core::mem::transmute(bDCD) };
+            bDCD as u64
+        });
+        __bindgen_bitfield_unit.set(1usize, 1u8, {
+            let bDSR: u8 = unsafe { ::core::mem::transmute(bDSR) };
+            bDSR as u64
+        });
+        __bindgen_bitfield_unit.set(2usize, 1u8, {
+            let bBreak: u8 = unsafe { ::core::mem::transmute(bBreak) };
+            bBreak as u64
+        });
+        __bindgen_bitfield_unit.set(3usize, 1u8, {
+            let bRingSignal: u8 = unsafe { ::core::mem::transmute(bRingSignal) };
+            bRingSignal as u64
+        });
+        __bindgen_bitfield_unit.set(4usize, 1u8, {
+            let bFraming: u8 = unsafe { ::core::mem::transmute(bFraming) };
+            bFraming as u64
+        });
+        __bindgen_bitfield_unit.set(5usize, 1u8, {
+            let bParity: u8 = unsafe { ::core::mem::transmute(bParity) };
+            bParity as u64
+        });
+        __bindgen_bitfield_unit
+    }
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct usb_cdc_uart_state__bindgen_ty_3 {
+    pub _bitfield_1: __BindgenBitfieldUnit<[u8; 1usize], u8>,
+    pub bOverRun: u8,
+}
+#[test]
+fn bindgen_test_layout_usb_cdc_uart_state__bindgen_ty_3() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_cdc_uart_state__bindgen_ty_3>(),
+        2usize,
+        concat!("Size of: ", stringify!(usb_cdc_uart_state__bindgen_ty_3))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_cdc_uart_state__bindgen_ty_3>(),
+        1usize,
+        concat!(
+            "Alignment of ",
+            stringify!(usb_cdc_uart_state__bindgen_ty_3)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_uart_state__bindgen_ty_3>())).bOverRun as *const _
+                as usize
+        },
+        1usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_uart_state__bindgen_ty_3),
+            "::",
+            stringify!(bOverRun)
+        )
+    );
+}
+impl usb_cdc_uart_state__bindgen_ty_3 {
+    #[inline]
+    pub fn bS109(&self) -> u8 {
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(0usize, 1u8) as u8) }
+    }
+    #[inline]
+    pub fn set_bS109(&mut self, val: u8) {
+        unsafe {
+            let val: u8 = ::core::mem::transmute(val);
+            self._bitfield_1.set(0usize, 1u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn bS106(&self) -> u8 {
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(1usize, 1u8) as u8) }
+    }
+    #[inline]
+    pub fn set_bS106(&mut self, val: u8) {
+        unsafe {
+            let val: u8 = ::core::mem::transmute(val);
+            self._bitfield_1.set(1usize, 1u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn bBreak(&self) -> u8 {
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(2usize, 1u8) as u8) }
+    }
+    #[inline]
+    pub fn set_bBreak(&mut self, val: u8) {
+        unsafe {
+            let val: u8 = ::core::mem::transmute(val);
+            self._bitfield_1.set(2usize, 1u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn bRingSignal(&self) -> u8 {
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(3usize, 1u8) as u8) }
+    }
+    #[inline]
+    pub fn set_bRingSignal(&mut self, val: u8) {
+        unsafe {
+            let val: u8 = ::core::mem::transmute(val);
+            self._bitfield_1.set(3usize, 1u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn bFraming(&self) -> u8 {
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(4usize, 1u8) as u8) }
+    }
+    #[inline]
+    pub fn set_bFraming(&mut self, val: u8) {
+        unsafe {
+            let val: u8 = ::core::mem::transmute(val);
+            self._bitfield_1.set(4usize, 1u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn bParity(&self) -> u8 {
+        unsafe { ::core::mem::transmute(self._bitfield_1.get(5usize, 1u8) as u8) }
+    }
+    #[inline]
+    pub fn set_bParity(&mut self, val: u8) {
+        unsafe {
+            let val: u8 = ::core::mem::transmute(val);
+            self._bitfield_1.set(5usize, 1u8, val as u64)
+        }
+    }
+    #[inline]
+    pub fn new_bitfield_1(
+        bS109: u8,
+        bS106: u8,
+        bBreak: u8,
+        bRingSignal: u8,
+        bFraming: u8,
+        bParity: u8,
+    ) -> __BindgenBitfieldUnit<[u8; 1usize], u8> {
+        let mut __bindgen_bitfield_unit: __BindgenBitfieldUnit<[u8; 1usize], u8> =
+            Default::default();
+        __bindgen_bitfield_unit.set(0usize, 1u8, {
+            let bS109: u8 = unsafe { ::core::mem::transmute(bS109) };
+            bS109 as u64
+        });
+        __bindgen_bitfield_unit.set(1usize, 1u8, {
+            let bS106: u8 = unsafe { ::core::mem::transmute(bS106) };
+            bS106 as u64
+        });
+        __bindgen_bitfield_unit.set(2usize, 1u8, {
+            let bBreak: u8 = unsafe { ::core::mem::transmute(bBreak) };
+            bBreak as u64
+        });
+        __bindgen_bitfield_unit.set(3usize, 1u8, {
+            let bRingSignal: u8 = unsafe { ::core::mem::transmute(bRingSignal) };
+            bRingSignal as u64
+        });
+        __bindgen_bitfield_unit.set(4usize, 1u8, {
+            let bFraming: u8 = unsafe { ::core::mem::transmute(bFraming) };
+            bFraming as u64
+        });
+        __bindgen_bitfield_unit.set(5usize, 1u8, {
+            let bParity: u8 = unsafe { ::core::mem::transmute(bParity) };
+            bParity as u64
+        });
+        __bindgen_bitfield_unit
+    }
+}
+#[test]
+fn bindgen_test_layout_usb_cdc_uart_state() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_cdc_uart_state>(),
+        2usize,
+        concat!("Size of: ", stringify!(usb_cdc_uart_state))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_cdc_uart_state>(),
+        1usize,
+        concat!("Alignment of ", stringify!(usb_cdc_uart_state))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_cdc_uart_state>())).value as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_uart_state),
+            "::",
+            stringify!(value)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_cdc_uart_state>())).bitmap as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_uart_state),
+            "::",
+            stringify!(bitmap)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_cdc_uart_state>())).rs232 as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_uart_state),
+            "::",
+            stringify!(rs232)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<usb_cdc_uart_state>())).v24 as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_uart_state),
+            "::",
+            stringify!(v24)
+        )
+    );
+}
+pub type usb_cdc_uart_state_t = usb_cdc_uart_state;
+#[doc = "! Hardware handshake support (cdc spec 1.1 chapter 6.3.5)"]
+#[repr(C)]
+#[derive(Copy, Clone)]
+pub struct usb_cdc_notify_serial_state {
+    pub header: usb_cdc_notify_msg_t,
+    pub state: usb_cdc_uart_state,
+}
+#[test]
+fn bindgen_test_layout_usb_cdc_notify_serial_state() {
+    assert_eq!(
+        ::core::mem::size_of::<usb_cdc_notify_serial_state>(),
+        10usize,
+        concat!("Size of: ", stringify!(usb_cdc_notify_serial_state))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<usb_cdc_notify_serial_state>(),
+        1usize,
+        concat!("Alignment of ", stringify!(usb_cdc_notify_serial_state))
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_notify_serial_state>())).header as *const _ as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_notify_serial_state),
+            "::",
+            stringify!(header)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::core::ptr::null::<usb_cdc_notify_serial_state>())).state as *const _ as usize
+        },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(usb_cdc_notify_serial_state),
+            "::",
+            stringify!(state)
+        )
+    );
+}
+pub type usb_cdc_notify_serial_state_t = usb_cdc_notify_serial_state;
+pub const cdcdf_acm_cb_type_CDCDF_ACM_CB_READ: cdcdf_acm_cb_type = 0;
+pub const cdcdf_acm_cb_type_CDCDF_ACM_CB_WRITE: cdcdf_acm_cb_type = 1;
+pub const cdcdf_acm_cb_type_CDCDF_ACM_CB_LINE_CODING_C: cdcdf_acm_cb_type = 2;
+pub const cdcdf_acm_cb_type_CDCDF_ACM_CB_STATE_C: cdcdf_acm_cb_type = 3;
+#[doc = " CDC ACM Class Callback Type"]
+pub type cdcdf_acm_cb_type = u32;
+#[doc = " CDC ACM Notify Line State Callback."]
+pub type cdcdf_acm_notify_state_t = ::core::option::Option<unsafe extern "C" fn(arg1: u16)>;
+#[doc = " CDC ACM Set Line Coding Callback."]
+pub type cdcdf_acm_set_line_coding_t =
+    ::core::option::Option<unsafe extern "C" fn(arg1: *mut usb_cdc_line_coding) -> bool>;
+extern "C" {
+    #[doc = " \\brief Initialize the USB CDC ACM Function Driver"]
+    #[doc = " \\return Operation status."]
+    pub fn cdcdf_acm_init() -> i32;
+}
+extern "C" {
+    #[doc = " \\brief Deinitialize the USB CDC ACM Function Driver"]
+    #[doc = " \\return Operation status."]
+    pub fn cdcdf_acm_deinit();
+}
+extern "C" {
+    #[doc = " \\brief USB CDC ACM Function Read Data"]
+    #[doc = " \\param[in] buf Pointer to the buffer which receives data"]
+    #[doc = " \\param[in] size the size of data to be received"]
+    #[doc = " \\return Operation status."]
+    pub fn cdcdf_acm_read(buf: *mut u8, size: u32) -> i32;
+}
+extern "C" {
+    #[doc = " \\brief USB CDC ACM Function Write Data"]
+    #[doc = " \\param[in] buf Pointer to the buffer which stores data"]
+    #[doc = " \\param[in] size the size of data to be sent"]
+    #[doc = " \\return Operation status."]
+    pub fn cdcdf_acm_write(buf: *mut u8, size: u32) -> i32;
+}
+extern "C" {
+    #[doc = " \\brief USB CDC ACM Stop the currnet data transfer"]
+    pub fn cdcdf_acm_stop_xfer();
+}
+extern "C" {
+    #[doc = " \\brief USB CDC ACM Function Register Callback"]
+    #[doc = " \\param[in] cb_type Callback type of CDC ACM Function"]
+    #[doc = " \\param[in] func Pointer to callback function"]
+    #[doc = " \\return Operation status."]
+    pub fn cdcdf_acm_register_callback(cb_type: cdcdf_acm_cb_type, func: FUNC_PTR) -> i32;
+}
+extern "C" {
+    #[doc = " \\brief Check whether CDC ACM Function is enabled"]
+    #[doc = " \\return Operation status."]
+    #[doc = " \\return true CDC ACM Function is enabled"]
+    #[doc = " \\return false CDC ACM Function is disabled"]
+    pub fn cdcdf_acm_is_enabled() -> bool;
+}
+extern "C" {
+    #[doc = " \\brief Return the CDC ACM line coding structure start address"]
+    #[doc = " \\return Pointer to USB CDC ACM line coding data."]
+    pub fn cdcdf_acm_get_line_coding() -> *const usb_cdc_line_coding;
+}
+extern "C" {
+    #[doc = " \\brief Return version"]
+    pub fn cdcdf_acm_get_version() -> u32;
+}
+extern "C" {
+    pub fn cdcd_acm_example();
+}
+extern "C" {
+    pub fn cdc_device_acm_init();
+}
+extern "C" {
+    #[doc = " \\berif Initialize USB"]
+    pub fn usb_init();
 }
 extern "C" {
     pub fn pin_new(port: gpio_port, pin: u8) -> u8;

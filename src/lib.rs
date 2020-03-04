@@ -5,7 +5,7 @@
 #![no_std]
 
 pub use bindings::*;
-mod bindings;
+pub mod bindings;
 
 pub fn init() {
     unsafe {

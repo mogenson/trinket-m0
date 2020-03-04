@@ -15,6 +15,8 @@ fn main() {
         "-Os",
         "-std=gnu99",
         "-Wall",
+        "-Wno-cast-function-type",
+        "-Wno-unused-parameter",
     ];
 
     let includes = [
@@ -29,8 +31,13 @@ fn main() {
         "atmel-start/hpl/pm",
         "atmel-start/hpl/port",
         "atmel-start/hpl/sysctrl",
+        "atmel-start/hpl/usb",
         "atmel-start/hri",
         "atmel-start/samd21a/include",
+        "atmel-start/usb",
+        "atmel-start/usb/class/cdc",
+        "atmel-start/usb/class/cdc/device",
+        "atmel-start/usb/device",
     ];
 
     /* exclude main.c and driver_examples.c */
@@ -43,6 +50,7 @@ fn main() {
         "atmel-start/hal/src/hal_init.c",
         "atmel-start/hal/src/hal_io.c",
         "atmel-start/hal/src/hal_sleep.c",
+        "atmel-start/hal/src/hal_usb_device.c",
         "atmel-start/hal/utils/src/utils_assert.c",
         "atmel-start/hal/utils/src/utils_event.c",
         "atmel-start/hal/utils/src/utils_list.c",
@@ -53,8 +61,13 @@ fn main() {
         "atmel-start/hpl/gclk/hpl_gclk.c",
         "atmel-start/hpl/pm/hpl_pm.c",
         "atmel-start/hpl/sysctrl/hpl_sysctrl.c",
+        "atmel-start/hpl/usb/hpl_usb.c",
         "atmel-start/samd21a/gcc/gcc/startup_samd21.c",
         "atmel-start/samd21a/gcc/system_samd21.c",
+        "atmel-start/usb/class/cdc/device/cdcdf_acm.c",
+        "atmel-start/usb/device/usbdc.c",
+        "atmel-start/usb_start.c",
+        "atmel-start/usb/usb_protocol.c",
         "src/hal.c",
     ];
 
@@ -69,8 +82,9 @@ fn main() {
     // builder.cargo_metadata(false);
 
     let mut bindings = bindgen::Builder::default();
-    bindings = bindings.clang_arg("--sysroot=/usr/lib/gcc/arm-none-eabi/include");
+    bindings = bindings.clang_arg("--sysroot=/usr/arm-none-eabi");
     bindings = bindings.header("atmel-start/driver_init.h");
+    bindings = bindings.header("atmel-start/usb_start.h");
     bindings = bindings.header("src/hal.h");
     bindings = bindings.ctypes_prefix("cty");
     bindings = bindings.use_core();
