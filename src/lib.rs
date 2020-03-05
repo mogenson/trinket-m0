@@ -7,12 +7,6 @@
 pub use bindings::*;
 pub mod bindings;
 
-pub fn init() {
-    unsafe {
-        system_init();
-    }
-}
-
 // implement gpio traits from embedded_hal
 use core::convert::Infallible;
 use embedded_hal::digital::v2::{InputPin, OutputPin, ToggleableOutputPin};
