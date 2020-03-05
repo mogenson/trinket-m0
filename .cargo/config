@@ -1,6 +1,4 @@
 [target.thumbv6m-none-eabi]
-runner = "sh make-uf2.sh"
-
 rustflags = [
   "-C", "linker=arm-none-eabi-gcc",
   "-C", "link-arg=-mcpu=cortex-m0plus",

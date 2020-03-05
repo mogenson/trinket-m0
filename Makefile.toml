@@ -1,0 +1,65 @@
+[env]
+BUILD = "./target/thumbv6m-none-eabi/debug/examples"
+DEVICE = "ATSAMD21E18"
+IF = "SWD"
+SPEED = "2000"
+
+[tasks.build]
+command = "cargo"
+args = ["build", "--example", "${@}"]
+
+[tasks.debug]
+dependencies = ["build"]
+script = [
+'''
+    JLinkGDBServer -device ${DEVICE} -if ${IF} -speed ${SPEED} > /dev/null &
+    PID=$!
+    script -q /dev/null -c \
+        "arm-none-eabi-gdb ${BUILD}/${@} \
+            -ex 'set print asm-demangle on' \
+            -ex 'target extended-remote :2331' \
+            -ex 'monitor semihosting enable' \
+            -ex 'monitor semihosting IOClient 3' \
+            -ex 'monitor reset' \
+            -ex 'load' \
+            -ex 'monitor reg sp=(0x00002000)' \
+            -ex 'monitor reg pc=(0x00002004)'"
+    kill -2 $PID
+'''
+]
+
+[tasks.flash]
+dependencies = ["bin"]
+script = [
+'''
+    JLinkExe -device ${DEVICE} -if ${IF} -speed ${SPEED} << EOF
+        halt
+        loadbin ${BUILD}/${@}.bin 0x00000000
+        r
+        go
+        exit
+    EOF
+'''
+]
+
+[tasks.erase]
+script = [
+'''
+    JLinkExe -device ${DEVICE} -if ${IF} -speed ${SPEED} << EOF
+        halt
+        erase
+        r
+        exit
+    EOF
+'''
+]
+
+[tasks.bin]
+dependencies = ["build"]
+command = "arm-none-eabi-objcopy"
+args = ["${BUILD}/${@}", "-O", "binary", "${BUILD}/${@}.bin"]
+
+[tasks.uf2]
+dependencies = ["bin"]
+command = "uf2conv-rs"
+args = ["-b", "0x2000", "-f", "0x68ed2b88", "-o", "${@}.uf2", "${BUILD}/${@}.bin"]
