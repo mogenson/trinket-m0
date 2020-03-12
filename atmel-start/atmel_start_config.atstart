@@ -2,16 +2,16 @@ format_version: '2'
 name: Trinket M0
 versions:
   api: '1.0'
-  backend: 1.7.298
+  backend: 1.7.301
   commit: 1e07622763d149970fd8808a8f12ff3b1e84e0d7
   content: unknown
   content_pack_name: unknown
   format: '2'
-  frontend: 1.7.298
+  frontend: 1.7.301
   packs_version_avr8: 1.0.1408
   packs_version_qtouch: unknown
   packs_version_sam: 1.0.1373
-  version_backend: 1.7.298
+  version_backend: 1.7.301
   version_frontend: ''
 board:
   identifier: CustomBoard
@@ -156,9 +156,9 @@ drivers:
       gclk_gen_1_div: 250
       gclk_gen_1_div_sel: false
       gclk_gen_1_oscillator: 8MHz Internal Oscillator (OSC8M)
-      gclk_gen_2_div: 1
+      gclk_gen_2_div: 2
       gclk_gen_2_div_sel: false
-      gclk_gen_2_oscillator: External Crystal Oscillator 0.4-32MHz (XOSC)
+      gclk_gen_2_oscillator: 8MHz Internal Oscillator (OSC8M)
       gclk_gen_3_div: 1
       gclk_gen_3_div_sel: false
       gclk_gen_3_oscillator: External Crystal Oscillator 0.4-32MHz (XOSC)
@@ -201,6 +201,50 @@ drivers:
           external: false
           external_frequency: 0
         configuration: {}
+  SPI_0:
+    user_label: SPI_0
+    definition: Atmel:SAMD21_Drivers:0.0.1::SAMD21E18A-MF::SERCOM1::driver_config_definition::SPI.Master::HAL:Driver:SPI.Master.Sync
+    functionality: SPI
+    api: HAL:Driver:SPI_Master_Sync
+    configuration:
+      spi_master_advanced: false
+      spi_master_arch_cpha: Sample input on leading edge
+      spi_master_arch_cpol: SCK is low when idle
+      spi_master_arch_dbgstop: Keep running
+      spi_master_arch_dord: MSB first
+      spi_master_arch_ibon: In data stream
+      spi_master_arch_runstdby: false
+      spi_master_baud_rate: 750000
+      spi_master_character_size: 8 bits
+      spi_master_dummybyte: 511
+      spi_master_rx_enable: false
+    optional_signals: []
+    variant:
+      specification: TXPO=0, RXPO=2
+      required_signals:
+      - name: SERCOM1/PAD/0
+        pad: PA00
+        label: MOSI
+      - name: SERCOM1/PAD/1
+        pad: PA01
+        label: SCK
+      - name: SERCOM1/PAD/2
+        pad: PA18
+        label: MISO
+    clocks:
+      domain_group:
+        nodes:
+        - name: Core
+          input: Generic clock generator 0
+          external: false
+          external_frequency: 0
+        - name: Slow
+          input: Generic clock generator 0
+          external: false
+          external_frequency: 0
+        configuration:
+          core_gclk_selection: Generic clock generator 0
+          slow_gclk_selection: Generic clock generator 0
   DMAC:
     user_label: DMAC
     definition: Atmel:SAMD21_Drivers:0.0.1::SAMD21E18A-MF::DMAC::driver_config_definition::DMAC::HAL:HPL:DMAC
@@ -603,6 +647,24 @@ drivers:
         configuration:
           usb_gclk_selection: Generic clock generator 0
 pads:
+  PA00:
+    name: PA00
+    definition: Atmel:SAMD21_Drivers:0.0.1::SAMD21E18A-MF::pad::PA00
+    mode: Digital output
+    user_label: PA00
+    configuration: null
+  PA01:
+    name: PA01
+    definition: Atmel:SAMD21_Drivers:0.0.1::SAMD21E18A-MF::pad::PA01
+    mode: Digital output
+    user_label: PA01
+    configuration: null
+  PA18:
+    name: PA18
+    definition: Atmel:SAMD21_Drivers:0.0.1::SAMD21E18A-MF::pad::PA18
+    mode: Digital input
+    user_label: PA18
+    configuration: null
   PA24:
     name: PA24
     definition: Atmel:SAMD21_Drivers:0.0.1::SAMD21E18A-MF::pad::PA24

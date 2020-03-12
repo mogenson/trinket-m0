@@ -39,6 +39,7 @@ samd21a/gcc \
 hpl/pm \
 hpl/sysctrl \
 hal/utils/src \
+hpl/sercom \
 examples \
 hpl/gclk \
 samd21a/gcc/gcc \
@@ -51,6 +52,7 @@ hal/src/hal_io.o \
 samd21a/gcc/gcc/startup_samd21.o \
 usb/class/cdc/device/cdcdf_acm.o \
 hal/utils/src/utils_syscalls.o \
+hal/src/hal_spi_m_sync.o \
 hpl/usb/hpl_usb.o \
 hal/src/hal_delay.o \
 hpl/pm/hpl_pm.o \
@@ -68,6 +70,7 @@ main.o \
 samd21a/gcc/system_samd21.o \
 examples/driver_examples.o \
 driver_init.o \
+hpl/sercom/hpl_sercom.o \
 hal/src/hal_gpio.o \
 hal/utils/src/utils_event.o \
 hal/src/hal_sleep.o \
@@ -81,6 +84,7 @@ OBJS_AS_ARGS +=  \
 "samd21a/gcc/gcc/startup_samd21.o" \
 "usb/class/cdc/device/cdcdf_acm.o" \
 "hal/utils/src/utils_syscalls.o" \
+"hal/src/hal_spi_m_sync.o" \
 "hpl/usb/hpl_usb.o" \
 "hal/src/hal_delay.o" \
 "hpl/pm/hpl_pm.o" \
@@ -98,6 +102,7 @@ OBJS_AS_ARGS +=  \
 "samd21a/gcc/system_samd21.o" \
 "examples/driver_examples.o" \
 "driver_init.o" \
+"hpl/sercom/hpl_sercom.o" \
 "hal/src/hal_gpio.o" \
 "hal/utils/src/utils_event.o" \
 "hal/src/hal_sleep.o" \
@@ -118,6 +123,7 @@ DIR_INCLUDES +=  \
 -I"../hpl/gclk" \
 -I"../hpl/pm" \
 -I"../hpl/port" \
+-I"../hpl/sercom" \
 -I"../hpl/sysctrl" \
 -I"../hpl/usb" \
 -I"../hri" \
@@ -141,6 +147,7 @@ DEPS_AS_ARGS +=  \
 "hal/utils/src/utils_syscalls.d" \
 "usb/class/cdc/device/cdcdf_acm.d" \
 "hpl/usb/hpl_usb.d" \
+"hal/src/hal_spi_m_sync.d" \
 "hpl/core/hpl_core_m0plus_base.d" \
 "hal/utils/src/utils_list.d" \
 "usb_start.d" \
@@ -158,6 +165,7 @@ DEPS_AS_ARGS +=  \
 "main.d" \
 "examples/driver_examples.d" \
 "hal/src/hal_sleep.d" \
+"hpl/sercom/hpl_sercom.d" \
 "hal/utils/src/utils_event.d" \
 "hal/src/hal_atomic.d" \
 "usb/device/usbdc.d" \

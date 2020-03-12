@@ -21,7 +21,15 @@ extern "C" {
 #include <hal_io.h>
 #include <hal_sleep.h>
 
+#include <hal_spi_m_sync.h>
+
 #include "hal_usb_device.h"
+
+extern struct spi_m_sync_descriptor SPI_0;
+
+void SPI_0_PORT_init(void);
+void SPI_0_CLOCK_init(void);
+void SPI_0_init(void);
 
 void USB_DEVICE_INSTANCE_CLOCK_init(void);
 void USB_DEVICE_INSTANCE_init(void);

@@ -3001,6 +3001,7 @@ pub const GPIO_PIN_FUNCTION_E: u32 = 4;
 pub const GPIO_PIN_FUNCTION_F: u32 = 5;
 pub const GPIO_PIN_FUNCTION_G: u32 = 6;
 pub const GPIO_PIN_FUNCTION_H: u32 = 7;
+pub const SPI_DUMMY_CHAR: u32 = 511;
 pub const USB_bmRequestType_Offset: u32 = 0;
 pub const USB_bRequest_Offset: u32 = 1;
 pub const USB_wValue_Offset: u32 = 2;
@@ -70573,6 +70574,583 @@ extern "C" {
 }
 #[doc = " \\brief Pointer to function"]
 pub type FUNC_PTR = ::core::option::Option<unsafe extern "C" fn()>;
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct spi_msg {
+    #[doc = " Pointer to the output data buffer"]
+    pub txbuf: *mut u8,
+    #[doc = " Pointer to the input data buffer"]
+    pub rxbuf: *mut u8,
+    #[doc = " Size of the message data in SPI characters"]
+    pub size: u32,
+}
+#[test]
+fn bindgen_test_layout_spi_msg() {
+    assert_eq!(
+        ::core::mem::size_of::<spi_msg>(),
+        12usize,
+        concat!("Size of: ", stringify!(spi_msg))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<spi_msg>(),
+        4usize,
+        concat!("Alignment of ", stringify!(spi_msg))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<spi_msg>())).txbuf as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(spi_msg),
+            "::",
+            stringify!(txbuf)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<spi_msg>())).rxbuf as *const _ as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(spi_msg),
+            "::",
+            stringify!(rxbuf)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<spi_msg>())).size as *const _ as usize },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(spi_msg),
+            "::",
+            stringify!(size)
+        )
+    );
+}
+#[doc = " Leading edge is rising edge, data sample on leading edge."]
+pub const spi_transfer_mode_SPI_MODE_0: spi_transfer_mode = 0;
+#[doc = " Leading edge is rising edge, data sample on trailing edge."]
+pub const spi_transfer_mode_SPI_MODE_1: spi_transfer_mode = 1;
+#[doc = " Leading edge is falling edge, data sample on leading edge."]
+pub const spi_transfer_mode_SPI_MODE_2: spi_transfer_mode = 2;
+#[doc = " Leading edge is falling edge, data sample on trailing edge."]
+pub const spi_transfer_mode_SPI_MODE_3: spi_transfer_mode = 3;
+#[doc = "  \\brief SPI transfer modes"]
+#[doc = "  SPI transfer mode controls clock polarity and clock phase."]
+#[doc = "  Mode 0: leading edge is rising edge, data sample on leading edge."]
+#[doc = "  Mode 1: leading edge is rising edge, data sample on trailing edge."]
+#[doc = "  Mode 2: leading edge is falling edge, data sample on leading edge."]
+#[doc = "  Mode 3: leading edge is falling edge, data sample on trailing edge."]
+pub type spi_transfer_mode = u32;
+#[doc = " Character size is 8 bit."]
+pub const spi_char_size_SPI_CHAR_SIZE_8: spi_char_size = 0;
+#[doc = " Character size is 9 bit."]
+pub const spi_char_size_SPI_CHAR_SIZE_9: spi_char_size = 1;
+#[doc = " Character size is 10 bit."]
+pub const spi_char_size_SPI_CHAR_SIZE_10: spi_char_size = 2;
+#[doc = " Character size is 11 bit."]
+pub const spi_char_size_SPI_CHAR_SIZE_11: spi_char_size = 3;
+#[doc = " Character size is 12 bit."]
+pub const spi_char_size_SPI_CHAR_SIZE_12: spi_char_size = 4;
+#[doc = " Character size is 13 bit."]
+pub const spi_char_size_SPI_CHAR_SIZE_13: spi_char_size = 5;
+#[doc = " Character size is 14 bit."]
+pub const spi_char_size_SPI_CHAR_SIZE_14: spi_char_size = 6;
+#[doc = " Character size is 15 bit."]
+pub const spi_char_size_SPI_CHAR_SIZE_15: spi_char_size = 7;
+#[doc = " Character size is 16 bit."]
+pub const spi_char_size_SPI_CHAR_SIZE_16: spi_char_size = 8;
+#[doc = "  \\brief SPI character sizes"]
+#[doc = "  The character size influence the way the data is sent/received."]
+#[doc = "  For char size <= 8 data is stored byte by byte."]
+#[doc = "  For char size between 9 ~ 16 data is stored in 2-byte length."]
+#[doc = "  Note that the default and recommended char size is 8 bit since it's"]
+#[doc = "  supported by all system."]
+pub type spi_char_size = u32;
+#[doc = " MSB goes first."]
+pub const spi_data_order_SPI_DATA_ORDER_MSB_1ST: spi_data_order = 0;
+#[doc = " LSB goes first."]
+pub const spi_data_order_SPI_DATA_ORDER_LSB_1ST: spi_data_order = 1;
+#[doc = "  \\brief SPI data order"]
+pub type spi_data_order = u32;
+#[doc = " \\brief Transfer descriptor for SPI"]
+#[doc = "  Transfer descriptor holds TX and RX buffers"]
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct spi_xfer {
+    #[doc = " Pointer to data buffer to TX"]
+    pub txbuf: *mut u8,
+    #[doc = " Pointer to data buffer to RX"]
+    pub rxbuf: *mut u8,
+    #[doc = " Size of data characters to TX & RX"]
+    pub size: u32,
+}
+#[test]
+fn bindgen_test_layout_spi_xfer() {
+    assert_eq!(
+        ::core::mem::size_of::<spi_xfer>(),
+        12usize,
+        concat!("Size of: ", stringify!(spi_xfer))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<spi_xfer>(),
+        4usize,
+        concat!("Alignment of ", stringify!(spi_xfer))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<spi_xfer>())).txbuf as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(spi_xfer),
+            "::",
+            stringify!(txbuf)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<spi_xfer>())).rxbuf as *const _ as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(spi_xfer),
+            "::",
+            stringify!(rxbuf)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<spi_xfer>())).size as *const _ as usize },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(spi_xfer),
+            "::",
+            stringify!(size)
+        )
+    );
+}
+#[doc = " SPI generic driver."]
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct spi_dev {
+    #[doc = " Pointer to the hardware base or private data for special device."]
+    pub prvt: *mut cty::c_void,
+    #[doc = " Reference start of sync/async variables"]
+    pub sync_async_misc: [u32; 1usize],
+}
+#[test]
+fn bindgen_test_layout_spi_dev() {
+    assert_eq!(
+        ::core::mem::size_of::<spi_dev>(),
+        8usize,
+        concat!("Size of: ", stringify!(spi_dev))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<spi_dev>(),
+        4usize,
+        concat!("Alignment of ", stringify!(spi_dev))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<spi_dev>())).prvt as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(spi_dev),
+            "::",
+            stringify!(prvt)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<spi_dev>())).sync_async_misc as *const _ as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(spi_dev),
+            "::",
+            stringify!(sync_async_misc)
+        )
+    );
+}
+extern "C" {
+    #[doc = "  \\brief Calculate the baudrate value for hardware to use to set baudrate"]
+    #[doc = "  \\param[in, out] dev Pointer to the SPI device instance."]
+    #[doc = "  \\param[in] clk Clock frequency (Hz) for baudrate generation."]
+    #[doc = "  \\param[in] baud Target baudrate (bps)."]
+    #[doc = "  \\return Error or baudrate value."]
+    #[doc = "  \\retval >0 Baudrate value."]
+    #[doc = "  \\retval ERR_INVALID_ARG Calculation fail."]
+    pub fn _spi_calc_baud_val(dev: *mut spi_dev, clk: u32, baud: u32) -> i32;
+}
+#[doc = " SPI driver to support sync HAL"]
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct _spi_sync_dev {
+    #[doc = " Pointer to the hardware base or private data for special device."]
+    pub prvt: *mut cty::c_void,
+    #[doc = " Data size, number of bytes for each character"]
+    pub char_size: u8,
+    #[doc = " Dummy byte used in master mode when reading the slave"]
+    pub dummy_byte: u16,
+}
+#[test]
+fn bindgen_test_layout__spi_sync_dev() {
+    assert_eq!(
+        ::core::mem::size_of::<_spi_sync_dev>(),
+        8usize,
+        concat!("Size of: ", stringify!(_spi_sync_dev))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<_spi_sync_dev>(),
+        4usize,
+        concat!("Alignment of ", stringify!(_spi_sync_dev))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_spi_sync_dev>())).prvt as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_spi_sync_dev),
+            "::",
+            stringify!(prvt)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_spi_sync_dev>())).char_size as *const _ as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_spi_sync_dev),
+            "::",
+            stringify!(char_size)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<_spi_sync_dev>())).dummy_byte as *const _ as usize },
+        6usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(_spi_sync_dev),
+            "::",
+            stringify!(dummy_byte)
+        )
+    );
+}
+extern "C" {
+    #[doc = "  \\brief Initialize SPI for access without interrupts"]
+    #[doc = "  It will load default hardware configuration and software struct."]
+    #[doc = "  \\param[in, out] dev Pointer to the SPI device instance."]
+    #[doc = "  \\param[in] hw Pointer to the hardware base."]
+    #[doc = "  \\return Operation status."]
+    #[doc = "  \\retval ERR_INVALID_ARG Input parameter problem."]
+    #[doc = "  \\retval ERR_BUSY SPI hardware not ready (resetting)."]
+    #[doc = "  \\retval ERR_DENIED SPI has been enabled."]
+    #[doc = "  \\retval 0 Operation done successfully."]
+    pub fn _spi_m_sync_init(dev: *mut _spi_sync_dev, hw: *mut cty::c_void) -> i32;
+}
+extern "C" {
+    #[doc = "  \\brief Deinitialize SPI"]
+    #[doc = "  Disable, reset the hardware and the software struct."]
+    #[doc = "  \\param[in, out] dev Pointer to the SPI device instance."]
+    #[doc = "  \\return Operation status."]
+    #[doc = "  \\retval 0 Operation done successfully."]
+    pub fn _spi_m_sync_deinit(dev: *mut _spi_sync_dev) -> i32;
+}
+extern "C" {
+    #[doc = "  \\brief Enable SPI for access without interrupts"]
+    #[doc = "  \\param[in, out] dev Pointer to the SPI device instance."]
+    #[doc = "  \\return Operation status."]
+    #[doc = "  \\retval ERR_BUSY SPI hardware not ready (resetting)."]
+    #[doc = "  \\retval 0 Operation done successfully."]
+    pub fn _spi_m_sync_enable(dev: *mut _spi_sync_dev) -> i32;
+}
+extern "C" {
+    #[doc = "  \\brief Disable SPI for access without interrupts"]
+    #[doc = "  Disable SPI. Deactivate all CS pins if works as master."]
+    #[doc = "  \\param[in, out] dev Pointer to the SPI device instance."]
+    #[doc = "  \\return Operation status."]
+    #[doc = "  \\retval 0 Operation done successfully."]
+    pub fn _spi_m_sync_disable(dev: *mut _spi_sync_dev) -> i32;
+}
+extern "C" {
+    #[doc = "  \\brief Set SPI transfer mode"]
+    #[doc = "  Set SPI transfer mode (\\ref spi_transfer_mode),"]
+    #[doc = "  which controls clock polarity and clock phase."]
+    #[doc = "  Mode 0: leading edge is rising edge, data sample on leading edge."]
+    #[doc = "  Mode 1: leading edge is rising edge, data sample on trailing edge."]
+    #[doc = "  Mode 2: leading edge is falling edge, data sample on leading edge."]
+    #[doc = "  Mode 3: leading edge is falling edge, data sample on trailing edge."]
+    #[doc = "  \\param[in, out] dev Pointer to the SPI device instance."]
+    #[doc = "  \\param[in] mode The SPI transfer mode."]
+    #[doc = "  \\return Operation status."]
+    #[doc = "  \\retval ERR_BUSY SPI is not ready to accept new setting."]
+    #[doc = "  \\retval 0 Operation done successfully."]
+    pub fn _spi_m_sync_set_mode(dev: *mut _spi_sync_dev, mode: spi_transfer_mode) -> i32;
+}
+extern "C" {
+    #[doc = "  \\brief Set SPI baudrate"]
+    #[doc = "  \\param[in, out] dev Pointer to the SPI device instance."]
+    #[doc = "  \\param[in] baud_val The SPI baudrate value, see \\ref _spi_calc_baud_val() on"]
+    #[doc = "                  how it's generated."]
+    #[doc = "  \\return Operation status."]
+    #[doc = "  \\retval ERR_BUSY SPI is not ready to accept new setting."]
+    #[doc = "  \\retval 0 Operation done successfully."]
+    pub fn _spi_m_sync_set_baudrate(dev: *mut _spi_sync_dev, baud_val: u32) -> i32;
+}
+extern "C" {
+    #[doc = "  \\brief Set SPI char size"]
+    #[doc = "  \\param[in, out] dev Pointer to the SPI device instance."]
+    #[doc = "  \\param[in] char_size The character size, see \\ref spi_char_size."]
+    #[doc = "  \\return Operation status."]
+    #[doc = "  \\retval ERR_INVALID_ARG The character size is not supported."]
+    #[doc = "  \\retval ERR_BUSY SPI is not ready to accept new setting."]
+    #[doc = "  \\retval 0 Operation done successfully."]
+    pub fn _spi_m_sync_set_char_size(dev: *mut _spi_sync_dev, char_size: spi_char_size) -> i32;
+}
+extern "C" {
+    #[doc = "  \\brief Set SPI data order"]
+    #[doc = "  \\param[in, out] dev Pointer to the SPI device instance."]
+    #[doc = "  \\param[in] dord SPI data order (LSB/MSB first)."]
+    #[doc = "  \\return Operation status."]
+    #[doc = "  \\retval ERR_INVALID_ARG The character size is not supported."]
+    #[doc = "  \\retval ERR_BUSY SPI is not ready to accept new setting."]
+    #[doc = "  \\retval 0 Operation done successfully."]
+    pub fn _spi_m_sync_set_data_order(dev: *mut _spi_sync_dev, dord: spi_data_order) -> i32;
+}
+extern "C" {
+    #[doc = "  \\brief Transfer the whole message without interrupt"]
+    #[doc = "  Transfer the message, it will keep waiting until the message finish or"]
+    #[doc = "  error."]
+    #[doc = "  \\param[in, out] dev Pointer to the SPI device instance."]
+    #[doc = "  \\param[in] msg Pointer to the message instance to process."]
+    #[doc = "  \\return Error or number of characters transferred."]
+    #[doc = "  \\retval ERR_BUSY SPI hardware is not ready to start transfer (not"]
+    #[doc = "                   enabled, busy applying settings, ...)."]
+    #[doc = "  \\retval SPI_ERR_OVERFLOW Overflow error."]
+    #[doc = "  \\retval >=0 Number of characters transferred."]
+    pub fn _spi_m_sync_trans(dev: *mut _spi_sync_dev, msg: *const spi_msg) -> i32;
+}
+#[doc = " \\brief SPI HAL driver struct for polling mode"]
+#[doc = ""]
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct spi_m_sync_descriptor {
+    pub func: *mut _spi_m_sync_hpl_interface,
+    #[doc = " SPI device instance"]
+    pub dev: _spi_sync_dev,
+    #[doc = " I/O read/write"]
+    pub io: io_descriptor,
+    #[doc = " Flags for HAL driver"]
+    pub flags: u16,
+}
+#[test]
+fn bindgen_test_layout_spi_m_sync_descriptor() {
+    assert_eq!(
+        ::core::mem::size_of::<spi_m_sync_descriptor>(),
+        24usize,
+        concat!("Size of: ", stringify!(spi_m_sync_descriptor))
+    );
+    assert_eq!(
+        ::core::mem::align_of::<spi_m_sync_descriptor>(),
+        4usize,
+        concat!("Alignment of ", stringify!(spi_m_sync_descriptor))
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<spi_m_sync_descriptor>())).func as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(spi_m_sync_descriptor),
+            "::",
+            stringify!(func)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<spi_m_sync_descriptor>())).dev as *const _ as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(spi_m_sync_descriptor),
+            "::",
+            stringify!(dev)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<spi_m_sync_descriptor>())).io as *const _ as usize },
+        12usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(spi_m_sync_descriptor),
+            "::",
+            stringify!(io)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::core::ptr::null::<spi_m_sync_descriptor>())).flags as *const _ as usize },
+        20usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(spi_m_sync_descriptor),
+            "::",
+            stringify!(flags)
+        )
+    );
+}
+extern "C" {
+    #[doc = " \\brief Set the SPI HAL instance function pointer for HPL APIs."]
+    #[doc = ""]
+    #[doc = "  Set SPI HAL instance function pointer for HPL APIs."]
+    #[doc = ""]
+    #[doc = "  \\param[in] spi Pointer to the HAL SPI instance."]
+    #[doc = "  \\param[in] func Pointer to the HPL api structure."]
+    #[doc = ""]
+    pub fn spi_m_sync_set_func_ptr(spi: *mut spi_m_sync_descriptor, func: *mut cty::c_void);
+}
+extern "C" {
+    #[doc = " \\brief Initialize SPI HAL instance and hardware for polling mode"]
+    #[doc = ""]
+    #[doc = "  Initialize SPI HAL with polling mode."]
+    #[doc = ""]
+    #[doc = "  \\param[in] spi Pointer to the HAL SPI instance."]
+    #[doc = "  \\param[in] hw Pointer to the hardware base."]
+    #[doc = ""]
+    #[doc = "  \\return Operation status."]
+    #[doc = "  \\retval ERR_NONE Success."]
+    #[doc = "  \\retval ERR_INVALID_DATA Error, initialized."]
+    pub fn spi_m_sync_init(spi: *mut spi_m_sync_descriptor, hw: *mut cty::c_void) -> i32;
+}
+extern "C" {
+    #[doc = " \\brief Deinitialize the SPI HAL instance and hardware"]
+    #[doc = ""]
+    #[doc = "  Abort transfer, disable and reset SPI, deinit software."]
+    #[doc = ""]
+    #[doc = "  \\param[in] spi Pointer to the HAL SPI instance."]
+    #[doc = ""]
+    #[doc = "  \\return Operation status."]
+    #[doc = "  \\retval ERR_NONE Success."]
+    #[doc = "  \\retval <0 Error code."]
+    pub fn spi_m_sync_deinit(spi: *mut spi_m_sync_descriptor);
+}
+extern "C" {
+    #[doc = " \\brief Enable SPI"]
+    #[doc = ""]
+    #[doc = "  \\param[in] spi Pointer to the HAL SPI instance."]
+    #[doc = ""]
+    #[doc = "  \\return Operation status."]
+    #[doc = "  \\retval ERR_NONE Success."]
+    #[doc = "  \\retval <0 Error code."]
+    pub fn spi_m_sync_enable(spi: *mut spi_m_sync_descriptor);
+}
+extern "C" {
+    #[doc = " \\brief Disable SPI"]
+    #[doc = ""]
+    #[doc = "  \\param[in] spi Pointer to the HAL SPI instance."]
+    #[doc = ""]
+    #[doc = "  \\return Operation status."]
+    #[doc = "  \\retval ERR_NONE Success."]
+    #[doc = "  \\retval <0 Error code."]
+    pub fn spi_m_sync_disable(spi: *mut spi_m_sync_descriptor);
+}
+extern "C" {
+    #[doc = " \\brief Set SPI baudrate"]
+    #[doc = ""]
+    #[doc = "  Works if SPI is initialized as master, it sets the baudrate."]
+    #[doc = ""]
+    #[doc = "  \\param[in] spi Pointer to the HAL SPI instance."]
+    #[doc = "  \\param[in] baud_val The target baudrate value"]
+    #[doc = "                  (see \"baudrate calculation\" for calculating the value)."]
+    #[doc = ""]
+    #[doc = "  \\return Operation status."]
+    #[doc = "  \\retval ERR_NONE Success."]
+    #[doc = "  \\retval ERR_BUSY Busy"]
+    #[doc = "  \\retval ERR_INVALID_ARG The baudrate is not supported."]
+    pub fn spi_m_sync_set_baudrate(spi: *mut spi_m_sync_descriptor, baud_val: u32) -> i32;
+}
+extern "C" {
+    #[doc = " \\brief Set SPI mode"]
+    #[doc = ""]
+    #[doc = "  Set the SPI transfer mode (\\ref spi_transfer_mode),"]
+    #[doc = "  which controls the clock polarity and clock phase:"]
+    #[doc = "  - Mode 0: leading edge is rising edge, data sample on leading edge."]
+    #[doc = "  - Mode 1: leading edge is rising edge, data sample on trailing edge."]
+    #[doc = "  - Mode 2: leading edge is falling edge, data sample on leading edge."]
+    #[doc = "  - Mode 3: leading edge is falling edge, data sample on trailing edge."]
+    #[doc = ""]
+    #[doc = "  \\param[in] spi Pointer to the HAL SPI instance."]
+    #[doc = "  \\param[in] mode The mode (0~3)."]
+    #[doc = ""]
+    #[doc = "  \\return Operation status."]
+    #[doc = "  \\retval ERR_NONE Success."]
+    #[doc = "  \\retval ERR_BUSY Busy"]
+    #[doc = "  \\retval ERR_INVALID_ARG The mode is not supported."]
+    pub fn spi_m_sync_set_mode(spi: *mut spi_m_sync_descriptor, mode: spi_transfer_mode) -> i32;
+}
+extern "C" {
+    #[doc = " \\brief Set SPI transfer character size in number of bits"]
+    #[doc = ""]
+    #[doc = "  The character size (\\ref spi_char_size) influence the way the data is"]
+    #[doc = "  sent/received."]
+    #[doc = "  For char size <= 8-bit, data is stored byte by byte."]
+    #[doc = "  For char size between 9-bit ~ 16-bit, data is stored in 2-byte length."]
+    #[doc = "  Note that the default and recommended char size is 8-bit since it's"]
+    #[doc = "  supported by all system."]
+    #[doc = ""]
+    #[doc = "  \\param[in] spi Pointer to the HAL SPI instance."]
+    #[doc = "  \\param[in] char_size The char size (~16, recommended 8)."]
+    #[doc = ""]
+    #[doc = "  \\return Operation status."]
+    #[doc = "  \\retval ERR_NONE Success."]
+    #[doc = "  \\retval ERR_BUSY Busy"]
+    #[doc = "  \\retval ERR_INVALID_ARG The char size is not supported."]
+    pub fn spi_m_sync_set_char_size(
+        spi: *mut spi_m_sync_descriptor,
+        char_size: spi_char_size,
+    ) -> i32;
+}
+extern "C" {
+    #[doc = " \\brief Set SPI transfer data order"]
+    #[doc = ""]
+    #[doc = "  \\param[in] spi Pointer to the HAL SPI instance."]
+    #[doc = "  \\param[in] dord The data order: send LSB/MSB first."]
+    #[doc = ""]
+    #[doc = "  \\return Operation status."]
+    #[doc = "  \\retval ERR_NONE Success."]
+    #[doc = "  \\retval ERR_BUSY Busy"]
+    #[doc = "  \\retval ERR_INVALID_ARG The data order is not supported."]
+    pub fn spi_m_sync_set_data_order(spi: *mut spi_m_sync_descriptor, dord: spi_data_order) -> i32;
+}
+extern "C" {
+    #[doc = " \\brief Perform the SPI data transfer (TX and RX) in polling way"]
+    #[doc = ""]
+    #[doc = "  Activate CS, do TX and RX and deactivate CS. It blocks."]
+    #[doc = ""]
+    #[doc = "  \\param[in, out] spi Pointer to the HAL SPI instance."]
+    #[doc = "  \\param[in] xfer Pointer to the transfer information (\\ref spi_xfer)."]
+    #[doc = ""]
+    #[doc = "  \\retval size Success."]
+    #[doc = "  \\retval >=0 Timeout, with number of characters transferred."]
+    #[doc = "  \\retval ERR_BUSY SPI is busy"]
+    pub fn spi_m_sync_transfer(spi: *mut spi_m_sync_descriptor, xfer: *const spi_xfer) -> i32;
+}
+extern "C" {
+    #[doc = " \\brief Return the I/O descriptor for this SPI instance"]
+    #[doc = ""]
+    #[doc = " This function will return an I/O instance for this SPI driver instance."]
+    #[doc = ""]
+    #[doc = " \\param[in] spi An SPI master descriptor, which is used to communicate through"]
+    #[doc = "                SPI"]
+    #[doc = " \\param[in, out] io A pointer to an I/O descriptor pointer type"]
+    #[doc = ""]
+    #[doc = " \\retval ERR_NONE"]
+    pub fn spi_m_sync_get_io_descriptor(
+        spi: *mut spi_m_sync_descriptor,
+        io: *mut *mut io_descriptor,
+    ) -> i32;
+}
+extern "C" {
+    #[doc = " \\brief Retrieve the current driver version"]
+    #[doc = ""]
+    #[doc = "  \\return Current driver version."]
+    pub fn spi_m_sync_get_version() -> u32;
+}
 #[doc = " USB Low Speed."]
 pub const usb_speed_USB_SPEED_LS: usb_speed = 0;
 #[doc = " USB Full Speed."]
@@ -71541,6 +72119,18 @@ extern "C" {
     #[doc = ""]
     #[doc = "  \\return Current driver version."]
     pub fn usb_d_get_version() -> u32;
+}
+extern "C" {
+    pub static mut SPI_0: spi_m_sync_descriptor;
+}
+extern "C" {
+    pub fn SPI_0_PORT_init();
+}
+extern "C" {
+    pub fn SPI_0_CLOCK_init();
+}
+extern "C" {
+    pub fn SPI_0_init();
 }
 extern "C" {
     pub fn USB_DEVICE_INSTANCE_CLOCK_init();
@@ -77388,4 +77978,9 @@ extern "C" {
 }
 extern "C" {
     pub fn pin_toggle(pin: u8);
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct _spi_m_sync_hpl_interface {
+    pub _address: u8,
 }

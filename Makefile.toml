@@ -61,5 +61,5 @@ args = ["${BUILD}/${@}", "-O", "binary", "${BUILD}/${@}.bin"]
 
 [tasks.uf2]
 dependencies = ["bin"]
-command = "uf2conv-rs"
+command = "uf2conv"
 args = ["-b", "0x2000", "-f", "0x68ed2b88", "-o", "${@}.uf2", "${BUILD}/${@}.bin"]
