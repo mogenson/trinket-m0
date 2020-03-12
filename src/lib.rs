@@ -7,8 +7,9 @@
 pub use bindings::*;
 pub mod bindings;
 
-// implement gpio traits from embedded_hal
 use core::convert::Infallible;
+
+// implement digital traits from embedded_hal
 use embedded_hal::digital::v2::{InputPin, OutputPin, ToggleableOutputPin};
 
 pub struct Pin {
@@ -117,5 +118,40 @@ impl DelayUs<u16> for Delay {
 impl DelayUs<u8> for Delay {
     fn delay_us(&mut self, us: u8) {
         self.delay_us(us as u16);
+    }
+}
+
+// implement blocking spi traits from embedded_hal
+use embedded_hal::blocking::spi::Write;
+
+pub struct Spi {
+    spi: *mut bindings::spi_m_sync_descriptor,
+    io: *mut bindings::io_descriptor,
+}
+
+impl Spi {
+    pub fn new() -> Self {
+        let spi = unsafe { &mut bindings::SPI_0 as *mut bindings::spi_m_sync_descriptor };
+        let mut io = core::ptr::null_mut() as *mut bindings::io_descriptor;
+        unsafe {
+            bindings::spi_m_sync_get_io_descriptor(
+                spi,
+                &mut io as *mut *mut bindings::io_descriptor,
+            );
+            bindings::spi_m_sync_enable(spi);
+        }
+
+        Spi { spi: spi, io: io }
+    }
+}
+
+impl Write<u8> for Spi {
+    type Error = Infallible;
+
+    fn write(&mut self, buffer: &[u8]) -> Result<(), Self::Error> {
+        unsafe {
+            bindings::io_write(self.io, buffer.as_ptr(), buffer.len() as u16);
+        }
+        Ok(())
     }
 }
