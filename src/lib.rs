@@ -125,23 +125,22 @@ impl DelayUs<u8> for Delay {
 use embedded_hal::blocking::spi::Write;
 
 pub struct Spi {
-    spi: *mut bindings::spi_m_sync_descriptor,
     io: *mut bindings::io_descriptor,
 }
 
 impl Spi {
-    pub fn new() -> Self {
-        let spi = unsafe { &mut bindings::SPI_0 as *mut bindings::spi_m_sync_descriptor };
+    pub fn new(module: &mut bindings::spi_m_sync_descriptor) -> Self {
+        let module = module as *mut bindings::spi_m_sync_descriptor;
         let mut io = core::ptr::null_mut() as *mut bindings::io_descriptor;
         unsafe {
             bindings::spi_m_sync_get_io_descriptor(
-                spi,
+                module,
                 &mut io as *mut *mut bindings::io_descriptor,
             );
-            bindings::spi_m_sync_enable(spi);
+            bindings::spi_m_sync_enable(module);
         }
 
-        Spi { spi: spi, io: io }
+        Spi { io: io }
     }
 }
 
