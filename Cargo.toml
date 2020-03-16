@@ -16,4 +16,7 @@ cc = "1.0.50"
 
 [dev-dependencies]
 apa102-spi = "0.3.2"
+heapless = "0.5.3"
+serde-json-core = "0.1.0"
+serde = { version = "1.0.104", default-features = false, features = ["derive"] }
 smart-leds = "0.3.0"
